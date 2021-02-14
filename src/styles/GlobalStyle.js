@@ -1,15 +1,11 @@
 import { createGlobalStyle } from "styled-components"
 
-import { COLOR } from "../utils/constants"
-
 export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    /* font-family: 'Raleway', sans-serif; */
-    font-family: 'Source Sans Pro', sans-serif;
   }
 
   html, 
@@ -23,9 +19,5 @@ export const GlobalStyle = createGlobalStyle`
     flex-shrink: 0;
     flex-basis: auto;
     overflow-x: hidden;
-  }
-
-  body {
-    background-color: ${COLOR.MYSTIC};
   }
 `

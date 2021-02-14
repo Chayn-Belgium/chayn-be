@@ -1,1 +1,3 @@
-export { default } from "./Button"
+import { StyledButton } from "./style"
+
+export default StyledButton

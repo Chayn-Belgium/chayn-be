@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { COLOR } from "../../../utils/constants"
 
 export const Input = styled.input`
-  border: 2px solid ${COLOR.MYSTIC};
+  border: 2px solid ${COLOR.SEASHELL};
   border-radius: 25px;
   padding: 10px 15px;
 
@@ -18,7 +18,7 @@ export const Input = styled.input`
 `
 
 export const Textarea = styled.textarea`
-  border: 2px solid ${COLOR.MYSTIC};
+  border: 2px solid ${COLOR.SEASHELL};
   border-radius: 20px;
   resize: none;
   padding: 10px 15px;

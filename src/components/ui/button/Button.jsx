@@ -1,9 +1,36 @@
 import React from "react"
 
-import { Button } from "./style"
+import Icon from "../icon"
 
-const ButtonEl = ({ children, ...props }) => {
-  return <Button {...props}>{children}</Button>
+const Button = ({
+  is: Element,
+  children,
+  iconVariant,
+  iconLeft,
+  iconRight,
+  isLoading,
+  ...props
+}) => {
+  let iconLeftElement
+  if (iconLeft || isLoading) {
+    iconLeftElement = <Icon name={isLoading ? "spinner" : iconLeft} />
+  }
+  let iconRightElement
+  if (iconRight) {
+    iconRightElement = <Icon name={iconRight} />
+  }
+
+  return (
+    <Element {...props}>
+      {iconLeftElement}
+      {children}
+      {iconRightElement}
+    </Element>
+  )
 }
 
-export default ButtonEl
+Button.defaultProps = {
+  is: "button",
+}
+
+export default Button

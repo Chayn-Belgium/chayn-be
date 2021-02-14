@@ -38,11 +38,7 @@ const Head = () => {
         <link rel="alternate" href={baseUrl} hreflang="en" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&family=Oswald:wght@600&display=swap"
           rel="stylesheet"
         />
 

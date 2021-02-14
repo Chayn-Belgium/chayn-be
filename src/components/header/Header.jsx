@@ -1,33 +1,26 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 
 import { Header, Content, Nav } from "./style"
-import { Container } from "../../styles"
 import Logo from "../logo"
+import Cta from "../cta"
+import { Button } from "../ui"
+import { Container } from "../../styles"
 
-const HeaderSection = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      logo: file(relativePath: { eq: "logo/logo.png" }) {
-        childImageSharp {
-          fixed(width: 125, quality: 90) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `)
-
-  return (
-    <Header>
-      <Container>
-        <Content>
-          <Logo logo={data.logo.childImageSharp} />
-          <Nav>{/* <NavItem to="/projects">Projects</NavItem> */}</Nav>
-        </Content>
-      </Container>
-    </Header>
-  )
-}
+const HeaderSection = ({ nav }) => (
+  <Header>
+    <Container>
+      <Content>
+        <Logo />
+        <Nav>
+          {nav.map((item, index) => (
+            <Button is={Cta} link={item} type="minimal" key={index}>
+              {item.label}
+            </Button>
+          ))}
+        </Nav>
+      </Content>
+    </Container>
+  </Header>
+)
 
 export default HeaderSection

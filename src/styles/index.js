@@ -6,6 +6,7 @@ export const Container = styled.div`
   max-width: 1096px;
   width: 100%;
   margin: 0 20px;
+  position: relative;
 `
 
 export const Main = styled.main`
@@ -14,3 +15,15 @@ export const Main = styled.main`
   flex-grow: 1;
   z-index: 1;
 `
+
+export const getHeadingSize = size =>
+  ({
+    xl: "2.9rem",
+    s: ".95rem",
+  }[size || "xl"])
+
+export const getTextSize = size =>
+  ({
+    m: "1.15rem",
+    s: ".95rem",
+  }[size || "m"])

@@ -5,14 +5,14 @@ import Header from "../header"
 import Footer from "../footer"
 import Head from "../head"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, nav, footer }) => {
   return (
     <>
       <GlobalStyle />
       <Head />
-      <Header />
+      <Header nav={nav} />
       <Main>{children}</Main>
-      <Footer />
+      <Footer data={footer} />
     </>
   )
 }
