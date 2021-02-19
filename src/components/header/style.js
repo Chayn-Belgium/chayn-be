@@ -21,6 +21,10 @@ export const Content = styled.div`
   width: 100%;
   height: 100%;
   align-items: center;
+
+  .logo {
+    max-height: 80%;
+  }
 `
 
 export const Nav = styled.nav`

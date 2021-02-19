@@ -11,6 +11,7 @@ const Button = ({
   isLoading,
   ...props
 }) => {
+  // console.log("okok", props)
   let iconLeftElement
   if (iconLeft || isLoading) {
     iconLeftElement = <Icon name={isLoading ? "spinner" : iconLeft} />

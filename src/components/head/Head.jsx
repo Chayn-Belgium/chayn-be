@@ -3,6 +3,10 @@ import { Helmet } from "react-helmet"
 
 import SchemaOrg from "./schema-org"
 
+import favIco from "../../assets/images/logo/favicon.ico"
+import fav16 from "../../assets/images/logo/logo-16x16.png"
+import fav32 from "../../assets/images/logo/logo-32x32.png"
+
 // const author = "Kevin Tassi"
 const websiteName = "Chayn Belgium"
 const baseUrl = "https://chayn.be"
@@ -35,7 +39,10 @@ const Head = () => {
         {/* Links */}
         <link href={baseUrl} rel="canonical" />
         <link rel="alternate" href={baseUrl} hreflang="x-default" />
-        <link rel="alternate" href={baseUrl} hreflang="en" />
+        {/* <link rel="alternate" href={baseUrl} hreflang="en" /> */}
+        <link rel="icon" href={favIco} />
+        <link href={fav16} rel="icon" sizes="16x16" type="image/png" />
+        <link href={fav32} rel="icon" sizes="32x32" type="image/png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&family=Oswald:wght@600&display=swap"
@@ -47,7 +54,7 @@ const Head = () => {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={ogImage} />
-        <meta property="fb:app_id" content={facebookAppID} />
+        {facebookAppID && <meta property="fb:app_id" content={facebookAppID} />}
 
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />

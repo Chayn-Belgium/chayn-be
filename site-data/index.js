@@ -10,19 +10,15 @@ module.exports = {
   nav: {
     fr: [
       {
+        label: "Nous rejoindre",
+        href: "https://www.google.com/",
+      },
+      {
         label: "Projet",
         href: "https://www.google.com/",
       },
       {
-        label: "Obtenir de l'aide",
-        href: "https://www.google.com/",
-      },
-      {
-        label: "Soutenir",
-        href: "https://www.google.com/",
-      },
-      {
-        label: "Nous rejoindre",
+        label: "Ressources",
         href: "https://www.google.com/",
       },
     ],
@@ -55,7 +51,7 @@ module.exports = {
           },
           {
             label: "Chayn Pakistan",
-            href: "https://chayn.co/",
+            href: "https://chaynpakistan.org/",
           },
           {
             label: "Chayn Inde",
@@ -63,7 +59,7 @@ module.exports = {
           },
           {
             label: "Chayn Italie",
-            href: "https://chayn.co/",
+            href: "https://chaynitalia.org/",
           },
         ],
       },
@@ -86,19 +82,37 @@ module.exports = {
           lang: "fr",
           template: SECTION_TEMPLATE.BASIC_HEADER,
           imageName: "team.png",
-          title: "Nous sommes CHAYN Belgium",
+          title: "CHAYN Belgium",
           text:
-            "Une collective féministe et antiraciste utilisant les technologies ouvertes pour lutter contre les violences et cyberviolences faites aux femmes.",
+            "Nous sommes une collective féministe et antiraciste utilisant les technologies ouvertes pour lutter contre les violences et cyberviolences faites aux femmes.",
+        },
+        {
+          lang: "fr",
+          template: SECTION_TEMPLATE.LIST_WITH_IMAGE_AND_CTA,
+          imageName: "founders2.gif",
+          text:
+            "Chayn Belgium est une collective initiée suite à l’augmentation des violences et des cyberviolences contre les femmes* pendant la pandémie du covid-19 en 2020. En Belgique, de nombreuses femmes sont notamment victimes de cyberviolences de genre, amplifiée ou non de par l’intersection identitaire où elles se trouvent.\nChayn Belgium est une collective intersectionnelle, par et pour les femmes de tous horizons et de toutes croyances désireuses de :",
+          list: [
+            "Consulter des ressources multilingues écrites par des survivantes de violences conjugales",
+            "Comprendre la problématique des cyberviolences et comment s’en protéger.",
+            "Contribuer à un espace bienveillant de création de ressources, de soutien et de partage de connaissance.",
+          ],
+          appendText:
+            "*Par «femmes», il est entendu toute personne qui a fait, fait ou fera l’expérience sociale d’être femme ou d’être perçue comme femme au cours de sa vie.",
+          link: {
+            label: "Accéder aux ressources",
+            href: "https://www.google.com/",
+          },
         },
         {
           lang: "fr",
           template: SECTION_TEMPLATE.SHORT_TEXT_WITH_CTA,
           imageName: "2-girls.png",
-          title: "Nous vous croyons.\nNous sommes là pour vous soutenir.",
+          title: "Nous sommes là pour vous soutenir.",
           text:
             "Qu’importe ce que dit quelqu’un sur vous, en ligne ou hors ligne, vous méritez le respect. Consulter ce site est la première étape. Utilisez nos ressources pour repérer les violences de genre, collecter des preuves, rester en sécurité, vous rétablir et vous connecter à d’autres associations qui prendront soin de vous.\nWe got you.",
           link: {
-            label: "Obtenir de l'aide",
+            label: "Accéder aux ressources",
             href: "https://www.google.com/",
           },
         },

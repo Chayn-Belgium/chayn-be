@@ -2,6 +2,14 @@ import React from "react"
 import Img from "gatsby-image/withIEPolyfill"
 
 const Image = ({ picture, alt, objectFit, svg }) => {
+  if (typeof picture === "string") {
+    return <img src={require(`../../../assets/images/${picture}`)} alt={alt} />
+  }
+
+  if (svg) {
+    return <img src={svg} alt={alt} />
+  }
+
   if (picture) {
     return (
       <Img
@@ -12,10 +20,6 @@ const Image = ({ picture, alt, objectFit, svg }) => {
         style={{ width: "100%", height: "100%" }}
       />
     )
-  }
-
-  if (svg) {
-    return <img src={svg} alt={alt} />
   }
 
   return null
