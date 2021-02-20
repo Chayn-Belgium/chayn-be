@@ -6,7 +6,7 @@
 const path = require(`path`)
 
 module.exports = {
-  pathPrefix: "/chayn.be",
+  pathPrefix: "/chayn-be",
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
