@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-import { COLOR } from "../../utils/constants"
+import { COLOR, MEDIA_QUERY } from "../../utils/constants"
 
 export const Header = styled.header`
   position: sticky;
@@ -24,13 +24,18 @@ export const Content = styled.div`
 
   .logo {
     max-height: 80%;
+    min-width: 50px;
   }
 `
 
-export const Nav = styled.nav`
+export const DesktopNav = styled.nav`
   display: flex;
   flex-grow: 1;
   justify-content: flex-end;
+
+  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+    display: none;
+  }
 `
 
 export const NavItem = styled(({ ...props }) => <Link {...props} />)``

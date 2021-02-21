@@ -1,5 +1,6 @@
 export const COLOR = {
   AMARANTH: "#ee3250",
+  BITTERSWEET: "#fc7373",
   BIZARRE: "#EEDAD6",
   CAPE_COD: "#3B3F40",
   SEASHELL: "#F2F1F1",

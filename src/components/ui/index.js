@@ -5,6 +5,7 @@ import ImageUI from "./image"
 import InputUI from "./input"
 import LabelUI from "./label"
 import PUI from "./p"
+import SideDialogUI from "./side-dialog"
 
 export const Button = ButtonUI
 export const Heading = HeadingUI
@@ -13,3 +14,4 @@ export const Image = ImageUI
 export const Input = InputUI
 export const Label = LabelUI
 export const P = PUI
+export const SideDialog = SideDialogUI

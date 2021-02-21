@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+import { MEDIA_QUERY } from "../../../utils/constants"
+
 export const Section = styled.section`
   display: flex;
   justify-content: center;
@@ -7,12 +9,18 @@ export const Section = styled.section`
 `
 
 export const ImageContainer = styled.div`
-  left: -60px;
+  right: -60px;
   position: absolute;
   bottom: -20px;
   width: 500px;
   z-index: 0;
-  opacity: 0.7;
+
+  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  }
 `
 
 export const ContentWrapper = styled.div`
@@ -23,6 +31,10 @@ export const ContentWrapper = styled.div`
   position: relative;
   text-align: center;
   z-index: 1;
+
+  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+    margin: 50px auto 0 auto;
+  }
 
   > p {
     max-width: 850px;

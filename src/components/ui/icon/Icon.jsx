@@ -2,21 +2,13 @@ import React from "react"
 
 import { IconContainer } from "./style"
 
-import facebookIconPath from "../../../assets/icons/facebook.svg"
-import instagramIconPath from "../../../assets/icons/instagram.svg"
-import mailIconPath from "../../../assets/icons/mail.svg"
-
-const getIconPath = name =>
-  ({
-    facebook: facebookIconPath,
-    instagram: instagramIconPath,
-    mail: mailIconPath,
-  }[name])
-
 const Icon = ({ name }) => {
   return (
     <IconContainer>
-      <img src={getIconPath(name)} alt={`${name}-icon`} />
+      <img
+        src={require(`../../../assets/icons/${name}.svg`)}
+        alt={`${name}-icon`}
+      />
     </IconContainer>
   )
 }

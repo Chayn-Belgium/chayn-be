@@ -8,7 +8,7 @@ const CTA = ({ link, children, className, ...props }) => {
   if (link && !href) {
     isExternal = true
   } else {
-    isExternal = href.includes("http")
+    isExternal = href.includes("http") || href.includes("mailto")
   }
 
   let Tag
