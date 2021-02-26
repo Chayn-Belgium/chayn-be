@@ -3,8 +3,8 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import BasicHeader from "../components/sections/basic-header"
-import ShortTextWithCTA from "../components/sections/short-text-with-cta"
-import ListWithImageAndCta from "../components/sections/list-with-image-and-cta"
+import CenteredSection from "../components/sections/centered-section"
+import ListSection from "../components/sections/list-section"
 import { SECTION_TEMPLATE } from "../../site-data/constants"
 
 export const query = graphql`
@@ -27,12 +27,10 @@ export const query = graphql`
 const getSection = (props, index) =>
   ({
     [SECTION_TEMPLATE.BASIC_HEADER]: <BasicHeader key={index} {...props} />,
-    [SECTION_TEMPLATE.SHORT_TEXT_WITH_CTA]: (
-      <ShortTextWithCTA key={index} {...props} />
+    [SECTION_TEMPLATE.CENTERED_SECTION]: (
+      <CenteredSection key={index} {...props} />
     ),
-    [SECTION_TEMPLATE.LIST_WITH_IMAGE_AND_CTA]: (
-      <ListWithImageAndCta key={index} {...props} />
-    ),
+    [SECTION_TEMPLATE.LIST_SECTION]: <ListSection key={index} {...props} />,
   }[props.template])
 
 const DefaultTemplate = props => {
@@ -49,7 +47,7 @@ const DefaultTemplate = props => {
           return pic.fluid.originalName === section.imageName
         })
 
-        if (section.imageName.includes(".gif")) {
+        if (section?.imageName?.includes(".gif")) {
           picture = section.imageName
         }
 

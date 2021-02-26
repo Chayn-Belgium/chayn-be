@@ -11,9 +11,11 @@ const ShortTextWithCTA = ({ title, text, picture, link, ...props }) => (
       <ContentWrapper>
         <Heading level={2}>{title}</Heading>
         <P dangerouslySetInnerHTML={{ __html: text }} />
-        <Button is={Cta} link={link}>
-          {link.label}
-        </Button>
+        {link && (
+          <Button is={Cta} link={link}>
+            {link.label}
+          </Button>
+        )}
       </ContentWrapper>
       <ImageContainer>
         <Image picture={picture} />
