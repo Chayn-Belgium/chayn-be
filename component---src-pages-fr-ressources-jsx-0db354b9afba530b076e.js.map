@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/fr/ressources.jsx"],"names":["ResourcesPage"],"mappings":"2FAAA,gCAMeA,UAJO,WACpB,OAAO","file":"component---src-pages-fr-ressources-jsx-0db354b9afba530b076e.js","sourcesContent":["import React from \"react\"\n\nconst ResourcesPage = () => {\n  return <div>wip</div>\n}\n\nexport default ResourcesPage\n"],"sourceRoot":""}
