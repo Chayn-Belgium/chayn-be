@@ -4,8 +4,9 @@ import { Section, ImageContainer, ContentWrapper } from "./style"
 import { Heading, P, Image, Button } from "../../ui"
 import { Container } from "../../../styles"
 import Cta from "../../cta"
+import { getImage } from "../../../utils/helpers"
 
-const ShortTextWithCTA = ({ title, text, picture, link, ...props }) => (
+const CenteredSection = ({ title, text, link, imageName, pictures }) => (
   <Section>
     <Container>
       <ContentWrapper>
@@ -18,10 +19,10 @@ const ShortTextWithCTA = ({ title, text, picture, link, ...props }) => (
         )}
       </ContentWrapper>
       <ImageContainer>
-        <Image picture={picture} />
+        <Image picture={getImage(imageName, pictures)} />
       </ImageContainer>
     </Container>
   </Section>
 )
 
-export default ShortTextWithCTA
+export default CenteredSection

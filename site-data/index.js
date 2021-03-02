@@ -12,15 +12,15 @@ module.exports = {
     fr: [
       {
         label: "Nous rejoindre",
-        href: "https://www.google.com/",
+        href: "/fr/nous-rejoindre",
       },
       {
         label: "Projet",
-        href: "https://www.google.com/",
+        href: "/fr/projet",
       },
       {
         label: "Ressources",
-        href: "https://www.google.com/",
+        href: "/fr/ressources",
       },
     ],
   },
@@ -230,6 +230,66 @@ module.exports = {
             href: "https://opencollective.com/chayn-belgium",
             rel: "noreferrer noopener",
             target: "_blank",
+          },
+        },
+      ],
+    },
+    {
+      name: "project",
+      template: PAGE_TEMPLATE.DEFAULT,
+      urls: {
+        fr: "/fr/projet",
+      },
+      sections: [
+        {
+          lang: "fr",
+          template: SECTION_TEMPLATE.CENTERED_SECTION,
+          title: "Contexte",
+          text: `Selon une étude d’${getInlineLink(
+            "Amnesty International",
+            "https://www.amnesty.org/en/latest/news/2017/11/amnesty-reveals-alarming-impact-of-online-abuse-against-women/"
+          )}, un quart des femmes ont déjà vécu des situations de violences dans l’espace numérique (harcèlement, menaces, injures, diffusion d’images de violences, etc.). Selon les Nation-Unies, ${getInlineLink(
+            "la situation s’est dramatiquement empirée",
+            "https://www.unwomen.org/en/digital-library/publications/2020/04/brief-online-and-ict-facilitated-violence-against-women-and-girls-during-covid-19?mc_cid=8e92d77db3&mc_eid=943aed7f64#view"
+          )} pendant la période de confinement du coronavirus. Les cyberviolences désignent toutes les formes de violences (harcèlement, menaces, injures, diffusion d’images de violences, etc.) qui s’exercent dans l’espace numérique.\n\nPourtant, il s’agit d’un sujet tabou et méconnu dans les écoles et dans la société dans son ensemble malgré l’omniprésence des technologies. Les conséquences, parfois irréversibles, vécues dans le silence poussent beaucoup de jeunes femmes à montrer de la réticence à l’idée de militer en ligne ou d’utiliser leur voix. Ces constats ne peuvent malheureusement pas s’affaisser uniquement en les identifiant, raison pour laquelle Chayn Belgium vise à informer, sensibiliser et agir face aux éléments précurseurs ainsi qu’aux conséquences de ces cyberviolences.
+            `,
+        },
+        {
+          lang: "fr",
+          template: SECTION_TEMPLATE.LIST_SECTION,
+          imageName: "equal-brussels.webp",
+          title: "Projets",
+          subtitle:
+            "Ateliers de prévention contre les cyberviolences pour adultes",
+          text:
+            "Chayn Belgium souhaite former les femmes à mieux appréhender la cybersécurité pour se protéger d’avantage en ligne. Ces ateliers s’adressent dans un premier temps aux femmes hautement susceptibles de subir du cyberharcèlement (journalistes, activistes, militantes, politiques,..).",
+          appendText:
+            "Ces ateliers sont organisés avec le soutien de la Région Bruxelloise dans le cadre de l'appel à projet de lutte contre les violences faites aux femmes.",
+        },
+        {
+          lang: "fr",
+          template: SECTION_TEMPLATE.LIST_SECTION,
+          imageName: "federation-wallonie-bruxelles.png",
+          title: "Projets",
+          subtitle:
+            "Ateliers de prévention contre les cyberviolences pour les jeunes de 16 à 18 ans.",
+          text: "Ce projet est réalisé en 3 phases :",
+          list: [
+            "Sensibilisation\nVia l’organisation de ces ateliers en école secondaire, Chayn Belgium vise à sensibiliser les jeunes sur les questions de cyberviolences, en ouvrant le dialogue sur les types de cyberviolences, les démarches à suivre lorsqu’on en est victime et faire comprendre aux élèves pourquoi ce problème est genré.",
+            "Prévention\nChayn Belgium vise à effectuer de la prévention proactive en enseignant aux jeunes les différentes manières de se sécuriser en ligne grâce aux bases de la cybersécurité.",
+            "Réutilisation\nLe contenu pédagogique ludique sera publié sous licence ouverte et diffusé dans les écoles secondaires francophones. Concrètement, tout ce contenu sera mis en ligne sur le site internet de Chayn Belgium et directement téléchargeable pour les professeurs.",
+          ],
+          appendText:
+            "Ce projet est développé avec le soutien de la Fédération Wallonie Bruxelles dans le cadre de l'appel à projet visant à lutter contre les violences faites aux femmes et aux filles dans un contexte post covid.",
+        },
+        {
+          lang: "fr",
+          template: SECTION_TEMPLATE.CENTERED_SECTION,
+          text:
+            "La collective travaille continuellement à la création et à la mise en ligne de ressources multilingues et intersectionnelles pour vous aider.",
+          link: {
+            label: "Accéder aux ressources",
+            href: "/fr/ressources",
           },
         },
       ],

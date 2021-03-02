@@ -12,6 +12,7 @@ export const Header = styled.header`
   display: flex;
   justify-content: center;
   box-shadow: 30px 30px 80px 0px ${COLOR.BIZARRE}55;
+  /* background-color: ${COLOR.BITTERSWEET}; */
   background-color: white;
   z-index: 2;
 `

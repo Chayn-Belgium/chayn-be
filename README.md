@@ -1,4 +1,3 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://chayn.be">
     <img alt="Chayn" src="https://user-images.githubusercontent.com/39580007/106380780-c7116080-63b4-11eb-9b52-94b78b0d4ca5.png" width="60" />
@@ -34,4 +33,4 @@ This project is open source.
 
 ## Deploy
 
-    The deployment is done automatically on [Github Pages](https://pages.github.com/) by a script who run when `main` branch is uptaed.
+The deployment is done automatically on [Github Pages](https://pages.github.com/) by a script who run when `main` branch is updated.

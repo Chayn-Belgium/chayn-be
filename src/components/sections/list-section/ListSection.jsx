@@ -8,29 +8,34 @@ import {
   List,
   ListItem,
 } from "./style"
+import Cta from "../../cta"
 import { P, Image, Button } from "../../ui"
 import { Container } from "../../../styles"
-import Cta from "../../cta"
+import { getImage } from "../../../utils/helpers"
 
-const ListWithImageAndCta = ({ list, text, picture, link, appendText }) => (
+const ListSection = ({ list, text, pictures, link, appendText, imageName }) => (
   <Section>
     <Container>
       <Wrapper>
         <ImageContainer>
-          <Image picture={picture} />
+          <Image picture={getImage(imageName, pictures)} />
         </ImageContainer>
         <ContentWrapper>
           <P dangerouslySetInnerHTML={{ __html: text }} />
-          <List>
-            {list.map((item, index) => (
-              <ListItem key={index}>
-                <P size="s">{item}</P>
-              </ListItem>
-            ))}
-          </List>
-          <Button is={Cta} link={link}>
-            {link.label}
-          </Button>
+          {list && (
+            <List>
+              {list.map((item, index) => (
+                <ListItem key={index}>
+                  <P size="s">{item}</P>
+                </ListItem>
+              ))}
+            </List>
+          )}
+          {link && (
+            <Button is={Cta} link={link}>
+              {link.label}
+            </Button>
+          )}
           <P size="s">{appendText}</P>
         </ContentWrapper>
       </Wrapper>
@@ -38,4 +43,4 @@ const ListWithImageAndCta = ({ list, text, picture, link, appendText }) => (
   </Section>
 )
 
-export default ListWithImageAndCta
+export default ListSection

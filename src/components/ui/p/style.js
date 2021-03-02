@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import { FONT } from "../../../utils/constants"
+import { COLOR, FONT } from "../../../utils/constants"
 import { getTextSize } from "../../../styles"
 
 export const P = styled(({ color, size, ...props }) => <p {...props} />)`
@@ -13,5 +13,14 @@ export const P = styled(({ color, size, ...props }) => <p {...props} />)`
 
   > b {
     font-weight: 600;
+  }
+
+  > a {
+    color: ${COLOR.BITTERSWEET};
+    font-weight: 900;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `

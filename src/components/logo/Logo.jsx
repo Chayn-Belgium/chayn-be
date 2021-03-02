@@ -18,7 +18,7 @@ const Logo = () => {
   `)
 
   return (
-    <Link className="logo" to="/" style={{ width: "125px", height: "60px" }}>
+    <Link className="logo" to="/fr/" style={{ width: "125px", height: "60px" }}>
       <Image picture={data.logo.childImageSharp} objectFit="contain" />
     </Link>
   )

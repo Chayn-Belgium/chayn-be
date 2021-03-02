@@ -18,7 +18,7 @@ const FooterSection = ({ data }) => (
       <TopContainer>
         <Logo />
         <SocialContainer>
-          {data.social.map((item, index) => (
+          {data?.social?.map((item, index) => (
             <Button
               type="minimal"
               iconLeft={item.iconLeft}
@@ -32,9 +32,9 @@ const FooterSection = ({ data }) => (
       <BottomContainer>
         <Column>
           <Heading level={3} size="s">
-            {data.international.title}
+            {data?.international?.title}
           </Heading>
-          {data.international.links.map((item, index) => (
+          {data?.international?.links.map((item, index) => (
             <Button type="text" key={index} link={item} is={Cta} size="s">
               {item.label}
             </Button>
@@ -42,9 +42,9 @@ const FooterSection = ({ data }) => (
         </Column>
         <Column>
           <Heading level={3} size="s">
-            {data.info.title}
+            {data?.info?.title}
           </Heading>
-          <P size="s">{data.info.text}</P>
+          <P size="s">{data?.info?.text}</P>
         </Column>
       </BottomContainer>
       <P size="s">&copy; {`${new Date().getFullYear()} Chayn Belgium`}</P>

@@ -8,7 +8,7 @@ import { Button } from "../ui"
 import { Container } from "../../styles"
 
 const getNavItems = elements =>
-  elements.map((element, index) => (
+  elements?.map((element, index) => (
     <Button is={Cta} link={element} type="minimal" key={index}>
       {element.label}
     </Button>
