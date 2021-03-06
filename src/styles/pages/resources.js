@@ -1,3 +1,8 @@
 import styled from "styled-components"
 
-export const ResourcesContainer = styled.div``
+export const ResourcesContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+`

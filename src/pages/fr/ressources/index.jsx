@@ -4,6 +4,8 @@ import { graphql } from "gatsby"
 import Layout from "../../../components/layout"
 import { ResourcesContainer } from "../../../styles/pages/resources"
 import data from "../../../../site-data"
+import { Image } from "../../../components/ui"
+import { Container } from "../../../styles"
 
 const CURRENT_LANG = "fr"
 const footerData = data.footer[CURRENT_LANG]
@@ -26,10 +28,13 @@ export const query = graphql`
   }
 `
 
-const ResourcesPage = p => (
+const ResourcesPage = ({ data }) => (
   <Layout lang={CURRENT_LANG} nav={navData} footer={footerData}>
-    {console.log("p", p)}
-    <ResourcesContainer>ok</ResourcesContainer>
+    <Image picture={data.images.edges[0].node.childImageSharp} isBackground>
+      <ResourcesContainer>
+        <Container>hello</Container>
+      </ResourcesContainer>
+    </Image>
   </Layout>
 )
 

@@ -1,8 +1,8 @@
 import React from "react"
-import Img from "gatsby-image"
+import Img from "gatsby-image/withIEPolyfill"
 import BackgroundImg from "gatsby-background-image"
 
-const Image = ({ picture, alt, objectFit, svg, isBackground }) => {
+const Image = ({ picture, alt, objectFit, svg, isBackground, children }) => {
   if (typeof picture === "string") {
     return <img src={require(`../../../assets/images/${picture}`)} alt={alt} />
   }
@@ -12,7 +12,6 @@ const Image = ({ picture, alt, objectFit, svg, isBackground }) => {
   }
 
   if (picture) {
-    console.log("isBackground", isBackground, objectFit)
     return isBackground ? (
       <BackgroundImg
         alt={alt}
@@ -20,6 +19,7 @@ const Image = ({ picture, alt, objectFit, svg, isBackground }) => {
         fluid={picture.fluid || undefined}
         objectFit={objectFit}
         style={{ width: "100%", height: "100%" }}
+        children={children}
       />
     ) : (
       <Img
