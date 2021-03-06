@@ -1,5 +1,3 @@
-"use strict"
-
 const {
   getInlineLink,
   EXTERNAL_LINK_ATTRIBUTES,
