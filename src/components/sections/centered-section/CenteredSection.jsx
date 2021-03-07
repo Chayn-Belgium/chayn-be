@@ -6,7 +6,14 @@ import { Container } from "../../../styles"
 import Cta from "../../cta"
 import { getImage } from "../../../utils/helpers"
 
-const CenteredSection = ({ title, text, link, imageName, pictures }) => (
+const CenteredSection = ({
+  title,
+  text,
+  link,
+  imageName,
+  pictures,
+  imageOpacity,
+}) => (
   <Section>
     <Container>
       <ContentWrapper>
@@ -18,7 +25,7 @@ const CenteredSection = ({ title, text, link, imageName, pictures }) => (
           </Button>
         )}
       </ContentWrapper>
-      <ImageContainer>
+      <ImageContainer opacity={imageOpacity}>
         <Image picture={getImage(imageName, pictures)} />
       </ImageContainer>
     </Container>

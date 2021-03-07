@@ -14,6 +14,7 @@ export const ImageContainer = styled.div`
   bottom: -20px;
   width: 500px;
   z-index: 0;
+  opacity: ${({ opacity }) => opacity || 1};
 
   @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
     position: relative;

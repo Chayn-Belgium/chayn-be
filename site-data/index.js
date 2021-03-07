@@ -100,7 +100,7 @@ module.exports = {
             "*Par «femmes», il est entendu toute personne qui a fait, fait ou fera l’expérience sociale d’être femme ou d’être perçue comme femme au cours de sa vie.",
           link: {
             label: "Accéder aux ressources",
-            href: "https://www.google.com/",
+            href: "/fr/ressources",
           },
         },
         {
@@ -112,7 +112,7 @@ module.exports = {
             "Qu’importe ce que dit quelqu’un sur vous, en ligne ou hors ligne, vous méritez le respect. Consulter ce site est la première étape. Utilisez nos ressources pour repérer les violences de genre, collecter des preuves, rester en sécurité, vous rétablir et vous connecter à d’autres associations qui prendront soin de vous.\nWe got you.",
           link: {
             label: "Accéder aux ressources",
-            href: "https://www.google.com/",
+            href: "/fr/ressources",
           },
         },
       ],
@@ -128,6 +128,7 @@ module.exports = {
           lang: "fr",
           template: SECTION_TEMPLATE.CENTERED_SECTION,
           imageName: "girls-flower.png",
+          imageOpacity: "0.3",
           title: "Qui nous sommes",
           text:
             "Nous sommes une collective qui croyons que l’utilisation des technologies ouvertes doit soutenir les survivantes de violences (dont les cyberviolences) de genre. Nous travaillons avec une communauté de militant⸱e⸱s et de bénévoles compétent⸱e⸱s et passionné⸱e⸱s qui se battent pour changer les choses à nos côtés. Plus nous serons nombreuses et nombreux, plus notre impact pourra être grand.",
@@ -273,9 +274,9 @@ module.exports = {
             "Ateliers de prévention contre les cyberviolences pour les jeunes de 16 à 18 ans.",
           text: "Ce projet est réalisé en 3 phases :",
           list: [
-            "Sensibilisation\nVia l’organisation de ces ateliers en école secondaire, Chayn Belgium vise à sensibiliser les jeunes sur les questions de cyberviolences, en ouvrant le dialogue sur les types de cyberviolences, les démarches à suivre lorsqu’on en est victime et faire comprendre aux élèves pourquoi ce problème est genré.",
-            "Prévention\nChayn Belgium vise à effectuer de la prévention proactive en enseignant aux jeunes les différentes manières de se sécuriser en ligne grâce aux bases de la cybersécurité.",
-            "Réutilisation\nLe contenu pédagogique ludique sera publié sous licence ouverte et diffusé dans les écoles secondaires francophones. Concrètement, tout ce contenu sera mis en ligne sur le site internet de Chayn Belgium et directement téléchargeable pour les professeurs.",
+            "<strong>Sensibilisation</strong>\nVia l’organisation de ces ateliers en école secondaire, Chayn Belgium vise à sensibiliser les jeunes sur les questions de cyberviolences, en ouvrant le dialogue sur les types de cyberviolences, les démarches à suivre lorsqu’on en est victime et faire comprendre aux élèves pourquoi ce problème est genré.",
+            "<strong>Prévention</strong>\nChayn Belgium vise à effectuer de la prévention proactive en enseignant aux jeunes les différentes manières de se sécuriser en ligne grâce aux bases de la cybersécurité.",
+            "<strong>Réutilisation</strong>\nLe contenu pédagogique ludique sera publié sous licence ouverte et diffusé dans les écoles secondaires francophones. Concrètement, tout ce contenu sera mis en ligne sur le site internet de Chayn Belgium et directement téléchargeable pour les professeurs.",
           ],
           appendText:
             "Ce projet est développé avec le soutien de la Fédération Wallonie Bruxelles dans le cadre de l'appel à projet visant à lutter contre les violences faites aux femmes et aux filles dans un contexte post covid.",

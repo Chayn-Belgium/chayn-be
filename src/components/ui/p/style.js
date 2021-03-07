@@ -11,7 +11,8 @@ export const P = styled(({ color, size, ...props }) => <p {...props} />)`
   font-weight: 300;
   white-space: pre-wrap;
 
-  > b {
+  > b,
+  > strong {
     font-weight: 600;
   }
 

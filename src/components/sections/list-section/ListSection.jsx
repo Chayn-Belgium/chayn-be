@@ -18,7 +18,7 @@ const ListSection = ({ list, text, pictures, link, appendText, imageName }) => (
     <Container>
       <Wrapper>
         <ImageContainer>
-          <Image picture={getImage(imageName, pictures)} />
+          <Image picture={getImage(imageName, pictures)} objectFit="contain" />
         </ImageContainer>
         <ContentWrapper>
           <P dangerouslySetInnerHTML={{ __html: text }} />
