@@ -18,7 +18,7 @@ const navData = data.nav[CURRENT_LANG]
 export const query = graphql`
   query {
     background: allFile(
-      filter: { relativePath: { regex: "/resources_bg.png/" } }
+      filter: { relativePath: { regex: "pages/resources/resources_bg.png/" } }
     ) {
       edges {
         node {
@@ -32,7 +32,7 @@ export const query = graphql`
       }
     }
     resourceImages: allFile(
-      filter: { relativeDirectory: { eq: "used/resources" } }
+      filter: { relativeDirectory: { eq: "pages/resources" } }
     ) {
       edges {
         node {
@@ -62,8 +62,8 @@ const ResourcesPage = ({ data }) => (
       <Heading>Nos ressources et guides informatifs</Heading>
       <P>
         Vos expériences comptent et ces ressources vous aideront à acquérir les
-        connaissances et les compétences nécessaires pour reprendre le contrôle.
-        Sélectionnez un guide et commencez votre parcours ! Nous sommes avec
+        connaissances et les compétences nécessaires pour vous aider.
+        Sélectionnez un guide et commencez votre parcour.\nNous sommes avec
         vous, vous pouvez le faire !
       </P>
     </ResourcesHead>
@@ -88,7 +88,11 @@ const ResourcesPage = ({ data }) => (
       <P>
         La collective prépare de nouveaux guides qui seront prochainement
         publiés ici. Si vous souhaitez déjà les recevoir, envoyez-nous un email
-        à <a href="mailto:collective@chayn.be">collective@chayn.be</a>.
+        à{" "}
+        <a href="mailto:collective@chayn.be" target="_blank" rel="noreferrer">
+          collective@chayn.be
+        </a>
+        .
       </P>
     </ResourcesHead>
   </Layout>

@@ -1,10 +1,11 @@
 import React from "react"
 
 import { Section, ContentWrapper, Wrapper, List, ListItem } from "./style"
-import { Heading, P } from "../../ui"
+import { Heading, P, Button } from "../../ui"
 import { Container } from "../../../styles"
+import Cta from "../../cta"
 
-const BulletPointSection = ({ bulletPoints, title }) => (
+const BulletPointSection = ({ bulletPoints, title, link }) => (
   <Section>
     <Container>
       <Wrapper>
@@ -17,6 +18,11 @@ const BulletPointSection = ({ bulletPoints, title }) => (
               </ListItem>
             ))}
           </List>
+          {link && (
+            <Button is={Cta} link={link}>
+              {link.label}
+            </Button>
+          )}
         </ContentWrapper>
       </Wrapper>
     </Container>

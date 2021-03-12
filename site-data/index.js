@@ -2,7 +2,6 @@ const {
   getInlineLink,
   EXTERNAL_LINK_ATTRIBUTES,
   PAGE_TEMPLATE,
-  SECTION_TEMPLATE,
 } = require("./constants")
 
 module.exports = {
@@ -13,8 +12,8 @@ module.exports = {
         href: "/fr/nous-rejoindre",
       },
       {
-        label: "Projet",
-        href: "/fr/projet",
+        label: "Projets",
+        href: "/fr/projets",
       },
       {
         label: "Ressources",
@@ -78,19 +77,21 @@ module.exports = {
       },
       sections: [
         {
-          lang: "fr",
-          template: SECTION_TEMPLATE.BASIC_HEADER,
           imageName: "team.png",
           title: "CHAYN Belgium",
           text:
-            "Nous sommes une collective féministe et antiraciste utilisant les technologies ouvertes pour lutter contre les violences et cyberviolences faites aux femmes.",
+            "Nous sommes une collective féministe et antiraciste utilisant les technologies ouvertes pour lutter contre les violences et cyberviolences faites aux femmes*.",
         },
         {
-          lang: "fr",
-          template: SECTION_TEMPLATE.LIST_SECTION,
-          imageName: "founders2.gif",
+          imageName: "2-girls.png",
+          title: "Nous sommes là pour vous soutenir.",
           text:
-            "Chayn Belgium est une collective initiée suite à l’augmentation des violences et des cyberviolences contre les femmes* pendant la pandémie du covid-19 en 2020. En Belgique, de nombreuses femmes sont notamment victimes de cyberviolences de genre, amplifiée ou non de par l’intersection identitaire où elles se trouvent.\nChayn Belgium est une collective intersectionnelle, par et pour les femmes de tous horizons et de toutes croyances désireuses de :",
+            "Qu’importe ce que dit quelqu’un sur vous, en ligne ou hors ligne, vous méritez le respect. Consulter ce site est la première étape. Utilisez nos ressources pour repérer les violences de genre, collecter des preuves, rester en sécurité, vous rétablir et vous connecter à d’autres associations qui prendront soin de vous.\nWe got you.",
+        },
+        {
+          imageName: "founders.gif",
+          text:
+            "Chayn Belgium est une collective initiée suite à l’augmentation des violences et des cyberviolences contre les femmes* pendant la pandémie du covid-19 en 2020. En Belgique, de nombreuses femmes* sont notamment victimes de cyberviolences de genre, amplifiée ou non de par l’intersection identitaire où elles se trouvent.\nChayn Belgium est une collective intersectionnelle, par et pour les femmes* de tous horizons et de toutes croyances désireuses de :",
           list: [
             "Consulter des ressources multilingues écrites par des survivantes de violences conjugales",
             "Comprendre la problématique des cyberviolences et comment s’en protéger.",
@@ -98,18 +99,6 @@ module.exports = {
           ],
           appendText:
             "*Par «femmes», il est entendu toute personne qui a fait, fait ou fera l’expérience sociale d’être femme ou d’être perçue comme femme au cours de sa vie.",
-          link: {
-            label: "Accéder aux ressources",
-            href: "/fr/ressources",
-          },
-        },
-        {
-          lang: "fr",
-          template: SECTION_TEMPLATE.CENTERED_SECTION,
-          imageName: "2-girls.png",
-          title: "Nous sommes là pour vous soutenir.",
-          text:
-            "Qu’importe ce que dit quelqu’un sur vous, en ligne ou hors ligne, vous méritez le respect. Consulter ce site est la première étape. Utilisez nos ressources pour repérer les violences de genre, collecter des preuves, rester en sécurité, vous rétablir et vous connecter à d’autres associations qui prendront soin de vous.\nWe got you.",
           link: {
             label: "Accéder aux ressources",
             href: "/fr/ressources",
@@ -125,18 +114,13 @@ module.exports = {
       },
       sections: [
         {
-          lang: "fr",
-          template: SECTION_TEMPLATE.CENTERED_SECTION,
           imageName: "girls-flower.png",
-          imageOpacity: "0.3",
           title: "Qui nous sommes",
           text:
             "Nous sommes une collective qui croyons que l’utilisation des technologies ouvertes doit soutenir les survivantes de violences (dont les cyberviolences) de genre. Nous travaillons avec une communauté de militant⸱e⸱s et de bénévoles compétent⸱e⸱s et passionné⸱e⸱s qui se battent pour changer les choses à nos côtés. Plus nous serons nombreuses et nombreux, plus notre impact pourra être grand.",
         },
         {
-          lang: "fr",
-          template: SECTION_TEMPLATE.CARDS,
-          title: "Pricinpes & Valeurs",
+          title: "Principes & Valeurs",
           subtitle:
             "Toutes les actions de la collective féministe rencontrent les valeurs et principes suivants.",
           appendText:
@@ -145,7 +129,7 @@ module.exports = {
             {
               title: "Intersectionnel",
               text:
-                "L’oppression n’est pas une exception. Les caractéristiques de race, genre, religion, identité sexuelle et d’invalidité impactent profondément nos expériences de vie. Nous sommes intersectionnel.les par design. Chayn Belgium s’engage à proposer des contenus et activités qui soient accessible à tou⸱tes.",
+                "L’oppression n’est pas une exception. Les caractéristiques de race, genre, religion, identité sexuelle et d’invalidité impactent profondément nos expériences de vie. Nous sommes intersectionnel.les. Chayn Belgium s’engage à proposer des contenus et activités qui soient accessible à tou⸱tes.",
               imageName: "intersectionnel.png",
             },
             {
@@ -181,36 +165,29 @@ module.exports = {
           ],
         },
         {
-          lang: "fr",
-          template: SECTION_TEMPLATE.LONELY_TITLE,
-          title: "❤️ Chayn BE recherche des militant·e·s et bénévoles ❤️",
+          title: "💜 Chayn BE recherche des militant·e·s et bénévoles 💜",
         },
         {
-          lang: "fr",
-          template: SECTION_TEMPLATE.BULLET_POINTS,
           title: "Comment faire pour nous rejoindre ?",
           bulletPoints: [
             "Remplissez le formulaire ci-dessous",
             "La collective se met d'accord sur les projets à développer",
-            "Les membres de la collective se donnent rendez-vous 2 fois par mois (en ligne ou hors ligne selon le covid) pour travailler ensemble",
+            "Les membres de la collective se donnent rendez-vous 2 fois par mois (en ligne ou hors ligne selon le covid) pour travailler ensemble et faire bouger les choses",
           ],
         },
         {
-          lang: "fr",
-          template: SECTION_TEMPLATE.BULLET_POINTS,
           title: "Que faut-il pour nous rejoindre ?",
           bulletPoints: [
-            "Vouloir lutter contre les violences et cyberviolences faites aux femmes.",
+            "Vouloir lutter contre les violences et cyberviolences faites aux femmes*.",
             "Il ne faut pas forcément avoir un profil technique. La collective a besoin de militantes qui s'y connaissent en communication, en coordination de projet, etc...mais aussi en design ou développement web.",
-            `Chaque membre de la collective adhère au code de conduite & aux ${getInlineLink(
-              "valeur et principes",
+            `Chaque membre de la collective adhère ${getInlineLink(
+              "au code de conduite",
+              "https://docs.chayn.be/charte-pour-les-membres"
+            )} & ${getInlineLink(
+              "aux valeur et principes",
               "https://docs.chayn.be/valeurs-and-principes"
             )} que la collective portent.`,
           ],
-        },
-        {
-          lang: "fr",
-          template: SECTION_TEMPLATE.LONELY_CTA,
           link: {
             label: "Je m'implique",
             href:
@@ -220,8 +197,6 @@ module.exports = {
           },
         },
         {
-          lang: "fr",
-          template: SECTION_TEMPLATE.CENTERED_SECTION,
           title: "Nous soutenir",
           text: "Vous pouvez également soutenir nos actions par des dons.",
           link: {
@@ -237,53 +212,43 @@ module.exports = {
       name: "project",
       template: PAGE_TEMPLATE.DEFAULT,
       urls: {
-        fr: "/fr/projet",
+        fr: "/fr/projets",
       },
       sections: [
         {
-          lang: "fr",
-          template: SECTION_TEMPLATE.CENTERED_SECTION,
           title: "Contexte",
           text: `Selon une étude d’${getInlineLink(
             "Amnesty International",
             "https://www.amnesty.org/en/latest/news/2017/11/amnesty-reveals-alarming-impact-of-online-abuse-against-women/"
-          )}, un quart des femmes ont déjà vécu des situations de violences dans l’espace numérique (harcèlement, menaces, injures, diffusion d’images de violences, etc.). Selon les Nation-Unies, ${getInlineLink(
+          )}, un quart des femmes* ont déjà vécu des situations de violences dans l’espace numérique (harcèlement, menaces, injures, diffusion d’images de violences, etc.). Selon les Nation-Unies, ${getInlineLink(
             "la situation s’est dramatiquement empirée",
             "https://www.unwomen.org/en/digital-library/publications/2020/04/brief-online-and-ict-facilitated-violence-against-women-and-girls-during-covid-19?mc_cid=8e92d77db3&mc_eid=943aed7f64#view"
-          )} pendant la période de confinement du coronavirus. Les cyberviolences désignent toutes les formes de violences (harcèlement, menaces, injures, diffusion d’images de violences, etc.) qui s’exercent dans l’espace numérique.\n\nPourtant, il s’agit d’un sujet tabou et méconnu dans les écoles et dans la société dans son ensemble malgré l’omniprésence des technologies. Les conséquences, parfois irréversibles, vécues dans le silence poussent beaucoup de jeunes femmes à montrer de la réticence à l’idée de militer en ligne ou d’utiliser leur voix. Ces constats ne peuvent malheureusement pas s’affaisser uniquement en les identifiant, raison pour laquelle Chayn Belgium vise à informer, sensibiliser et agir face aux éléments précurseurs ainsi qu’aux conséquences de ces cyberviolences.
-            `,
+          )} pendant la période de confinement du coronavirus. Les cyberviolences désignent toutes les formes de violences (harcèlement, menaces, injures, diffusion d’images de violences, etc.) qui s’exercent dans l’espace numérique.\n\nPourtant, il s’agit d’un sujet tabou et méconnu dans les écoles et dans la société dans son ensemble malgré l’omniprésence des technologies. Les conséquences, parfois irréversibles, vécues dans le silence poussent beaucoup de jeunes femmes* à montrer de la réticence à l’idée de militer en ligne ou d’utiliser leur voix. Ces constats ne peuvent malheureusement pas s’affaisser uniquement en les identifiant, raison pour laquelle <b>Chayn Belgium vise à informer, sensibiliser et agir face aux éléments précurseurs ainsi qu’aux conséquences de ces cyberviolences.</b>`,
         },
         {
-          lang: "fr",
-          template: SECTION_TEMPLATE.LIST_SECTION,
           imageName: "equal-brussels.webp",
           title: "Projets",
           subtitle:
             "Ateliers de prévention contre les cyberviolences pour adultes",
           text:
-            "Chayn Belgium souhaite former les femmes à mieux appréhender la cybersécurité pour se protéger d’avantage en ligne. Ces ateliers s’adressent dans un premier temps aux femmes hautement susceptibles de subir du cyberharcèlement (journalistes, activistes, militantes, politiques,..).",
+            "Chayn Belgium souhaite former les femmes* à mieux appréhender la cybersécurité pour se protéger d’avantage en ligne. Ces ateliers s’adressent dans un premier temps aux femmes* hautement susceptibles de subir du cyberharcèlement (journalistes, activistes, militantes, politiques,..).",
           appendText:
-            "Ces ateliers sont organisés avec le soutien de la Région Bruxelloise dans le cadre de l'appel à projet de lutte contre les violences faites aux femmes.",
+            "Ces ateliers sont organisés avec le soutien de la Région Bruxelloise dans le cadre de l'appel à projet de lutte contre les violences faites aux femmes*.",
         },
+        // {
+        //   imageName: "federation-wallonie-bruxelles.png",
+        //   subtitle:
+        //     "Ateliers de prévention contre les cyberviolences pour les jeunes de 16 à 18 ans.",
+        //   text: "Ce projet est réalisé en 3 phases :",
+        //   list: [
+        //     "<strong>Sensibilisation</strong>\nVia l’organisation de ces ateliers en école secondaire, Chayn Belgium vise à sensibiliser les jeunes sur les questions de cyberviolences, en ouvrant le dialogue sur les types de cyberviolences, les démarches à suivre lorsqu’on en est victime et faire comprendre aux élèves pourquoi ce problème est genré.",
+        //     "<strong>Prévention</strong>\nChayn Belgium vise à effectuer de la prévention proactive en enseignant aux jeunes les différentes manières de se sécuriser en ligne grâce aux bases de la cybersécurité.",
+        //     "<strong>Réutilisation</strong>\nLe contenu pédagogique ludique sera publié sous licence ouverte et diffusé dans les écoles secondaires francophones. Concrètement, tout ce contenu sera mis en ligne sur le site internet de Chayn Belgium et directement téléchargeable pour les professeurs.",
+        //   ],
+        //   appendText:
+        //     "Ce projet est développé avec le soutien de la Fédération Wallonie Bruxelles dans le cadre de l'appel à projet visant à lutter contre les violences faites aux femmes* et aux filles dans un contexte post covid.",
+        // },
         {
-          lang: "fr",
-          template: SECTION_TEMPLATE.LIST_SECTION,
-          imageName: "federation-wallonie-bruxelles.png",
-          title: "Projets",
-          subtitle:
-            "Ateliers de prévention contre les cyberviolences pour les jeunes de 16 à 18 ans.",
-          text: "Ce projet est réalisé en 3 phases :",
-          list: [
-            "<strong>Sensibilisation</strong>\nVia l’organisation de ces ateliers en école secondaire, Chayn Belgium vise à sensibiliser les jeunes sur les questions de cyberviolences, en ouvrant le dialogue sur les types de cyberviolences, les démarches à suivre lorsqu’on en est victime et faire comprendre aux élèves pourquoi ce problème est genré.",
-            "<strong>Prévention</strong>\nChayn Belgium vise à effectuer de la prévention proactive en enseignant aux jeunes les différentes manières de se sécuriser en ligne grâce aux bases de la cybersécurité.",
-            "<strong>Réutilisation</strong>\nLe contenu pédagogique ludique sera publié sous licence ouverte et diffusé dans les écoles secondaires francophones. Concrètement, tout ce contenu sera mis en ligne sur le site internet de Chayn Belgium et directement téléchargeable pour les professeurs.",
-          ],
-          appendText:
-            "Ce projet est développé avec le soutien de la Fédération Wallonie Bruxelles dans le cadre de l'appel à projet visant à lutter contre les violences faites aux femmes et aux filles dans un contexte post covid.",
-        },
-        {
-          lang: "fr",
-          template: SECTION_TEMPLATE.CENTERED_SECTION,
           text:
             "La collective travaille continuellement à la création et à la mise en ligne de ressources multilingues et intersectionnelles pour vous aider.",
           link: {
