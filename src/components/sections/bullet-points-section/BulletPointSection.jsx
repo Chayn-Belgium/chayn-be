@@ -10,7 +10,7 @@ const BulletPointSection = ({ bulletPoints, title, link }) => (
     <Container>
       <Wrapper>
         <ContentWrapper>
-          <Heading size="m">{title}</Heading>
+          <Heading size="s">{title}</Heading>
           <List>
             {bulletPoints.map((item, index) => (
               <ListItem key={index}>

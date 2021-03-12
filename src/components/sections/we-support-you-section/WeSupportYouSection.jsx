@@ -8,7 +8,9 @@ const WeSupportYouSection = ({ title, text, picture }) => (
   <Section>
     <Container>
       <ContentWrapper>
-        <Heading level={2}>{title}</Heading>
+        <Heading level={2} size="l">
+          {title}
+        </Heading>
         <P dangerouslySetInnerHTML={{ __html: text }} />
       </ContentWrapper>
       <ImageContainer>

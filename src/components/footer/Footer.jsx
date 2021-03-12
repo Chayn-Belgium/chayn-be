@@ -11,6 +11,7 @@ import Logo from "../logo"
 import Cta from "../cta"
 import { P, Heading, Button } from "../ui"
 import { Container } from "../../styles"
+import { FONT } from "../../utils/constants"
 
 const FooterSection = ({ data }) => (
   <Footer>
@@ -31,7 +32,7 @@ const FooterSection = ({ data }) => (
       </TopContainer>
       <BottomContainer>
         <Column>
-          <Heading level={3} size="s">
+          <Heading level={3} size="m" font={FONT.NUNITO_SANS}>
             {data?.international?.title}
           </Heading>
           {data?.international?.links.map((item, index) => (
@@ -41,7 +42,7 @@ const FooterSection = ({ data }) => (
           ))}
         </Column>
         <Column>
-          <Heading level={3} size="s">
+          <Heading level={3} size="m" font={FONT.NUNITO_SANS}>
             {data?.info?.title}
           </Heading>
           <P size="s">{data?.info?.text}</P>

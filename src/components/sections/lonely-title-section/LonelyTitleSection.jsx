@@ -8,7 +8,7 @@ const LonelyTitleSection = ({ title }) => (
   <Section>
     <Container>
       <ContentWrapper>
-        <Heading size="l" level={2}>
+        <Heading size="m" level={2}>
           {title}
         </Heading>
       </ContentWrapper>

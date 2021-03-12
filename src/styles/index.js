@@ -18,7 +18,7 @@ export const Main = styled.main`
 
 export const getHeadingSize = size =>
   ({
-    xl: "2.9rem",
+    xl: "3.4rem",
     l: "2.1rem",
     m: "1.4rem",
     s: ".95rem",

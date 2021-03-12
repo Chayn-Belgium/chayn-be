@@ -59,7 +59,7 @@ const getResourceImageByName = (pictures, name) => {
 const ResourcesPage = ({ data }) => (
   <Layout lang={CURRENT_LANG} nav={navData} footer={footerData}>
     <ResourcesHead>
-      <Heading>Nos ressources et guides informatifs</Heading>
+      <Heading size="l">Nos ressources et guides informatifs</Heading>
       <P>
         Vos expériences comptent et ces ressources vous aideront à acquérir les
         connaissances et les compétences nécessaires pour vous aider.

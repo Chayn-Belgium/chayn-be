@@ -23,5 +23,5 @@ export const MEDIA_QUERY = {
 
 export const FONT = {
   NUNITO_SANS: "'Nunito Sans', sans-serif",
-  OSWALD: "'Oswald', sans-serif",
+  ORDNER: `"GF Ordner Inverted", sans-serif`,
 }
