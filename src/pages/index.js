@@ -1,13 +1,32 @@
 import React, { useEffect } from "react"
 
-const IndexPage = () => {
-  useEffect(() => {
-    if (typeof window !== undefined) {
-      window.location = "/fr/"
-    }
-  }, [])
+import HomePage from "./fr/index"
 
-  return null
+export const query = graphql`
+  query {
+    pictures: allFile(filter: { relativeDirectory: { eq: "pages/home" } }) {
+      edges {
+        node {
+          childImageSharp {
+            fluid(maxWidth: 600, quality: 90) {
+              ...GatsbyImageSharpFluid
+              originalName
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
+const IndexPage = ({ ...props }) => {
+  // useEffect(() => {
+  //   if (typeof window !== undefined) {
+  //     window.location = "/fr/"
+  //   }
+  // }, [])
+
+  return <HomePage {...props} />
 }
 
 export default IndexPage
