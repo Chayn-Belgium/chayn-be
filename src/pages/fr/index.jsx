@@ -42,7 +42,7 @@ const getImageByName = (data, name) => {
   return element.node.childImageSharp
 }
 
-const ResourcesPage = ({ data }) => (
+const HomePage = ({ data }) => (
   <Layout lang={CURRENT_LANG} nav={navData} footer={footerData}>
     <MainHeader
       picture={getImageByName(data, mainHeaderData.imageName)}
@@ -66,4 +66,4 @@ const ResourcesPage = ({ data }) => (
   </Layout>
 )
 
-export default ResourcesPage
+export default HomePage
