@@ -22,6 +22,12 @@ This project is open source.
     ```shell
     npm run start
     ```
+    
+    Start and refresh the cache
+
+    ```shell
+    npm run restart
+    ```
 
 1.  **Open the source code and start editing!**
 
