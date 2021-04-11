@@ -68,6 +68,9 @@ module.exports = {
       },
     },
   },
+  leaveWebsiteButton: {
+    fr: "Quitter le site\n(ou presser sur la touche 'esc')",
+  },
   pages: [
     {
       name: "index",

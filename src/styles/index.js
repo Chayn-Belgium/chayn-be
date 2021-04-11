@@ -16,6 +16,11 @@ export const Main = styled.main`
   z-index: 1;
 `
 
+/**
+ * s, m, l, xl
+ * @param {string} size
+ * @returns {string} size in rem
+ */
 export const getHeadingSize = size =>
   ({
     xl: "3.4rem",
@@ -24,6 +29,11 @@ export const getHeadingSize = size =>
     s: ".95rem",
   }[size || "xl"])
 
+/**
+ * s, m
+ * @param {string} size
+ * @returns {string} size in rem
+ */
 export const getTextSize = size =>
   ({
     m: "1.15rem",
