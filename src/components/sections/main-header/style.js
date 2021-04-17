@@ -8,6 +8,7 @@ export const Section = styled.section`
   width: 100%;
   background-color: ${COLOR.WHITE_LINEN};
   overflow: hidden;
+  flex-shrink: 0;
 `
 
 export const Wrapper = styled.div`

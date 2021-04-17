@@ -7,6 +7,7 @@ export const Footer = styled.footer`
   justify-content: center;
   padding: 50px 0 20px 0;
   background-color: ${COLOR.BIZARRE};
+  flex-shrink: 0;
 `
 
 export const TopContainer = styled.div`

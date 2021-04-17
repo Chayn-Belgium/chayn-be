@@ -6,6 +6,7 @@ export const Section = styled.section`
   display: flex;
   justify-content: center;
   width: 100%;
+  flex-shrink: 0;
 `
 
 export const ImageContainer = styled.div`
