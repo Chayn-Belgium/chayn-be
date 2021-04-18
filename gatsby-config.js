@@ -6,6 +6,9 @@
 const path = require(`path`)
 
 module.exports = {
+  siteMetadata: {
+    siteUrl: "https://chayn.be",
+  },
   pathPrefix: "/",
   plugins: [
     {
@@ -28,6 +31,15 @@ module.exports = {
         trackingId: "G-J3ZRDDZT5S",
       },
     },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://chayn.be",
+        sitemap: "https://chayn.be/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
