@@ -21,7 +21,7 @@ const Button = ({
   }
 
   return (
-    <Element {...props} iconLeft={undefined}>
+    <Element {...props}>
       {iconLeftElement}
       {children}
       {iconRightElement}

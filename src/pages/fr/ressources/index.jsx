@@ -10,10 +10,25 @@ import data from "../../../../site-data"
 import { Image, Heading, P } from "../../../components/ui"
 import { Container } from "../../../styles"
 import ResourceCard from "../../../components/resource-card"
+import { resources } from "../../../../site-data/resources"
+import { RESOURCE } from "../../../../site-data/constants"
 
 const CURRENT_LANG = "fr"
 const footerData = data.footer[CURRENT_LANG]
 const navData = data.nav[CURRENT_LANG]
+const resourcesData = [
+  {
+    title:
+      "Comment construire un dossier judiciaire de violences domestiques sans l’aide d’un·e avocat·e",
+    imageName: "building-case-no-lawyer.png",
+    text: "Comment collecter et présenter des preuves d’abus",
+    link: {
+      href: `/${CURRENT_LANG}/ressources/${
+        resources[RESOURCE.BUILD_CASE_NO_LAWYER][CURRENT_LANG].slug
+      }`,
+    },
+  },
+]
 
 export const query = graphql`
   query {
@@ -63,24 +78,23 @@ const ResourcesPage = ({ data }) => (
       <P>
         Vos expériences comptent et ces ressources vous aideront à acquérir les
         connaissances et les compétences nécessaires pour vous aider.
-        Sélectionnez un guide et commencez votre parcour.\nNous sommes avec
-        vous, vous pouvez le faire !
+        Sélectionnez un guide et commencez votre parcour.
+        <br />
+        Nous sommes avec vous, vous pouvez le faire !
       </P>
     </ResourcesHead>
     <Image picture={data.background.edges[0].node.childImageSharp} isBackground>
       <ResourcesContainer>
         <Container>
-          <ResourceCard
-            title="Comment construire un dossier judiciaire de violences domestiques sans l’aide d’un·e avocat·e"
-            picture={getResourceImageByName(
-              data,
-              "building-case-no-lawyer.png"
-            )}
-            text="Comment collecter et présenter des preuves d’abus"
-            href="https://soulmedicine.io/fr/pathways/how-to-build-a-domestic-abuse-case-without-a-lawyer"
-            target="_blank"
-            rel="noreferrer noopener"
-          />
+          {resourcesData.map((resource, index) => (
+            <ResourceCard
+              key={index}
+              title={resource.title}
+              picture={getResourceImageByName(data, resource.imageName)}
+              text={resource.text}
+              link={resource.link}
+            />
+          ))}
         </Container>
       </ResourcesContainer>
     </Image>
