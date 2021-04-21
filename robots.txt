@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://chayn.be/sitemap.xml
+Host: https://chayn.be
