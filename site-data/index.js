@@ -69,7 +69,7 @@ module.exports = {
     },
   },
   leaveWebsiteButton: {
-    fr: "Quitter le site\n(ou presser sur la touche 'esc')",
+    fr: "Quitter le site\n(ou presser la touche 'esc')",
   },
   pages: [
     {
