@@ -1,19 +1,21 @@
 import styled from "styled-components"
 
-export const Wrapper = styled.div`
-  max-width: 600px;
-  margin: auto;
-`
+import { MEDIA_QUERY } from "../../../utils/constants"
 
 export const ImageContainer = styled.div`
-  display: flex;
-  align-items: center;
   width: 100%;
   min-height: 300px;
-  z-index: 0;
-  border: 2px solid black;
 
-  > img {
-    width: 100%;
+  ${MEDIA_QUERY.TABLET_AND_DOWN} {
+    min-height: 200px !important;
+  }
+
+  > div {
+    display: block !important;
+    height: 300px !important;
+
+    ${MEDIA_QUERY.TABLET_AND_DOWN} {
+      height: 200px !important;
+    }
   }
 `

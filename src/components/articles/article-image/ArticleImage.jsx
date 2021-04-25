@@ -1,13 +1,13 @@
 import React from "react"
 
 import { Image } from "../../ui"
-import { Wrapper, ImageContainer } from "./style"
+import { ImageContainer } from "./style"
+import { Wrapper } from "../style"
 
 const ArticleTitle = ({ image }) => (
   <Wrapper>
-    {console.log("okok", image)}
     <ImageContainer>
-      <Image picture={image} />
+      <Image picture={image} objectFit="contain" />
     </ImageContainer>
   </Wrapper>
 )

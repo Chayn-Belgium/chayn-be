@@ -21,7 +21,7 @@ export const Container = styled.div`
     transform: scale(1.05);
   }
 
-  @media ${MEDIA_QUERY.MOBILE_AND_DOWN} {
+  ${MEDIA_QUERY.MOBILE_AND_DOWN} {
     display: none;
   }
 `

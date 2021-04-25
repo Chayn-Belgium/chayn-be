@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
   display: flex;
   width: 100%;
 
-  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+  ${MEDIA_QUERY.TABLET_AND_DOWN} {
     flex-direction: column;
   }
 `
@@ -49,6 +49,5 @@ export const ListItem = styled.li`
     position: absolute;
     top: 8px;
     left: 6px;
-    color: green;
   }
 `

@@ -22,6 +22,7 @@ export const Content = styled.div`
   width: 100%;
   height: 100%;
   align-items: center;
+  max-width: 1096px;
 
   .logo {
     max-height: 80%;
@@ -34,7 +35,7 @@ export const DesktopNav = styled.nav`
   flex-grow: 1;
   justify-content: flex-end;
 
-  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+  ${MEDIA_QUERY.TABLET_AND_DOWN} {
     display: none;
   }
 `

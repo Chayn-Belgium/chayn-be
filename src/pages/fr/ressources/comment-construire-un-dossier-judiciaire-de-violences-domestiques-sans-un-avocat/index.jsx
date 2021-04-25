@@ -4,11 +4,14 @@ import { graphql } from "gatsby"
 import Layout from "../../../../components/layout"
 import data from "../../../../../site-data"
 import {
-  ArticleMainTitle,
-  ArticleTitle,
-  ArticleText,
-  ArticleImage,
   ArticleChapter,
+  ArticleDivider,
+  ArticleImage,
+  ArticleList,
+  ArticleMainTitle,
+  ArticleQuote,
+  ArticleText,
+  ArticleTitle,
 } from "../../../../components/articles"
 import { resources } from "../../../../../site-data/resources"
 import { RESOURCE, CONTENT_TYPE } from "../../../../../site-data/constants"
@@ -63,6 +66,9 @@ const getArticleSection = (type, props) =>
         image={getResourceImageByName(props.imageData, props.imageName)}
       />
     ),
+    [CONTENT_TYPE.QUOTE]: <ArticleQuote {...props} />,
+    [CONTENT_TYPE.LIST]: <ArticleList {...props} />,
+    [CONTENT_TYPE.DIVIDER]: <ArticleDivider {...props} />,
   }[type])
 
 const ResourcesBuildCaseNoLawyerPage = ({ data }) => (
@@ -71,28 +77,38 @@ const ResourcesBuildCaseNoLawyerPage = ({ data }) => (
       {resources[ARTICLE_NAME][CURRENT_LANG].content.map((resource, index) => {
         const { type, ...props } = resource
 
-        // console.log(index, type, props)
-
         if (type === CONTENT_TYPE.CHAPTER) {
           return (
-            <ArticleChapter title={props.title}>
+            <ArticleChapter title={props.title} key={index}>
               {props.content.map((chapterResource, chapterIndex) => {
                 const { type: chapterType, ...chapterProps } = chapterResource
 
-                return getArticleSection(chapterType, {
+                const section = getArticleSection(chapterType, {
                   key: `${index}-${chapterIndex}`,
                   ...chapterProps,
                 })
+
+                if (!section) {
+                  console.warn("Section missing:", chapterType)
+                }
+
+                return section
               })}
             </ArticleChapter>
           )
         }
 
-        return getArticleSection(type, {
+        const section = getArticleSection(type, {
           key: index,
           imageData: data,
           ...props,
         })
+
+        if (!section) {
+          console.warn("Section missing:", type)
+        }
+
+        return section
       })}
     </Container>
   </Layout>

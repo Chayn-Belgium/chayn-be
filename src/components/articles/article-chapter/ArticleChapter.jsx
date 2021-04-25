@@ -1,16 +1,18 @@
 import React from "react"
 
-import { TitleContainer, BodyContainer, Heading } from "./style"
+import { TitleContainer, BodyContainer, Heading, Container } from "./style"
 import { Wrapper } from "../style"
 
 const ArticleChapter = ({ title, level, children }) => (
   <Wrapper>
-    <TitleContainer>
-      <Heading level={level} size="s">
-        {title}
-      </Heading>
-    </TitleContainer>
-    <BodyContainer>{children}</BodyContainer>
+    <Container>
+      <TitleContainer>
+        <Heading level={level} size="s">
+          {title}
+        </Heading>
+      </TitleContainer>
+      <BodyContainer>{children}</BodyContainer>
+    </Container>
   </Wrapper>
 )
 

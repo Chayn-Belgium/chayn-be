@@ -7,7 +7,7 @@ export const Container = styled.div`
   justify-content: flex-end;
   flex-grow: 1;
 
-  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+  ${MEDIA_QUERY.TABLET_AND_DOWN} {
     display: flex;
   }
 `
