@@ -12,6 +12,7 @@ export const Card = styled.a`
   box-shadow: "0 15px 45px 0 rgba(0, 0, 0, 0.1)";
   cursor: pointer;
   transition: all 0.3s ease;
+  margin: 10px;
 
   &:hover {
     transform: scale(1.01);
