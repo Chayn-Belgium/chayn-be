@@ -22,11 +22,3 @@ export const ResourcesHead = styled.div`
     max-width: 800px;
   }
 `
-
-export const ResourcesContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  padding: 50px 0;
-`

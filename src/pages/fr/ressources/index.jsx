@@ -2,33 +2,14 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../../../components/layout"
-import {
-  ResourcesHead,
-  ResourcesContainer,
-} from "../../../styles/pages/resources"
+import { ResourcesHead } from "../../../styles/pages/resources"
 import data from "../../../../site-data"
 import { Image, Heading, P } from "../../../components/ui"
-import { Container } from "../../../styles"
-import ResourceCard from "../../../components/resource-card"
-import { resources } from "../../../../site-data/resources"
-import { RESOURCE } from "../../../../site-data/constants"
+import ResourcesContainer from "../../../components/resources-container"
 
 const CURRENT_LANG = "fr"
 const footerData = data.footer[CURRENT_LANG]
 const navData = data.nav[CURRENT_LANG]
-const resourcesData = [
-  {
-    title:
-      "Comment construire un dossier judiciaire de violences domestiques sans l’aide d’un·e avocat·e",
-    imageName: "building-case-no-lawyer.png",
-    text: "Comment collecter et présenter des preuves d’abus",
-    link: {
-      href: `/${CURRENT_LANG}/ressources/${
-        resources[RESOURCE.BUILD_CASE_NO_LAWYER][CURRENT_LANG].slug
-      }`,
-    },
-  },
-]
 
 export const query = graphql`
   query {
@@ -63,14 +44,6 @@ export const query = graphql`
   }
 `
 
-const getResourceImageByName = (pictures, name) => {
-  const element = pictures.resourceImages.edges.find(
-    el => el.node.childImageSharp.fixed.originalName === name
-  )
-
-  return element.node.childImageSharp
-}
-
 const ResourcesPage = ({ data }) => (
   <Layout lang={CURRENT_LANG} nav={navData} footer={footerData}>
     <ResourcesHead>
@@ -80,23 +53,12 @@ const ResourcesPage = ({ data }) => (
         connaissances et les compétences nécessaires pour vous aider.
         Sélectionnez un guide et commencez votre parcour.
         <br />
+        <br />
         Nous sommes avec vous, vous pouvez le faire !
       </P>
     </ResourcesHead>
     <Image picture={data.background.edges[0].node.childImageSharp} isBackground>
-      <ResourcesContainer>
-        <Container>
-          {resourcesData.map((resource, index) => (
-            <ResourceCard
-              key={index}
-              title={resource.title}
-              picture={getResourceImageByName(data, resource.imageName)}
-              text={resource.text}
-              link={resource.link}
-            />
-          ))}
-        </Container>
-      </ResourcesContainer>
+      <ResourcesContainer pictures={data} />
     </Image>
     <ResourcesHead>
       <P>
