@@ -10,6 +10,7 @@ import data from "../../../../site-data"
 import { Image, Heading, P } from "../../../components/ui"
 import { Container } from "../../../styles"
 import ResourceCard from "../../../components/resource-card"
+import NewsletterSection from "../../../components/sections/newsletter"
 
 const CURRENT_LANG = "fr"
 const footerData = data.footer[CURRENT_LANG]
@@ -67,6 +68,7 @@ const ResourcesPage = ({ data }) => (
         vous, vous pouvez le faire !
       </P>
     </ResourcesHead>
+    <NewsletterSection />
     <Image picture={data.background.edges[0].node.childImageSharp} isBackground>
       <ResourcesContainer>
         <Container>

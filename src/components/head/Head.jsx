@@ -62,6 +62,12 @@ const Head = () => {
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={ogImage} />
+
+        {/* Mailchimp script */}
+        <script
+          type="text/javascript"
+          src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+        />
       </Helmet>
       <SchemaOrg url={baseUrl} title={title} />
     </>
