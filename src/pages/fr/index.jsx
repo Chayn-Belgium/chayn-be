@@ -6,6 +6,7 @@ import data from "../../../site-data"
 import MainHeader from "../../components/sections/main-header"
 import WeSupportYouSection from "../../components/sections/we-support-you-section"
 import DescriptionSection from "../../components/sections/description-section"
+import NewsletterSection from "../../components/sections/newsletter"
 
 const CURRENT_LANG = "fr"
 const footerData = data.footer[CURRENT_LANG]
@@ -63,6 +64,7 @@ const HomePage = ({ data }) => (
       subtitle={descriptionData.subtitle}
       list={descriptionData.list}
     />
+    <NewsletterSection />
   </Layout>
 )
 
