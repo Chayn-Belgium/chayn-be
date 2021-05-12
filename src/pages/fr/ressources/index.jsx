@@ -61,12 +61,12 @@ const ResourcesPage = ({ data }) => (
   <Layout lang={CURRENT_LANG} nav={navData} footer={footerData}>
     <ResourcesHead>
       <Heading size="l">Nos ressources et guides informatifs</Heading>
-      <P>
-        Vos expériences comptent et ces ressources vous aideront à acquérir les
-        connaissances et les compétences nécessaires pour vous aider.
-        Sélectionnez un guide et commencez votre parcour.\nNous sommes avec
-        vous, vous pouvez le faire !
-      </P>
+      <P
+        dangerouslySetInnerHTML={{
+          __html:
+            "Vos expériences comptent et ces ressources vous aideront à acquérir les connaissances et les compétences nécessaires pour vous aider. Sélectionnez un guide et commencez votre parcours.\n\nNous sommes avec vous, vous pouvez le faire !",
+        }}
+      />
     </ResourcesHead>
     <NewsletterSection />
     <Image picture={data.background.edges[0].node.childImageSharp} isBackground>

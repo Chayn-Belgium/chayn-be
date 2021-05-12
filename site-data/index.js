@@ -94,9 +94,9 @@ module.exports = {
         {
           imageName: "founders.gif",
           text:
-            "Chayn Belgium est une collective initiée suite à l’augmentation des violences et des cyberviolences contre les femmes* pendant la pandémie du covid-19 en 2020. En Belgique, de nombreuses femmes* sont notamment victimes de cyberviolences de genre, amplifiée ou non de par l’intersection identitaire où elles se trouvent.\nChayn Belgium est une collective intersectionnelle, par et pour les femmes* de tous horizons et de toutes croyances désireuses de :",
+            "Chayn Belgium est une collective initiée suite à l’augmentation des violences et des cyberviolences contre les femmes* pendant la pandémie du covid-19 en 2020. En Belgique, de nombreuses femmes* sont notamment victimes de cyberviolences de genre, amplifiée ou non de par l’intersection identitaire où elles se trouvent.\nChayn Belgium est une collective intersectionnelle, par et pour les femmes* de tous horizons et de toutes croyances, désireuses de :",
           list: [
-            "Consulter des ressources multilingues écrites par des survivantes de violences conjugales",
+            "Consulter des ressources multilingues écrites par des survivantes de violences conjugales.",
             "Comprendre la problématique des cyberviolences et comment s’en protéger.",
             "Contribuer à un espace bienveillant de création de ressources, de soutien et de partage de connaissance.",
           ],
@@ -162,7 +162,7 @@ module.exports = {
             {
               title: "Développé avec des survivantes",
               text:
-                "‘Développé ensemble, pas pour’. Tout le contenu créé par Chayn HQ a été développé en collaboration directe et continue avec des survivantes de violences et de cyberviolences faites aux femmes*.",
+                '"Développé ensemble, pas pour". Tout le contenu créé par Chayn HQ a été développé en collaboration directe et continue avec des survivantes de violences et de cyberviolences faites aux femmes*.',
               imageName: "developpe-avec-des-survivantes.png",
             },
           ],
@@ -223,7 +223,7 @@ module.exports = {
           text: `Selon une étude d’${getInlineLink(
             "Amnesty International",
             "https://www.amnesty.org/en/latest/news/2017/11/amnesty-reveals-alarming-impact-of-online-abuse-against-women/"
-          )}, un quart des femmes* ont déjà vécu des situations de violences dans l’espace numérique (harcèlement, menaces, injures, diffusion d’images de violences, etc.). Selon les Nation-Unies, ${getInlineLink(
+          )}, un quart des femmes* ont déjà vécu des situations de violences dans l’espace numérique (harcèlement, menaces, injures, diffusion d’images de violences, etc.). Selon les Nations Unies, ${getInlineLink(
             "la situation s’est dramatiquement empirée",
             "https://www.unwomen.org/en/digital-library/publications/2020/04/brief-online-and-ict-facilitated-violence-against-women-and-girls-during-covid-19?mc_cid=8e92d77db3&mc_eid=943aed7f64#view"
           )} pendant la période de confinement du coronavirus. Les cyberviolences désignent toutes les formes de violences (harcèlement, menaces, injures, diffusion d’images de violences, etc.) qui s’exercent dans l’espace numérique.\n\nPourtant, il s’agit d’un sujet tabou et méconnu dans les écoles et dans la société dans son ensemble malgré l’omniprésence des technologies. Les conséquences, parfois irréversibles, vécues dans le silence poussent beaucoup de jeunes femmes* à montrer de la réticence à l’idée de militer en ligne ou d’utiliser leur voix. Ces constats ne peuvent malheureusement pas s’affaisser uniquement en les identifiant, raison pour laquelle <b>Chayn Belgium vise à informer, sensibiliser et agir face aux éléments précurseurs ainsi qu’aux conséquences de ces cyberviolences.</b>`,
@@ -234,9 +234,9 @@ module.exports = {
           subtitle:
             "Ateliers de prévention contre les cyberviolences pour adultes",
           text:
-            "Chayn Belgium souhaite former les femmes* à mieux appréhender la cybersécurité pour se protéger d’avantage en ligne. Ces ateliers s’adressent dans un premier temps aux femmes* hautement susceptibles de subir du cyberharcèlement (journalistes, activistes, militantes, politiques,..).",
+            "Chayn Belgium souhaite former les femmes* à mieux appréhender la cybersécurité pour se protéger davantage en ligne. Ces ateliers s’adressent dans un premier temps aux femmes* hautement susceptibles de subir du cyberharcèlement (journalistes, activistes, militantes, politiques,..).",
           appendText:
-            "Ces ateliers sont organisés avec le soutien de la Région Bruxelloise dans le cadre de l'appel à projet de lutte contre les violences faites aux femmes*.",
+            "Ces ateliers sont organisés avec le soutien de la Région bruxelloise dans le cadre de l'appel à projet de lutte contre les violences faites aux femmes*.",
         },
         // {
         //   imageName: "federation-wallonie-bruxelles.png",
