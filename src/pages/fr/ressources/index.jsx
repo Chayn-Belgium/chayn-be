@@ -50,11 +50,11 @@ export const query = graphql`
 `
 
 const getResourceImageByName = (pictures, name) => {
-  const element = pictures.resourceImages.edges.find(
-    el => el.node.childImageSharp.fixed.originalName === name
+  const element = pictures?.resourceImages?.edges.find(
+    el => el?.node?.childImageSharp?.fixed?.originalName === name
   )
 
-  return element.node.childImageSharp
+  return element?.node?.childImageSharp
 }
 
 const ResourcesPage = ({ data }) => (
@@ -86,7 +86,7 @@ const ResourcesPage = ({ data }) => (
           <ResourceCard
             title="Guide : Les premiers gestes pour affronter une situation de cyberharcèlement"
             text="Ressources et conseils pour vous aider à affronter une situation de cyberharclèment et de cyberviolences"
-            picture={getResourceImageByName(data, "guide-coming-soon.jpeg")}
+            picture={getResourceImageByName(data, "guide-coming-soon.jpg")}
             isComingSoon
           />
         </ResourcesContainer>
