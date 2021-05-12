@@ -70,8 +70,8 @@ const ResourcesPage = ({ data }) => (
     </ResourcesHead>
     <NewsletterSection />
     <Image picture={data.background.edges[0].node.childImageSharp} isBackground>
-      <ResourcesContainer>
-        <Container>
+      <Container>
+        <ResourcesContainer>
           <ResourceCard
             title="Comment construire un dossier judiciaire de violences domestiques sans l’aide d’un·e avocat·e"
             picture={getResourceImageByName(
@@ -83,8 +83,14 @@ const ResourcesPage = ({ data }) => (
             target="_blank"
             rel="noreferrer noopener"
           />
-        </Container>
-      </ResourcesContainer>
+          <ResourceCard
+            title="Guide : Les premiers gestes pour affronter une situation de cyberharcèlement"
+            text="Ressources et conseils pour vous aider à affronter une situation de cyberharclèment et de cyberviolences"
+            picture={getResourceImageByName(data, "guide-coming-soon.jpeg")}
+            isComingSoon
+          />
+        </ResourcesContainer>
+      </Container>
     </Image>
     <ResourcesHead>
       <P>
