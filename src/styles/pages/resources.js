@@ -25,8 +25,10 @@ export const ResourcesHead = styled.div`
 
 export const ResourcesContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   height: 100%;
   padding: 50px 0;
+  box-sizing: border-box;
 `

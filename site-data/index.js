@@ -25,17 +25,17 @@ module.exports = {
     fr: {
       social: [
         {
-          iconLeft: "facebook",
+          icon: "facebook",
           href: "https://www.facebook.com/chayn",
           ...EXTERNAL_LINK_ATTRIBUTES,
         },
         {
-          iconLeft: "instagram",
+          icon: "instagram",
           href: "https://www.instagram.com/chayn.be",
           ...EXTERNAL_LINK_ATTRIBUTES,
         },
         {
-          iconLeft: "mail",
+          icon: "mail",
           href: "mailto:collective@chayn.be",
           ...EXTERNAL_LINK_ATTRIBUTES,
         },
@@ -46,18 +46,22 @@ module.exports = {
           {
             label: "Chayn HQ",
             href: "https://chayn.co/",
+            ...EXTERNAL_LINK_ATTRIBUTES,
           },
           {
             label: "Chayn Pakistan",
             href: "https://chaynpakistan.org/",
+            ...EXTERNAL_LINK_ATTRIBUTES,
           },
           {
             label: "Chayn Inde",
             href: "http://chaynindia.com/",
+            ...EXTERNAL_LINK_ATTRIBUTES,
           },
           {
             label: "Chayn Italie",
             href: "https://chaynitalia.org/",
+            ...EXTERNAL_LINK_ATTRIBUTES,
           },
         ],
       },

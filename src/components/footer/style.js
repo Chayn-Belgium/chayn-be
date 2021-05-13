@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { COLOR, MEDIA_QUERY } from "../../utils/constants"
+import { COLOR, MEDIA_QUERY, FONT } from "../../utils/constants"
 
 export const Footer = styled.footer`
   display: flex;
@@ -57,4 +57,30 @@ export const Column = styled.div`
       text-align: center;
     }
   }
+`
+
+export const Button = styled.a`
+  cursor: pointer;
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  font-family: ${FONT.NUNITO_SANS};
+  font-size: 0.95rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 19px;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+`
+
+export const Link = styled.a`
+  cursor: pointer;
+  font-family: ${FONT.NUNITO_SANS};
+  font-size: 0.95rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 19px;
+  color: ${COLOR.CAPE_COD};
+  margin: 4px 0;
 `

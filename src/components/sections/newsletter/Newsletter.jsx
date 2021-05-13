@@ -23,7 +23,6 @@ const Newsletter = () => (
             type="text"
             name="b_b1740add2400b144d13b18106_2f7a5bd41b"
             tabIndex="-1"
-            value=""
           />
         </div>
         <Input

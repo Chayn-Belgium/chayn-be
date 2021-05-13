@@ -70,7 +70,7 @@ const ResourcesPage = ({ data }) => (
     </ResourcesHead>
     <NewsletterSection />
     <Image picture={data.background.edges[0].node.childImageSharp} isBackground>
-      <Container>
+      <Container hasMarginOnMobile={false}>
         <ResourcesContainer>
           <ResourceCard
             title="Comment construire un dossier judiciaire de violences domestiques sans l’aide d’un·e avocat·e"
