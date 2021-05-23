@@ -10,6 +10,7 @@ export const StyledButton = styled(({ type, isDisabled, size, ...rest }) => (
 ))`
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   padding: 0.8rem 1.8rem;
   border-radius: 8px;
   ${({ type }) => {

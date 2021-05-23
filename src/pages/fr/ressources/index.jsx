@@ -5,8 +5,7 @@ import Layout from "../../../components/layout"
 import { ResourcesHead } from "../../../styles/pages/resources"
 import data from "../../../../site-data"
 import { Image, Heading, P } from "../../../components/ui"
-import { Container } from "../../../styles"
-import ResourceCard from "../../../components/resource-card"
+import ResourceContainer from "../../../components/resources-container"
 import NewsletterSection from "../../../components/sections/newsletter"
 
 const CURRENT_LANG = "fr"
@@ -46,14 +45,6 @@ export const query = graphql`
   }
 `
 
-const getResourceImageByName = (pictures, name) => {
-  const element = pictures?.resourceImages?.edges.find(
-    el => el?.node?.childImageSharp?.fixed?.originalName === name
-  )
-
-  return element?.node?.childImageSharp
-}
-
 const ResourcesPage = ({ data }) => (
   <Layout lang={CURRENT_LANG} nav={navData} footer={footerData}>
     <ResourcesHead>
@@ -67,27 +58,7 @@ const ResourcesPage = ({ data }) => (
     </ResourcesHead>
     <NewsletterSection />
     <Image picture={data.background.edges[0].node.childImageSharp} isBackground>
-      <Container hasMarginOnMobile={false}>
-        <div>
-          <ResourceCard
-            title="Comment construire un dossier judiciaire de violences domestiques sans l’aide d’un·e avocat·e"
-            picture={getResourceImageByName(
-              data,
-              "building-case-no-lawyer.png"
-            )}
-            text="Comment collecter et présenter des preuves d’abus"
-            href="https://soulmedicine.io/fr/pathways/how-to-build-a-domestic-abuse-case-without-a-lawyer"
-            target="_blank"
-            rel="noreferrer noopener"
-          />
-          <ResourceCard
-            title="Guide : Les premiers gestes pour affronter une situation de cyberharcèlement"
-            text="Ressources et conseils pour vous aider à affronter une situation de cyberharclèment et de cyberviolences"
-            picture={getResourceImageByName(data, "guide-coming-soon.jpg")}
-            isComingSoon
-          />
-        </div>
-      </Container>
+      <ResourceContainer pictures={data} />
     </Image>
     <ResourcesHead>
       <P>
