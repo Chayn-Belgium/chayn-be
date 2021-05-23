@@ -11,10 +11,6 @@ export const Input = styled.input`
     outline: none;
     border: 2px solid ${COLOR.BIZARRE};
   }
-
-  ::placeholder {
-    color: ${COLOR.BIZARRE}55;
-  }
 `
 
 export const Textarea = styled.textarea`
