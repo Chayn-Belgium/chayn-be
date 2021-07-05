@@ -5,11 +5,12 @@ import Button from "./Button"
 import { COLOR, FONT } from "../../../utils/constants"
 import { getTextSize } from "../../../styles"
 
-export const StyledButton = styled(({ type, isDisabled, ...rest }) => (
+export const StyledButton = styled(({ type, isDisabled, size, ...rest }) => (
   <Button {...rest} />
 ))`
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   padding: 0.8rem 1.8rem;
   border-radius: 8px;
   ${({ type }) => {

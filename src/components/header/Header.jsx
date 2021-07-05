@@ -5,7 +5,6 @@ import MobileNav from "./mobile-nav"
 import Logo from "../logo"
 import Cta from "../cta"
 import { Button } from "../ui"
-import { Container } from "../../styles"
 
 const getNavItems = elements =>
   elements?.map((element, index) => (
@@ -16,13 +15,11 @@ const getNavItems = elements =>
 
 const HeaderSection = ({ nav }) => (
   <Header>
-    <Container>
-      <Content>
-        <Logo />
-        <DesktopNav>{getNavItems(nav)}</DesktopNav>
-        <MobileNav>{getNavItems(nav)}</MobileNav>
-      </Content>
-    </Container>
+    <Content>
+      <Logo />
+      <DesktopNav>{getNavItems(nav)}</DesktopNav>
+      <MobileNav>{getNavItems(nav)}</MobileNav>
+    </Content>
   </Header>
 )
 

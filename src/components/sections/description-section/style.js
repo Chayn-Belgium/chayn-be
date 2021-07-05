@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
   display: flex;
   width: 100%;
 
-  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+  ${MEDIA_QUERY.TABLET_AND_DOWN} {
     flex-direction: column;
   }
 `
@@ -25,7 +25,7 @@ export const ImageContainer = styled.div`
   width: 40%;
   z-index: 0;
 
-  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+  ${MEDIA_QUERY.TABLET_AND_DOWN} {
     width: 100%;
     justify-content: center;
   }
@@ -33,7 +33,7 @@ export const ImageContainer = styled.div`
   > img {
     width: 100%;
 
-    @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+    ${MEDIA_QUERY.TABLET_AND_DOWN} {
       max-width: 300px;
     }
   }
@@ -47,7 +47,7 @@ export const ContentWrapper = styled.div`
   position: relative;
   padding-right: 50px;
 
-  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+  ${MEDIA_QUERY.TABLET_AND_DOWN} {
     margin: 50px 0 0 0;
     padding: 0;
     align-items: center;
@@ -57,7 +57,7 @@ export const ContentWrapper = styled.div`
     max-width: 850px;
     margin-bottom: 20px;
 
-    @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+    ${MEDIA_QUERY.TABLET_AND_DOWN} {
       text-align: center;
     }
   }

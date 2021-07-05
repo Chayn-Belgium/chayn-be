@@ -9,7 +9,7 @@ export const ResourcesHead = styled.div`
   width: 100%;
   padding: 50px 0;
 
-  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+  ${MEDIA_QUERY.TABLET_AND_DOWN} {
     padding: 50px 20px;
   }
 

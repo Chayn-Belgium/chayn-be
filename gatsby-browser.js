@@ -4,5 +4,5 @@ exports.shouldUpdateScroll = ({ routerProps }) => {
   /* Do not scroll top if the route contain a hash */
   gatsbyWrapper && !isHash && (gatsbyWrapper.scrollTop = 0)
 
-  return isHash && isHash.replace("#", "")
+  return isHash?.replace("#", "")
 }

@@ -7,6 +7,7 @@ export const Container = styled.div`
   width: 100%;
   margin: ${({ hasMarginOnMobile }) => (hasMarginOnMobile ? "0 20px" : "0")};
   position: relative;
+  padding: 0 20px;
 `
 
 Container.defaultProps = {
@@ -19,6 +20,7 @@ export const Main = styled.main`
   flex-grow: 1;
   z-index: 1;
   flex-shrink: 0;
+  align-items: center;
 `
 
 /**

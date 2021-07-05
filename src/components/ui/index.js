@@ -1,4 +1,5 @@
 import ButtonUI from "./button"
+import DropdownUI from "./dropdown"
 import FixedElementUI from "./fixed-element"
 import HeadingUI from "./heading"
 import IconUI from "./icon"
@@ -9,6 +10,7 @@ import PUI from "./p"
 import SideDialogUI from "./side-dialog"
 
 export const Button = ButtonUI
+export const Dropdown = DropdownUI
 export const FixedElement = FixedElementUI
 export const Heading = HeadingUI
 export const Icon = IconUI
