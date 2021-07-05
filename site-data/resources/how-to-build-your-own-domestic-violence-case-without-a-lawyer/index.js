@@ -22,6 +22,7 @@ module.exports = {
       {
         type: CONTENT_TYPE.CHAPTER,
         title: "LEÇON 1 : COMMENT UTILISER CE GUIDE",
+        id: "lecon-1-comment-utiliser-ce-guide",
         content: [
           {
             type: CONTENT_TYPE.TEXT,
@@ -58,6 +59,7 @@ module.exports = {
       {
         type: CONTENT_TYPE.CHAPTER,
         title: "LEÇON 2 : RASSEMBLER DES PREUVES",
+        id: "lecon-2-rassembler-des-preuves",
         content: [
           {
             type: CONTENT_TYPE.TEXT,
@@ -99,6 +101,7 @@ module.exports = {
       {
         type: CONTENT_TYPE.CHAPTER,
         title: "LEÇON 3  - TYPES DE PREUVES",
+        id: "lecon-3-types-de-preuves",
         content: [
           {
             type: CONTENT_TYPE.TEXT,
@@ -139,6 +142,7 @@ module.exports = {
       {
         type: CONTENT_TYPE.CHAPTER,
         title: "LEÇON 4 : TYPES DE PREUVES, COMMENT LES DOCUMENTER",
+        id: "lecon-4-types-de-preuves-comment-les-documenter",
         content: [
           {
             type: CONTENT_TYPE.TEXT,
@@ -179,6 +183,7 @@ module.exports = {
       {
         type: CONTENT_TYPE.CHAPTER,
         title: "LEÇON 5 - TYPES DE PREUVES : PREUVES MATÉRIELLES/RÉELLES",
+        id: "lecon-5-types-de-preuves-materielles-reelles",
         content: [
           {
             type: CONTENT_TYPE.TEXT,
@@ -225,6 +230,7 @@ module.exports = {
       {
         type: CONTENT_TYPE.CHAPTER,
         title: "LEÇON 6 - TYPES DE PREUVES : TÉMOIGNAGE",
+        id: "lecon-6-types-de-preuves-temoignage",
         content: [
           {
             type: CONTENT_TYPE.TEXT,
@@ -257,6 +263,7 @@ module.exports = {
       {
         type: CONTENT_TYPE.CHAPTER,
         title: "LEÇON 7 - TYPES DE PREUVES : ORIGINAL",
+        id: "lecon-7-types-de-preuves-original",
         content: [
           {
             type: CONTENT_TYPE.TEXT,
@@ -280,6 +287,7 @@ module.exports = {
       {
         type: CONTENT_TYPE.CHAPTER,
         title: "LEÇON 8 - TYPES DE PREUVES : LE OUÏ-DIRE",
+        id: "lecon-8-types-de-preuves-le-oui-dire",
         content: [
           {
             type: CONTENT_TYPE.TEXT,
@@ -302,6 +310,7 @@ module.exports = {
       {
         type: CONTENT_TYPE.CHAPTER,
         title: "LEÇON 9 - DOCUMENTER LES ABUS",
+        id: "lecon-9-documenter-les-abus",
         content: [
           {
             type: CONTENT_TYPE.TEXT,

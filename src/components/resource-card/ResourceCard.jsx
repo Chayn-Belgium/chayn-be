@@ -38,7 +38,7 @@ const ResourceCard = ({
     {!!langs.length && (
       <LangsContainer>
         {langs.sort().map(l => (
-          <LangTag>{l}</LangTag>
+          <LangTag key={l}>{l}</LangTag>
         ))}
       </LangsContainer>
     )}

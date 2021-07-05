@@ -3,8 +3,8 @@ import React from "react"
 import { TitleContainer, BodyContainer, Heading, Container } from "./style"
 import { Wrapper } from "../style"
 
-const ArticleChapter = ({ title, level, children }) => (
-  <Wrapper>
+const ArticleChapter = ({ title, level, children, ...props }) => (
+  <Wrapper {...props}>
     <Container>
       <TitleContainer>
         <Heading level={level} size="s">
