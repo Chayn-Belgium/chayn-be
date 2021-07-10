@@ -1,6 +1,6 @@
 import React from "react"
 
-import { GlobalStyle, Main } from "../../styles"
+import { GlobalStyle, Main, Theme } from "../../styles"
 import Header from "../header"
 import Footer from "../footer"
 import Head from "../head"
@@ -11,7 +11,7 @@ import { FixedElement } from "../ui"
 import data from "../../../site-data"
 
 const Layout = ({ children, nav, footer, lang }) => (
-  <>
+  <Theme>
     <GlobalStyle />
     <Head />
     <FixedElement {...leaveWebsiteButtonPositions}>
@@ -20,7 +20,7 @@ const Layout = ({ children, nav, footer, lang }) => (
     <Header nav={nav} />
     <Main>{children}</Main>
     <Footer data={footer} />
-  </>
+  </Theme>
 )
 
 export default Layout

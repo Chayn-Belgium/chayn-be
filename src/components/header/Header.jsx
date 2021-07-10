@@ -1,16 +1,16 @@
 import React from "react"
+import PropTypes from "prop-types"
+import { Link } from "gatsby"
 
-import { Header, Content, DesktopNav } from "./style"
+import { Header, Content, DesktopNav, NavItem } from "./style"
 import MobileNav from "./mobile-nav"
 import Logo from "../logo"
-import Cta from "../cta"
-import { Button } from "../ui"
 
 const getNavItems = elements =>
   elements?.map((element, index) => (
-    <Button is={Cta} link={element} type="minimal" key={index}>
+    <NavItem as={Link} to={element.href} type="minimal" key={index}>
       {element.label}
-    </Button>
+    </NavItem>
   ))
 
 const HeaderSection = ({ nav }) => (
@@ -22,5 +22,14 @@ const HeaderSection = ({ nav }) => (
     </Content>
   </Header>
 )
+
+HeaderSection.propsTypes = {
+  nav: PropTypes.arrayOf(
+    PropTypes.shape({
+      href: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+    })
+  ),
+}
 
 export default HeaderSection

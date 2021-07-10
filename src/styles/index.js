@@ -1,4 +1,7 @@
-import styled from "styled-components"
+import React from "react"
+import styled, { ThemeProvider } from "styled-components"
+
+import { COLOR } from "../utils/constants"
 
 export { GlobalStyle } from "./GlobalStyle"
 
@@ -46,3 +49,17 @@ export const getTextSize = size =>
     m: "1.15rem",
     s: ".95rem",
   }[size || "m"])
+
+/**
+ * Theme
+ */
+const theme = {
+  color: {
+    backgroundLight: COLOR.WHITE_LINEN,
+    text: COLOR.CAPE_COD,
+  },
+}
+
+export const Theme = ({ children }) => (
+  <ThemeProvider theme={theme}>{children}</ThemeProvider>
+)

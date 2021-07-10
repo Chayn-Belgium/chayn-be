@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 
+import { LogoContainer, Text, ImageContainer } from "./style"
 import { Image } from "../ui"
 
 const Logo = () => {
@@ -18,13 +19,20 @@ const Logo = () => {
   `)
 
   return (
-    <Link className="logo" to="/fr/" style={{ width: "125px", height: "60px" }}>
-      <Image
-        picture={data.logo.childImageSharp}
-        objectFit="contain"
-        alt="logo"
-      />
-    </Link>
+    <LogoContainer as={Link} to="/fr/">
+      <ImageContainer>
+        <Image
+          picture={data.logo.childImageSharp}
+          objectFit="contain"
+          alt="logo"
+        />
+      </ImageContainer>
+      <Text>
+        Chayn
+        <br />
+        beligum
+      </Text>
+    </LogoContainer>
   )
 }
 
