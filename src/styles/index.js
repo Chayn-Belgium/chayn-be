@@ -3,19 +3,8 @@ import styled, { ThemeProvider } from "styled-components"
 
 import { COLOR } from "../utils/constants"
 
+export * from "./elements"
 export { GlobalStyle } from "./GlobalStyle"
-
-export const Container = styled.div`
-  max-width: 1096px;
-  width: 100%;
-  margin: ${({ hasMarginOnMobile }) => (hasMarginOnMobile ? "0 20px" : "0")};
-  position: relative;
-  padding: 0 20px;
-`
-
-Container.defaultProps = {
-  hasMarginOnMobile: true,
-}
 
 export const Main = styled.main`
   display: flex;

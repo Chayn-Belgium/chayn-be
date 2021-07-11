@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../../components/layout"
 import data from "../../../site-data"
-import MainHeader from "../../components/sections/main-header"
+import HomeMain from "../../components/sections/home-main"
 import WeSupportYouSection from "../../components/sections/we-support-you-section"
 import DescriptionSection from "../../components/sections/description-section"
 import NewsletterSection from "../../components/sections/newsletter"
@@ -45,10 +45,12 @@ const getImageByName = (data, name) => {
 
 const HomePage = ({ data }) => (
   <Layout lang={CURRENT_LANG} nav={navData} footer={footerData}>
-    <MainHeader
+    <HomeMain
       picture={getImageByName(data, mainHeaderData.imageName)}
       title={mainHeaderData.title}
       text={mainHeaderData.text}
+      CTALabel={"Voir nos ressources"}
+      CTALink={"/fr/ressources"}
     />
     <WeSupportYouSection
       picture={getImageByName(data, weSupportYouData.imageName)}

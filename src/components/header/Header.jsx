@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 import { Header, Content, DesktopNav, NavItem } from "./style"
 import MobileNav from "./mobile-nav"
 import Logo from "../logo"
+import LeaveWebsiteButton from "../leave-website-button"
 
 const getNavItems = elements =>
   elements?.map((element, index) => (
@@ -13,10 +14,11 @@ const getNavItems = elements =>
     </NavItem>
   ))
 
-const HeaderSection = ({ nav }) => (
+const HeaderSection = ({ nav, exitText }) => (
   <Header>
     <Content>
       <Logo />
+      <LeaveWebsiteButton text={exitText} />
       <DesktopNav>{getNavItems(nav)}</DesktopNav>
       <MobileNav>{getNavItems(nav)}</MobileNav>
     </Content>
@@ -30,6 +32,7 @@ HeaderSection.propsTypes = {
       label: PropTypes.string.isRequired,
     })
   ),
+  exitText: PropTypes.string,
 }
 
 export default HeaderSection

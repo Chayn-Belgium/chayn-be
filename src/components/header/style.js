@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { MEDIA_QUERY, FONT } from "../../utils/constants"
+import { MEDIA_QUERY, FONT, COLOR } from "../../utils/constants"
 
 export const Header = styled.header`
   position: sticky;
@@ -13,6 +13,10 @@ export const Header = styled.header`
   z-index: 2;
   flex-shrink: 0;
   padding: 0 20px;
+
+  ${MEDIA_QUERY.MOBILE_AND_DOWN} {
+    height: 40px;
+  }
 `
 
 export const Content = styled.div`
@@ -21,11 +25,6 @@ export const Content = styled.div`
   height: 100%;
   align-items: center;
   max-width: 1440px;
-
-  .logo {
-    max-height: 80%;
-    min-width: 50px;
-  }
 `
 
 export const DesktopNav = styled.nav`
@@ -43,7 +42,7 @@ export const NavItem = styled.a`
   font-family: ${FONT.NUNITO_SANS};
   color: ${({ theme }) => theme.color.text};
   align-items: center;
-  font-weight: 900;
+  font-weight: 600;
   font-size: 18px;
   line-height: 1.3;
   position: relative;

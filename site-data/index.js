@@ -73,7 +73,7 @@ module.exports = {
     },
   },
   leaveWebsiteButton: {
-    fr: "Quitter le site\n(ou presser la touche 'esc')",
+    fr: "Quitter le site\n(ou presser 'esc')",
   },
   pages: [
     {
@@ -85,9 +85,9 @@ module.exports = {
       sections: [
         {
           imageName: "team.png",
-          title: "CHAYN Belgium",
+          title: "La collective feministe et antiraciste",
           text:
-            "Nous sommes une collective féministe et antiraciste utilisant les technologies ouvertes pour lutter contre les violences et cyberviolences faites aux femmes*.",
+            "Chayn utilise les technologies ouvertes pour <b>informer</b>, <b>sensibiliser</b> et <b>agir</b> contre les cyberviolences faites aux femmes<sup>*</sup>",
         },
         {
           imageName: "2-girls.png",

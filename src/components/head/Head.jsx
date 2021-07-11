@@ -45,7 +45,7 @@ const Head = () => {
         <link href={fav32} rel="icon" sizes="32x32" type="image/png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;900&display=swap"
           rel="stylesheet"
         />
 
