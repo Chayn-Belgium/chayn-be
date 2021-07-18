@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { MEDIA_QUERY, FONT, COLOR } from "../../utils/constants"
+import { MEDIA_QUERY, FONT } from "../../utils/constants"
 
 export const Header = styled.header`
   position: sticky;
@@ -15,7 +15,7 @@ export const Header = styled.header`
   padding: 0 20px;
 
   ${MEDIA_QUERY.MOBILE_AND_DOWN} {
-    height: 40px;
+    height: 50px;
   }
 `
 

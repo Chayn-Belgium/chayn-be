@@ -19,9 +19,15 @@ export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-left: 10%;
 
+  ${MEDIA_QUERY.SMALL_DESKTOP_AND_DOWN} {
+    padding-left: 2%;
+  }
   ${MEDIA_QUERY.TABLET_AND_DOWN} {
     width: 100%;
+    padding-left: 0;
+    align-items: center;
   }
 `
 
@@ -32,6 +38,7 @@ export const ImageContainer = styled.div`
   ${MEDIA_QUERY.TABLET_AND_DOWN} {
     width: 100%;
     height: 300px;
+    margin-top: 20px;
   }
 `
 
@@ -44,7 +51,7 @@ export const Title = styled.h1`
   white-space: pre-wrap;
 
   ${MEDIA_QUERY.TABLET_AND_DOWN} {
-    font-size: 38px;
+    font-size: 32px;
     text-align: center;
   }
 `
@@ -62,6 +69,8 @@ export const Text = styled.p`
   ${MEDIA_QUERY.TABLET_AND_DOWN} {
     max-width: 100%;
     text-align: center;
+    font-size: 22px;
+    line-height: 1.45;
   }
 
   > b {

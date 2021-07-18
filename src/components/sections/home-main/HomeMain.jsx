@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 import { ImageContainer, TextContainer, Wrapper, Title, Text } from "./style"
 import { Image, Button } from "../../ui"
 import { PageSection, SectionContainer } from "../../../styles"
+import { fluidPicCustomPropType } from "../../../utils/helpers"
 
 const HomeMain = ({ picture, title, text, CTALabel, CTALink }) => (
   <PageSection backgroundColor="light">
@@ -28,8 +29,7 @@ const HomeMain = ({ picture, title, text, CTALabel, CTALink }) => (
 HomeMain.propTypes = {
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-  // TODO: make custom prop-type for picture
-  picture: PropTypes.any.isRequired,
+  picture: fluidPicCustomPropType,
   CTALabel: PropTypes.string.isRequired,
   CTALink: PropTypes.string.isRequired,
 }

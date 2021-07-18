@@ -2,8 +2,8 @@ import React from "react"
 
 import { IconContainer } from "./style"
 
-const Icon = ({ name }) => (
-  <IconContainer>
+const Icon = ({ name, ...props }) => (
+  <IconContainer {...props}>
     <img
       src={require(`../../../assets/icons/${name}.svg`)}
       alt={`${name}-icon`}

@@ -8,8 +8,10 @@ import {
   ArticleQuote,
   ArticleText,
   ArticleTitle,
-} from "../components/articles"
-import { CONTENT_TYPE } from "../../site-data/constants"
+} from "../../components/articles"
+import { CONTENT_TYPE } from "../../../site-data/constants"
+
+export * from "./propTypes"
 
 export const getImage = (imageName, pictures) => {
   let picture = pictures.find(pic => {

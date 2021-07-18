@@ -4,17 +4,17 @@ import { graphql } from "gatsby"
 import Layout from "../../components/layout"
 import data from "../../../site-data"
 import HomeMain from "../../components/sections/home-main"
-import WeSupportYouSection from "../../components/sections/we-support-you-section"
-import DescriptionSection from "../../components/sections/description-section"
+// import WeSupportYouSection from "../../components/sections/we-support-you-section"
+// import DescriptionSection from "../../components/sections/description-section"
 import NewsletterSection from "../../components/sections/newsletter"
 
 const CURRENT_LANG = "fr"
 const footerData = data.footer[CURRENT_LANG]
 const navData = data.nav[CURRENT_LANG]
 const sectionsData = data.pages.find(({ name }) => name === "index").sections
-const mainHeaderData = sectionsData[0]
-const weSupportYouData = sectionsData[1]
-const descriptionData = sectionsData[2]
+// const weSupportYouData = sectionsData[1]
+// const descriptionData = sectionsData[2]
+const [mainHeaderData] = sectionsData
 
 export const query = graphql`
   query {
@@ -52,12 +52,12 @@ const HomePage = ({ data }) => (
       CTALabel={"Voir nos ressources"}
       CTALink={"/fr/ressources"}
     />
-    <WeSupportYouSection
+    {/* <WeSupportYouSection
       picture={getImageByName(data, weSupportYouData.imageName)}
       title={weSupportYouData.title}
       text={weSupportYouData.text}
-    />
-    <DescriptionSection
+    /> */}
+    {/* <DescriptionSection
       picture={`pages/home/${descriptionData.imageName}`}
       appendText={descriptionData.appendText}
       text={descriptionData.text}
@@ -65,7 +65,7 @@ const HomePage = ({ data }) => (
       title={descriptionData.title}
       subtitle={descriptionData.subtitle}
       list={descriptionData.list}
-    />
+    /> */}
     <NewsletterSection />
   </Layout>
 )
