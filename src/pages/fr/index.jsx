@@ -7,6 +7,7 @@ import HomeMain from "../../components/sections/home-main"
 // import WeSupportYouSection from "../../components/sections/we-support-you-section"
 // import DescriptionSection from "../../components/sections/description-section"
 import NewsletterSection from "../../components/sections/newsletter"
+import InformSensitizeAct from "../../components/sections/inform-sensitize-act"
 
 const CURRENT_LANG = "fr"
 const footerData = data.footer[CURRENT_LANG]
@@ -52,6 +53,7 @@ const HomePage = ({ data }) => (
       CTALabel={"Voir nos ressources"}
       CTALink={"/fr/ressources"}
     />
+    <InformSensitizeAct />
     {/* <WeSupportYouSection
       picture={getImageByName(data, weSupportYouData.imageName)}
       title={weSupportYouData.title}
