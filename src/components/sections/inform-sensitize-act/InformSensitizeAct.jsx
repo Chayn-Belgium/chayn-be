@@ -1,6 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
 
 import {
   TextContainer,
@@ -11,9 +9,7 @@ import {
   ArrowLine,
   ArrowEnd,
 } from "./style"
-import { Image, Button } from "../../ui"
 import { PageSection, SectionContainer } from "../../../styles"
-// import { fluidPicCustomPropType } from "../../../utils/helpers"
 
 const txt =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet adipisci laudantium similique pariatur autem culpa blanditiis nemo voluptate? Earum cum quisquam mollitia, ullam unde incidunt accusantium saepe officiis eum maiores?"
@@ -53,7 +49,5 @@ const InformSensitizeAct = () => (
     </SectionContainer>
   </PageSection>
 )
-
-InformSensitizeAct.propTypes = {}
 
 export default InformSensitizeAct

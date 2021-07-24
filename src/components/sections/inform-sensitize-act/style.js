@@ -74,11 +74,10 @@ export const Text = styled.p`
 export const ArrowContainer = styled.div`
   flex: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: ${({ reverse }) => (reverse ? "flex-start" : "flex-end")};
   align-items: flex-end;
   min-height: 300px;
   order: ${({ reverse }) => (reverse ? "2" : "1")};
-  transform: ${({ reverse }) => (reverse ? "scaleX(-1)" : "none")};
   ${({ reverse }) => (reverse ? `margin-left: 50px;` : `margin-right: 50px;`)}
 
   ${MEDIA_QUERY.TABLET_AND_DOWN} {
@@ -94,9 +93,20 @@ export const ArrowLine = styled.div`
   position: relative;
   width: 40%;
   height: 200px;
-  border-top-left-radius: 100%;
-  border-left: 1px dashed ${COLOR.AMARANTH};
   border-top: 1px dashed ${COLOR.AMARANTH};
+  ${({ reverse }) => {
+    if (reverse) {
+      return `
+        border-top-right-radius: 100%;
+        border-right: 1px dashed ${COLOR.AMARANTH};
+      `
+    } else {
+      return `
+        border-top-left-radius: 100%;
+        border-left: 1px dashed ${COLOR.AMARANTH};
+      `
+    }
+  }}
 
   ${MEDIA_QUERY.TABLET_AND_DOWN} {
     height: 60px;
@@ -107,10 +117,21 @@ export const ArrowLine = styled.div`
 export const ArrowEnd = styled.div`
   position: absolute;
   bottom: 0;
-  left: 0;
   width: 35px;
   height: 35px;
   border-left: 1px dashed ${COLOR.AMARANTH};
   border-bottom: 1px dashed ${COLOR.AMARANTH};
-  transform: rotate(-45deg) translate(-25%, -50%);
+  ${({ reverse }) => {
+    if (reverse) {
+      return `
+        right: 0;
+        transform: rotate(-45deg) translate(50%, 25%);
+      `
+    } else {
+      return `
+        left: 0;
+        transform: rotate(-45deg) translate(-25%, -50%);
+      `
+    }
+  }}
 `
