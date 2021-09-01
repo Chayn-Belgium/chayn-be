@@ -1,17 +1,9 @@
-import ArticleChapterUI from "./article-chapter"
-import ArticleDividerUI from "./article-divider"
-import ArticleImageUI from "./article-image"
-import ArticleListUI from "./article-list"
-import ArticleMainTitleUI from "./article-main-title"
-import ArticleQuoteUI from "./article-quote"
-import ArticleTextUI from "./article-text"
-import ArticleTitleUI from "./article-title"
-
-export const ArticleChapter = ArticleChapterUI
-export const ArticleDivider = ArticleDividerUI
-export const ArticleImage = ArticleImageUI
-export const ArticleList = ArticleListUI
-export const ArticleMainTitle = ArticleMainTitleUI
-export const ArticleQuote = ArticleQuoteUI
-export const ArticleText = ArticleTextUI
-export const ArticleTitle = ArticleTitleUI
+export { default as ArticleChapter } from "./article-chapter"
+export { default as ArticleDivider } from "./article-divider"
+export { default as ArticleImage } from "./article-image"
+export { default as ArticleList } from "./article-list"
+export { default as ArticleMainTitle } from "./article-main-title"
+export { default as ArticlePage } from "./article-page"
+export { default as ArticleQuote } from "./article-page"
+export { default as ArticleText } from "./article-text"
+export { default as ArticleTitle } from "./article-title"

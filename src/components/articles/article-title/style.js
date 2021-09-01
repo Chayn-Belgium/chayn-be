@@ -9,7 +9,7 @@ export const Heading = styled.h2`
   line-height: 36px;
   font-weight: 700;
   white-space: pre-wrap;
-  color: red;
+  margin-bottom: 10px;
 
   ${MEDIA_QUERY.TABLET_AND_DOWN} {
     font-size: 30px;

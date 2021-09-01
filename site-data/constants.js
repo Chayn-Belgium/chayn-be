@@ -19,10 +19,11 @@ module.exports.getInlineLink = (text, href) =>
 const resource = {
   BUILD_CASE_NO_LAWYER:
     "how-to-build-your-own-domestic-violence-case-without-a-lawyer",
+  HOW_TO_BE_A_GOOD_ALLIED: "how-to-be-a-good-allied",
 }
 
 module.exports.RESOURCE = resource
-module.exports.RESOURCES = Object.keys(resource)
+module.exports.RESOURCES = Object.values(resource)
 
 const lang = {
   FR: "fr",
