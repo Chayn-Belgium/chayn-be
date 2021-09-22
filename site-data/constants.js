@@ -26,8 +26,12 @@ module.exports.RESOURCE = resource
 module.exports.RESOURCES = Object.values(resource)
 
 const lang = {
-  FR: "fr",
   EN: "en",
+  ES: "es",
+  FR: "fr",
+  NL: "nl",
+  PL: "pl",
+  TR: "tr",
 }
 
 module.exports.LANG = lang
