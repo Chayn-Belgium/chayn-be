@@ -85,31 +85,28 @@ module.exports = {
       sections: [
         {
           imageName: "team.png",
-          title: "La collective feministe et antiraciste",
+          title: "Nous luttons contre les cyberviolences",
           text:
-            "Chayn utilise les technologies ouvertes pour <b>informer</b>, <b>sensibiliser</b> et <b>agir</b> contre les cyberviolences faites aux femmes<sup>*</sup>",
+            "Chayn Belgium est une collective <b>féministe</b> et <b>antiraciste</b> utilisant les technologies ouvertes pour lutter contre les (cyber)violences faites aux femmes<sup>*</sup>",
         },
         {
-          imageName: "2-girls.png",
-          title: "Nous sommes là pour vous soutenir.",
-          text:
-            "Qu’importe ce que dit quelqu’un sur vous, en ligne ou hors ligne, vous méritez le respect. Consulter ce site est la première étape. Utilisez nos ressources pour repérer les violences de genre, collecter des preuves, rester en sécurité, vous rétablir et vous connecter à d’autres associations qui prendront soin de vous.\nWe got you.",
-        },
-        {
-          imageName: "founders.gif",
-          text:
-            "Chayn Belgium est une collective initiée suite à l’augmentation des violences et des cyberviolences contre les femmes* pendant la pandémie du covid-19 en 2020. En Belgique, de nombreuses femmes* sont notamment victimes de cyberviolences de genre, amplifiée ou non de par l’intersection identitaire où elles se trouvent.\nChayn Belgium est une collective intersectionnelle, par et pour les femmes* de tous horizons et de toutes croyances, désireuses de :",
-          list: [
-            "Consulter des ressources multilingues écrites par des survivantes de violences conjugales.",
-            "Comprendre la problématique des cyberviolences et comment s’en protéger.",
-            "Contribuer à un espace bienveillant de création de ressources, de soutien et de partage de connaissance.",
+          blocs: [
+            {
+              title: "Nous sensibilisons",
+              text:
+                "Les (cyber)violences ont pris une ampleur immense dans nos sociétés. Pourtant, ces (cyber)violences - et leurs effets secondaires physiques et psychologiques - restent incompris et sous-estimés par beaucoup de personnes. Il est temps de changer cela.",
+            },
+            {
+              title: "Nous informons",
+              text:
+                "Nous créons et publions des ressources multilingues à destination des femmes* voulant apprendre à mieux se protéger en ligne (cybersécurité) ou ayant subi des (cyber)violences.",
+            },
+            {
+              title: "Nous agissons",
+              text:
+                "Nous organisons des ateliers de cybersécurité, digital care et de prévention contre les cyberviolences. Restez informé.e sur notre newsletter pour savoir la prochaine date.",
+            },
           ],
-          appendText:
-            "*Par «femmes», il est entendu toute personne qui a fait, fait ou fera l’expérience sociale d’être femme ou d’être perçue comme femme au cours de sa vie.",
-          link: {
-            label: "Accéder aux ressources",
-            href: "/fr/ressources",
-          },
         },
       ],
     },

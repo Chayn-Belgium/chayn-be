@@ -11,41 +11,24 @@ import {
 } from "./style"
 import { PageSection, SectionContainer } from "../../../styles"
 
-const txt =
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet adipisci laudantium similique pariatur autem culpa blanditiis nemo voluptate? Earum cum quisquam mollitia, ullam unde incidunt accusantium saepe officiis eum maiores?"
-
-const InformSensitizeAct = () => (
+const InformSensitizeAct = ({ data: { blocs } }) => (
   <PageSection backgroundColor="light">
     <SectionContainer>
-      <Wrapper>
-        <ArrowContainer>
-          <ArrowLine>
-            <ArrowEnd />
-          </ArrowLine>
-        </ArrowContainer>
-        <TextContainer>
-          <Title>Nous informons</Title>
-          <Text dangerouslySetInnerHTML={{ __html: txt }} />
-        </TextContainer>
-      </Wrapper>
-      <Wrapper>
-        <ArrowContainer reverse>
-          <ArrowLine reverse>
-            <ArrowEnd reverse />
-          </ArrowLine>
-        </ArrowContainer>
-        <TextContainer reverse>
-          <Title>Nous sensibilisons</Title>
-          <Text dangerouslySetInnerHTML={{ __html: txt }} />
-        </TextContainer>
-      </Wrapper>
-      <Wrapper>
-        <ArrowContainer />
-        <TextContainer>
-          <Title>Nous agissons</Title>
-          <Text dangerouslySetInnerHTML={{ __html: txt }} />
-        </TextContainer>
-      </Wrapper>
+      {blocs.map((bloc, index) => (
+        <Wrapper key={index}>
+          <ArrowContainer reverse={index % 2 != 0}>
+            {index < 2 && (
+              <ArrowLine reverse={index % 2 != 0}>
+                <ArrowEnd reverse={index % 2 != 0} />
+              </ArrowLine>
+            )}
+          </ArrowContainer>
+          <TextContainer reverse={index % 2 != 0}>
+            <Title>{bloc.title}</Title>
+            <Text dangerouslySetInnerHTML={{ __html: bloc.text }} />
+          </TextContainer>
+        </Wrapper>
+      ))}
     </SectionContainer>
   </PageSection>
 )

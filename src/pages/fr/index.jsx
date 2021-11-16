@@ -15,7 +15,7 @@ const navData = data.nav[CURRENT_LANG]
 const sectionsData = data.pages.find(({ name }) => name === "index").sections
 // const weSupportYouData = sectionsData[1]
 // const descriptionData = sectionsData[2]
-const [mainHeaderData] = sectionsData
+const [mainHeaderData, informSensitizeActData] = sectionsData
 
 export const query = graphql`
   query {
@@ -53,7 +53,7 @@ const HomePage = ({ data }) => (
       CTALabel={"Voir nos ressources"}
       CTALink={"/fr/ressources"}
     />
-    <InformSensitizeAct />
+    <InformSensitizeAct data={informSensitizeActData} />
     {/* <WeSupportYouSection
       picture={getImageByName(data, weSupportYouData.imageName)}
       title={weSupportYouData.title}
