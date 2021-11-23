@@ -7,13 +7,19 @@ const {
 module.exports = {
   nav: {
     fr: [
+      // {
+      //   label: "Nous rejoindre",
+      //   href: "/fr/nous-rejoindre",
+      // },
+      // {
+      //   label: "Projets",
+      //   href: "/fr/projets",
+      // },
       {
-        label: "Nous rejoindre",
-        href: "/fr/nous-rejoindre",
-      },
-      {
-        label: "Projets",
-        href: "/fr/projets",
+        label: "Guide",
+        href:
+          "/fr/guides/les-premiers-gestes-pour-affronter-une-situation-de-cyberharcèlement",
+        isNew: true,
       },
       {
         label: "Ressources",

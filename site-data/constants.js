@@ -13,8 +13,10 @@ module.exports.EXTERNAL_LINK_ATTRIBUTES = {
  * @param {string} text
  * @param {string} href
  */
-module.exports.getInlineLink = (text, href) =>
-  `<a href="${href}" rel="noreferrer noopener" target="_blank">${text}</a>`
+module.exports.getInlineLink = (text, href, isExternal = true) =>
+  `<a href="${href}" ${
+    isExternal ? 'rel="noreferrer noopener" target="_blank"' : ""
+  }>${text}</a>`
 
 const resource = {
   BUILD_CASE_NO_LAWYER:
@@ -24,6 +26,14 @@ const resource = {
 
 module.exports.RESOURCE = resource
 module.exports.RESOURCES = Object.values(resource)
+
+const guide = {
+  THE_FIRST_STEPS_TO_FACE_A_CYBERBULLYING_SITUATION:
+    "the-first-steps-to-face-a-cyberbullying-situation",
+}
+
+module.exports.GUIDE = guide
+module.exports.GUIDES = Object.keys(guide)
 
 const lang = {
   EN: "en",
