@@ -14,7 +14,7 @@ export const Container = styled.section`
 
 export const TitleContainer = styled.div`
   position: sticky;
-  top: 65px;
+  top: 111px;
   background-color: ${COLOR.SEASHELL};
   padding: 14px 12px 10px 12px;
   border-radius: 20px;

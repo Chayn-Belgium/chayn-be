@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { FONT, MEDIA_QUERY } from "../../utils/constants"
 
 export const Container = styled.div`
-  width: 100;
+  width: 100%;
   display: flex;
   position: relative;
 
@@ -18,12 +18,13 @@ export const Body = styled.section`
   flex: 1;
   z-index: 0;
   position: relative;
+  padding: 0 20px;
 `
 
 export const Aside = styled.aside`
   max-width: 300px;
   width: 30%;
-  padding-left: 20px;
+  padding-right: 20px;
   z-index: 1;
   position: relative;
 
@@ -40,7 +41,7 @@ export const AsideContent = styled.div`
   display: flex;
   flex-direction: column;
   position: sticky;
-  top: 80px;
+  top: 111px;
   padding: 30px;
   box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.1);
   border-radius: 25px;

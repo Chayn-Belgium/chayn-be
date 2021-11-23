@@ -3,8 +3,8 @@ import React from "react"
 import { P } from "./style"
 import { Wrapper } from "../style"
 
-const ArticleText = ({ text }) => (
-  <Wrapper>
+const ArticleText = ({ isFull, text }) => (
+  <Wrapper isFull={isFull}>
     <P dangerouslySetInnerHTML={{ __html: text }} />
   </Wrapper>
 )
