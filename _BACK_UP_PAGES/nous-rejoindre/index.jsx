@@ -1,13 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../../../components/layout"
-import data from "../../../../site-data"
-import WhoWeAre from "../../../components/sections/who-we-are"
-import PrinciplesAndValues from "../../../components/sections/principles-and-values"
-import LonelyTitle from "../../../components/sections/lonely-title-section"
-import BulletPoints from "../../../components/sections/bullet-points-section"
-import SupportUs from "../../../components/sections/support-us"
+import Layout from "../../src/components/layout"
+import data from "../../site-data"
+import WhoWeAre from "../../src/components/sections/who-we-are"
+import PrinciplesAndValues from "../../src/components/sections/principles-and-values"
+import LonelyTitle from "../../src/components/sections/lonely-title-section"
+import BulletPoints from "../../src/components/sections/bullet-points-section"
+import SupportUs from "../../src/components/sections/support-us"
 
 const CURRENT_LANG = "fr"
 const footerData = data.footer[CURRENT_LANG]
