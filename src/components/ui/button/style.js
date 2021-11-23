@@ -5,11 +5,12 @@ import Button from "./Button"
 import { COLOR, FONT } from "../../../utils/constants"
 import { getTextSize } from "../../../styles"
 
-export const StyledButton = styled(({ type, isDisabled, ...rest }) => (
-  <Button {...rest} />
-))`
+export const StyledButton_old = styled(
+  ({ type, isDisabled, size, ...rest }) => <Button {...rest} />
+)`
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   padding: 0.8rem 1.8rem;
   border-radius: 8px;
   ${({ type }) => {
@@ -69,8 +70,26 @@ export const StyledButton = styled(({ type, isDisabled, ...rest }) => (
   }
 `
 
-StyledButton.defaultProps = {
+StyledButton_old.defaultProps = {
   type: "default",
   isDisabled: false,
   size: "m",
 }
+
+export const StyledButton = styled.button`
+  border-radius: 35px;
+  background: linear-gradient(90deg, #db1d70 0%, #f6b92c 100%);
+  box-shadow: 0 15px 45px 0 rgba(20, 106, 255, 0.1);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 19px;
+  text-align: center;
+  padding: 20px 40px;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+  font-family: ${FONT.NUNITO_SANS};
+  transition: all 0.2s ease;
+`

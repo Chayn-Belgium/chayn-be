@@ -15,7 +15,7 @@ export const ContentWrapper = styled.div`
   text-align: center;
   z-index: 1;
 
-  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+  ${MEDIA_QUERY.TABLET_AND_DOWN} {
     margin: 50px auto 0 auto;
   }
 `

@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
   display: flex;
   width: 100%;
 
-  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+  ${MEDIA_QUERY.TABLET_AND_DOWN} {
     flex-direction: column;
   }
 `
@@ -25,7 +25,7 @@ export const ContentWrapper = styled.div`
   margin: 100px auto 100px auto;
   position: relative;
 
-  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+  ${MEDIA_QUERY.TABLET_AND_DOWN} {
     margin: 50px 0;
     padding: 0;
     align-items: center;
@@ -40,7 +40,7 @@ export const ContentWrapper = styled.div`
     max-width: 850px;
     margin-bottom: 20px;
 
-    @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+    ${MEDIA_QUERY.TABLET_AND_DOWN} {
       text-align: center;
     }
   }
@@ -63,10 +63,10 @@ export const Card = styled.li`
   min-width: 250px;
   padding: 50px 20px;
 
-  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+  ${MEDIA_QUERY.TABLET_AND_DOWN} {
     width: 50%;
   }
-  @media ${MEDIA_QUERY.MOBILE_AND_DOWN} {
+  ${MEDIA_QUERY.MOBILE_AND_DOWN} {
     width: 100%;
     padding: 20px 0;
   }
@@ -78,10 +78,10 @@ export const ImageContainer = styled.div`
   z-index: 0;
   margin: auto;
 
-  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+  ${MEDIA_QUERY.TABLET_AND_DOWN} {
     width: 100%;
   }
-  @media ${MEDIA_QUERY.MOBILE_AND_DOWN} {
+  ${MEDIA_QUERY.MOBILE_AND_DOWN} {
     width: 60%;
     margin-bottom: 20px;
   }

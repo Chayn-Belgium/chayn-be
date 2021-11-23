@@ -3,18 +3,19 @@ import { graphql } from "gatsby"
 
 import Layout from "../../components/layout"
 import data from "../../../site-data"
-import MainHeader from "../../components/sections/main-header"
-import WeSupportYouSection from "../../components/sections/we-support-you-section"
-import DescriptionSection from "../../components/sections/description-section"
+import HomeMain from "../../components/sections/home-main"
+// import WeSupportYouSection from "../../components/sections/we-support-you-section"
+// import DescriptionSection from "../../components/sections/description-section"
 import NewsletterSection from "../../components/sections/newsletter"
+import InformSensitizeAct from "../../components/sections/inform-sensitize-act"
 
 const CURRENT_LANG = "fr"
 const footerData = data.footer[CURRENT_LANG]
 const navData = data.nav[CURRENT_LANG]
 const sectionsData = data.pages.find(({ name }) => name === "index").sections
-const mainHeaderData = sectionsData[0]
-const weSupportYouData = sectionsData[1]
-const descriptionData = sectionsData[2]
+// const weSupportYouData = sectionsData[1]
+// const descriptionData = sectionsData[2]
+const [mainHeaderData, informSensitizeActData] = sectionsData
 
 export const query = graphql`
   query {
@@ -45,17 +46,20 @@ const getImageByName = (data, name) => {
 
 const HomePage = ({ data }) => (
   <Layout lang={CURRENT_LANG} nav={navData} footer={footerData}>
-    <MainHeader
+    <HomeMain
       picture={getImageByName(data, mainHeaderData.imageName)}
       title={mainHeaderData.title}
       text={mainHeaderData.text}
+      CTALabel={"Voir nos ressources"}
+      CTALink={"/fr/ressources"}
     />
-    <WeSupportYouSection
+    <InformSensitizeAct data={informSensitizeActData} />
+    {/* <WeSupportYouSection
       picture={getImageByName(data, weSupportYouData.imageName)}
       title={weSupportYouData.title}
       text={weSupportYouData.text}
-    />
-    <DescriptionSection
+    /> */}
+    {/* <DescriptionSection
       picture={`pages/home/${descriptionData.imageName}`}
       appendText={descriptionData.appendText}
       text={descriptionData.text}
@@ -63,7 +67,7 @@ const HomePage = ({ data }) => (
       title={descriptionData.title}
       subtitle={descriptionData.subtitle}
       list={descriptionData.list}
-    />
+    /> */}
     <NewsletterSection />
   </Layout>
 )

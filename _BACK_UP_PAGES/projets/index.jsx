@@ -1,11 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../../../components/layout"
-import data from "../../../../site-data"
-import Context from "../../../components/sections/context"
-import Workshops from "../../../components/sections/workshops"
-import GoToResources from "../../../components/sections/go-to-resources"
+import Layout from "../../src/components/layout"
+import data from "../../site-data"
+import Context from "../../src/components/sections/context"
+import Workshops from "../../src/components/sections/workshops"
+import GoToResources from "../../src/components/sections/go-to-resources"
 
 const CURRENT_LANG = "fr"
 const footerData = data.footer[CURRENT_LANG]

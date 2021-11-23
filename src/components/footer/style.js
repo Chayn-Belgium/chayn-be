@@ -26,7 +26,7 @@ export const BottomContainer = styled.div`
   justify-content: space-around;
   margin-bottom: 20px;
 
-  @media ${MEDIA_QUERY.MOBILE_AND_DOWN} {
+  ${MEDIA_QUERY.MOBILE_AND_DOWN} {
     flex-direction: column;
   }
 `
@@ -35,17 +35,17 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media ${MEDIA_QUERY.MOBILE_AND_DOWN} {
+  ${MEDIA_QUERY.MOBILE_AND_DOWN} {
     margin-bottom: 50px;
   }
 
   > h3 {
-    @media ${MEDIA_QUERY.MOBILE_AND_DOWN} {
+    ${MEDIA_QUERY.MOBILE_AND_DOWN} {
       text-align: center;
     }
   }
   > a {
-    @media ${MEDIA_QUERY.MOBILE_AND_DOWN} {
+    ${MEDIA_QUERY.MOBILE_AND_DOWN} {
       justify-content: center;
     }
   }
@@ -53,7 +53,7 @@ export const Column = styled.div`
   > p {
     max-width: 350px;
 
-    @media ${MEDIA_QUERY.MOBILE_AND_DOWN} {
+    ${MEDIA_QUERY.MOBILE_AND_DOWN} {
       text-align: center;
     }
   }

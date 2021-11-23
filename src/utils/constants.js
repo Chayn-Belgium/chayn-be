@@ -15,10 +15,10 @@ export const BREAKPOINT = {
 }
 
 export const MEDIA_QUERY = {
-  DESKTOP: `only screen and (min-width: ${BREAKPOINT.XL})`,
-  SMALL_DESKTOP_AND_DOWN: `only screen and (max-width: ${BREAKPOINT.XL})`,
-  TABLET_AND_DOWN: `only screen and (max-width: ${BREAKPOINT.M})`,
-  MOBILE_AND_DOWN: `only screen and (max-width: ${BREAKPOINT.S})`,
+  DESKTOP: `@media only screen and (min-width: ${BREAKPOINT.XL})`,
+  SMALL_DESKTOP_AND_DOWN: `@media only screen and (max-width: ${BREAKPOINT.XL})`,
+  TABLET_AND_DOWN: `@media only screen and (max-width: ${BREAKPOINT.M})`,
+  MOBILE_AND_DOWN: `@media only screen and (max-width: ${BREAKPOINT.S})`,
 }
 
 export const FONT = {

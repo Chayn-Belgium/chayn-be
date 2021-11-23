@@ -2,13 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 
 const CTA = ({ link, children, className, ...props }) => {
-  const { href, rel, target, ...linkExtraAttributes } = link
+  const { href, rel, target, ...linkExtraAttributes } = link || {}
 
   let isExternal
   if (link && !href) {
     isExternal = true
   } else {
-    isExternal = href.includes("http") || href.includes("mailto")
+    isExternal = href && (href.includes("http") || href.includes("mailto"))
   }
 
   let Tag
@@ -31,13 +31,13 @@ const CTA = ({ link, children, className, ...props }) => {
        */
       className={className}
       href={finalHref}
-      rel={link.rel || undefined}
-      target={link.target || undefined}
+      rel={link?.rel || undefined}
+      target={link?.target || undefined}
       to={to}
       {...linkExtraAttributes}
       {...props}
     >
-      {children || link.label}
+      {children || link?.label}
     </Tag>
   )
 }

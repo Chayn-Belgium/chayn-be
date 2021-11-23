@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-import { Container, DialogContent, Button } from "./style"
+import { Container, DialogContent } from "./style"
 import { SideDialog, Icon } from "../../ui"
 
 const MobileNav = ({ children }) => {
@@ -8,9 +8,7 @@ const MobileNav = ({ children }) => {
 
   return (
     <Container>
-      <Button onClick={() => setIsOpen(true)}>
-        <Icon name="menu" />
-      </Button>
+      <Icon name="menu" onClick={() => setIsOpen(true)} />
       <SideDialog isOpen={isOpen} onClose={() => setIsOpen(false)}>
         <DialogContent>{children}</DialogContent>
       </SideDialog>

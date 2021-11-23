@@ -8,6 +8,7 @@ export const Section = styled.section`
   padding: 50px 0;
   background-color: ${COLOR.WHITE_LINEN};
   flex-shrink: 0;
+  width: 100%;
 `
 
 export const Button = styled.button`
