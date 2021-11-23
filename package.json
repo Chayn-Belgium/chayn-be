@@ -7,7 +7,7 @@
   "scripts": {
     "build": "gatsby build --prefix-paths",
     "clean": "gatsby clean",
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "restart": "npm run clean && npm run develop",
     "serve": "gatsby serve",
