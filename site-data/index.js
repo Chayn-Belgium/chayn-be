@@ -18,7 +18,7 @@ module.exports = {
       {
         label: "Guide",
         href:
-          "/fr/guides/les-premiers-gestes-pour-affronter-une-situation-de-cyberharcèlement",
+          "/fr/guides/les-premiers-gestes-pour-affronter-une-situation-de-cyberharcelement",
         isNew: true,
       },
       {
