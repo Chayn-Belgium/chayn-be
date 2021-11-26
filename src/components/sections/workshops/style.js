@@ -1,13 +1,12 @@
 import styled from "styled-components"
 
-import { COLOR, MEDIA_QUERY } from "../../../utils/constants"
+import { MEDIA_QUERY } from "../../../utils/constants"
 import listIcon from "../../../assets/icons/dot.svg"
 
 export const Section = styled.section`
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: ${COLOR.BIZARRE};
 `
 
 export const Wrapper = styled.div`
@@ -23,6 +22,7 @@ export const ImageContainer = styled.div`
   display: flex;
   align-items: center;
   width: 40%;
+  max-width: 400px;
   z-index: 0;
 
   ${MEDIA_QUERY.TABLET_AND_DOWN} {
@@ -46,6 +46,7 @@ export const ContentWrapper = styled.div`
   margin: 100px auto 100px auto;
   position: relative;
   padding-left: 50px;
+  max-width: 700px;
 
   ${MEDIA_QUERY.TABLET_AND_DOWN} {
     margin: 50px 0;

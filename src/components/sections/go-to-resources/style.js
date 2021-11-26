@@ -1,12 +1,11 @@
 import styled from "styled-components"
 
-import { MEDIA_QUERY, COLOR } from "../../../utils/constants"
+import { MEDIA_QUERY } from "../../../utils/constants"
 
 export const Section = styled.section`
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: ${COLOR.BITTERSWEET};
 `
 
 export const ContentWrapper = styled.div`

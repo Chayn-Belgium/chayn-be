@@ -10,7 +10,7 @@ const GoToResources = ({ text, link }) => (
     <Container>
       <ContentWrapper>
         <P dangerouslySetInnerHTML={{ __html: text }} />
-        <Button is={Cta} link={link}>
+        <Button as={Cta} link={link}>
           {link.label}
         </Button>
       </ContentWrapper>
