@@ -16,14 +16,14 @@ const InformSensitizeAct = ({ data: { blocs } }) => (
     <SectionContainer>
       {blocs.map((bloc, index) => (
         <Wrapper key={index}>
-          <ArrowContainer reverse={index % 2 != 0}>
+          <ArrowContainer reverse={index % 2 !== 0}>
             {index < 2 && (
-              <ArrowLine reverse={index % 2 != 0}>
-                <ArrowEnd reverse={index % 2 != 0} />
+              <ArrowLine reverse={index % 2 !== 0}>
+                <ArrowEnd reverse={index % 2 !== 0} />
               </ArrowLine>
             )}
           </ArrowContainer>
-          <TextContainer reverse={index % 2 != 0}>
+          <TextContainer reverse={index % 2 !== 0}>
             <Title>{bloc.title}</Title>
             <Text dangerouslySetInnerHTML={{ __html: bloc.text }} />
           </TextContainer>
