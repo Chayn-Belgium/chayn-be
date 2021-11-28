@@ -16,7 +16,17 @@ export const P = styled.p`
     line-height: 28px;
   }
 
-  > b {
-    font-weight: 700;
+  > b,
+  > strong {
+    font-weight: 600;
+  }
+
+  > a {
+    color: ${COLOR.BITTERSWEET};
+    font-weight: 900;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `

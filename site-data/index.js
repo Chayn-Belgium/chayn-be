@@ -12,15 +12,15 @@ module.exports = {
       //   href: "/fr/nous-rejoindre",
       // },
       {
+        label: "Guide",
+        href:
+          "/fr/guides/les-premiers-gestes-pour-affronter-une-situation-de-cyberharcelement",
+        isNew: true,
+      },
+      {
         label: "Projets",
         href: "/fr/projets",
       },
-      // {
-      //   label: "Guide",
-      //   href:
-      //     "/fr/guides/les-premiers-gestes-pour-affronter-une-situation-de-cyberharcelement",
-      //   isNew: true,
-      // },
       {
         label: "Ressources",
         href: "/fr/ressources",

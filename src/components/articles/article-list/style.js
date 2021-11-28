@@ -59,4 +59,18 @@ export const ListItem = styled.li`
       left: 6px;
     }
   }
+
+  > b,
+  > strong {
+    font-weight: 600;
+  }
+
+  > a {
+    color: ${COLOR.BITTERSWEET};
+    font-weight: 900;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `
