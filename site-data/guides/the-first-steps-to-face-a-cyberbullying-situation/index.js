@@ -328,147 +328,202 @@ module.exports = {
               "Signalez l’infraction aux plateformes sur lesquelles se déroulent les abus. Pour que le signalement fonctionne et soit effectivement pris en compte, n’hésitez pas à demander à un maximum de témoins de signaler également les contenus avec vous.",
             ],
           },
-
-          // PAGE 10 du doc https://docs.google.com/document/d/1udg0lOmakoy7hIEbc3se8x86FtXokV7x/edit#
-
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Ne restez pas seule",
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text:
+              "Il est important de sortir de l’isolement, d’être entourée et conseillée",
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Vous êtes adulte ?",
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Parlez-en également à toute personne de confiance, ne restez pas seule! Il existe des organismes et des intervenants prêts à vous épauler.`,
+            // Need boite 4 for this one
+            // `Vous êtes une personne isolée ou vous vivez dans un contexte familial de violence, de dépendance ou d’emprise psychologique. Dans ce cas, nous avons recensé pour vous, en boîte 4, les ressources à votre disposition pour faire face au cyberharcèlement.
+            // `,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Vous êtes mineure d’âge ou aidez un mineur ?",
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Parlez-en directement à un adulte de confiance. Choisissez une personne qui vous sécurise: un de vos professeurs, parents,  assistant social, centre PMS de votre école ou de votre commune, planning familial, etc.\n\nEn Belgique, Child Focus est joignable gratuitement au 116 000 pour les questions de sécurité en ligne destinées aux enfants, adolescents, parents et professionnels de l’éducation. Le site ${getInlineLink(
+              "https://cybersquad.be/",
+              "https://cybersquad.be/"
+            )} peut accompagner le jeune victime de cyberharcèlement.`,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Vous êtes témoins de faits de harcèlement en ligne ?",
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Vous pouvez porter secours à la victime en lui proposant votre soutien et votre écoute bienveillante et en vous référant aux conseils recensés en boîte 7 (En cours de rédaction).`,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Quelques conseils :",
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            intro: "Les premiers gestes :",
+            list: [
+              `Comme nous l’avons déjà énoncé plus haut, faites toujours des <b>captures d’écrans</b> avant de bloquer ou de signaler les comptes et/ou les contenus indésirables car vous risquez de perdre définitivement de précieux éléments de preuve.`,
+              `Pour signaler des messages, ou autres contenus indésirables, aux plateformes qui les hébergent, vous pouvez suivre les instructions disponibles via le lien suivant :\n\n-> ${getInlineLink(
+                "Ressource complète",
+                "https://onlineharassmentfieldmanual.pen.org/fr/le-signalement-aux-plateformes/"
+              )} du online harassment field manual.\n\nLiens rapides :\n\n${getInlineLink(
+                "Twitter",
+                "https://help.twitter.com/fr/safety-and-security/report-abusive-behavior"
+              )} / ${getInlineLink(
+                "Facebook",
+                "https://www.facebook.com/help/1753719584844061?helpref=page_content"
+              )} / ${getInlineLink(
+                "Whatsapp",
+                "https://faq.whatsapp.com/general/security-and-privacy/about-blocking-and-reporting-contacts"
+              )} / ${getInlineLink(
+                "Tiktok",
+                "https://support.tiktok.com/fr/safety-hc/report-a-problem"
+              )} / ${getInlineLink(
+                "Instagram",
+                "https://help.instagram.com/192435014247952"
+              )} / ${getInlineLink(
+                "Twitch",
+                "https://help.twitch.tv/s/article/how-to-file-a-user-report?language=fr"
+              )} / ${getInlineLink(
+                "Medium",
+                "https://help.medium.com/hc/en-us/articles/217047977-Report-posts-users"
+              )}`,
+              `Sur Facebook, une fonctionnalité vous permet de masquer certains commentaires au bas de vos publications. L’auteur n’en sera pas alerté et sera, lui, toujours disposé à les voir. Ces contenus seront cependant bien conservés mais inaccessibles aux autres utilisateurs`,
+            ],
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Cas particuliers",
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Nous l’avons vu, les formes de harcèlement ou de violences rencontrées dans l’espace digital peuvent être nombreuses, leur impact important et leur diffusion très large. Certains cas spécifiques nécessiteront des protocoles d’action bien précis, et parfois plus complexes. En effet, certaines victimes, en raison de leur situation, de leur statut ou de leur âge, devront faire l’objet d’un traitement plus particulier. En voici deux exemples :`,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            intro: `<b>Journaliste, Femme politique ou autre figure médiatique</b>\n\nIl s’agit ici d’un cas spécifique en raison de l’effet de la médiatisation sur la diffusion des contenus agressifs. Une rumeur, ou campagne de dénigrement, bénéficiera en effet d’un plus large écho en fonction de la notoriété de la personne visée. \n\nSi vous subissez les répercussions négatives d’une couverture médiatique, relative ou importante, renforçant le sentiment de détresse que vous ressentez face à du cyberharcèlement, voici quelques conseils susceptibles de vous aider :`,
+            list: [
+              `Publiez un communiqué officiel, en utilisant de préférence le même canal que celui dont sont issues les attaques (par exemple, dans le cas d’une rumeur diffusée sur Instagram, utilisez cette même plateforme pour émettre votre message.)`,
+              `Vous pouvez également envisager de contacter la presse, solliciter le concours de professionnels de l’information, si vous estimez que la situation vous échappe.`,
+              `Evitez de répondre ponctuellement aux agressions afin d’éviter que vos propos soient isolés de leur contexte et instrumentalisés à vos dépens. Il est important également d’éviter une surexposition qui vous desservirait.`,
+              `Mettre sur pied un dispositif de veille ou de monitoring (externe)`,
+              `Essayer, à votre échelle, de fédérer une communauté de soutien disposée à porter votre parole et de témoigner en votre faveur.`,
+            ],
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            intro: `<b>Enfant, adolescente ou adulte sous tutelle</b>\n\nCertaines personnes sont particulièrement vulnérables et constituent en cela des proies particulièrement attrayantes pour les prédateurs du web. Que ce soit en raison de leur jeune âge ou de leur situation de dépendance à l’égard d’autres adultes, il est difficile pour ces victimes d’identifier des contextes de harcèlement ou d’adopter les bons réflexes pour y faire face.`,
+            list: [
+              `Dès les premiers signes ou doutes quant à une situation de cyberharcèlement, tournez-vous directement vers un, ou plusieurs, adulte de confiance : parents, professeur, assistant social, etc.`,
+              `Evitez de répondre aux messages et aux sollicitations de la part de votre agresseur. Il est important pour vous de vous protéger et d’empêcher toute tentative de manipulation.`,
+              `Vous pouvez aussi contacter ${getInlineLink(
+                "Childfocus chat",
+                "http://www.childfocus.be/fr/besoin-daide/chat-116000"
+              )} et ${getInlineLink(
+                "103ecoute.be",
+                "http://www.103ecoute.be/"
+              )}`,
+            ],
+          },
+          // Revenge porn doc ~page 12
           // {
           //   type: CONTENT_TYPE.TITLE,
-          //   title: "Les preuves et traces numériques",
+          //   title: "Cas particuliers",
           // },
-          // {
-          //   type: CONTENT_TYPE.TEXT,
-          //   text:
-          //     "Récoltez toutes les informations possibles permettant de prouver les faits problématiques de cyber harcèlements mais aussi tous les éléments qui pourraient mener à l’identité des personnes qui agissent. C’est ce que l’on appelle “Les traces numériques”.",
-          // },
-          // {
-          //   type: CONTENT_TYPE.LIST,
-          //   intro: "Notez dans un endroit sécurisé :",
-          //   list: [
-          //     "Les Dates, heures, plateforme, réseau social ou application",
-          //     "Types de documents et supports (Messages directs ? Images ? Commentaires Facebook ?...)",
-          //     "Liens (vous pouvez utiliser Archive.is pour conserver une adresse URL)",
-          //     "Le nombre de messages,",
-          //     "La nature de l’incident en ligne (menace de violence sexuelle, attaque à caractère raciste, etc.)",
-          //     "Les Plateformes, site web ou application sur lesquelles ont eu lieu les agissements",
-          //     "Le nom du compte de l’auteur ? Autres comptes actifs ? Adresse email ? Numéro de téléphone ? Adresse IP ? Une photo ? Indices de localisation ?  Tout élément d’identité qui permettrait  d’identifier la/les personnes (un message qu’il ou elle aurait laissé traîner quelque part sur le web ?)",
-          //     "Captures d’écran ou vidéos",
-          //     "Votre matériel informatique, vos identifiants et votre nom d’utilisateur",
-          //     "Agissements et faits ayant lieu  “hors-ligne”  et qui seraient liés à ce harcèlement en ligne",
-          //     "Preuves du préjudice : certificat médical, attestations, psychologues, psychothérapeutes, employeurs,...",
-          //     "La fréquence des attaques, le type d’attaque, ou tout autre élément de contexte (le message a-t-il été amplifié par exemple par des réseaux plus influents ?)",
-          //   ],
-          // },
-          // {
-          //   type: CONTENT_TYPE.LIST,
-          //   intro: "Conseils",
-          //   list: [
-          //     "Prenez des captures d’écrans avant de bloquer ou signaler le(s) compte(s) et contenus de la personne, ou de signaler les commentaires. En effet, ils s'effaceront lors de cette démarche",
-          //     "Sur Facebook, vous pouvez masquer les messages en commentaires de vos publications, vidéos et photos, cela n'alerte pas l’auteur, qui sera toujours disposé à les voir.  Les autres utilisateur.ice.s ne les verront quant à eux plus et les messages seront bien conservés.",
-          //     "Dans le cas d’attaques perpétrées par de très nombreux comptes, n’hésitez pas à questionner l’authenticité des comptes.",
-          //     "Vous êtes témoins de faits de harcèlement en ligne ? Soyez un.e bon.ne allié.e - dirigez-vous en boîte 7 ou accompagnez la victime dans les démarches que nous conseillons dans cette partie du guide.",
-          //     "Ne restez pas seule. C’est une expérience éprouvante, nous le savons\n\n- Vous êtes mineure d’âge ? Parlez-en directement à un.e adulte de confiance : votre prof, vos parents, votre assistant social, le Centre PMS de votre école ou de votre commune, votre planning familial,... Il existe également un numéro gratuit, le 103.\n\n- Vous êtes adulte ? Parlez-en également à toute personne de confiance, ne restez pas seule!\n\n- Vous n’avez personne vers qui vous tourner ? Nous avons recensé, en boîte 4, les ressources existantes pour vous épauler, et que vous pouvez contacter",
-          //   ],
-          // },
-          // TODO: add this section when it will be writen
-          // {
-          //   type: CONTENT_TYPE.TITLE,
-          //   tiile:
-          //     "Comment signaler des messages sur les plateformes ?",
-          // },
-          // {
-          //   type: CONTENT_TYPE.TEXT,
-          //   text:
-          //     "",
-          // },
-          // {
-          //   type: CONTENT_TYPE.TITLE,
-          //   tiile: "Quelques cas particuliers",
-          // },
-          // {
-          //   type: CONTENT_TYPE.TEXT,
-          //   text:
-          //     "Nous l’avons vu, les formes de harcèlement ou de violences rencontrées dans l’espace digital peuvent être nombreuses, ainsi que les impacts et développements. Certains cas spécifiques demanderont de suivre des protocoles plus élaborés. Notamment à cause du contexte de la victime, de la temporalité, de la médiatisation et de la gravité des formes",
-          // },
-          // {
-          //   type: CONTENT_TYPE.TITLE,
-          //   tiile:
-          //     "Journaliste ? Femme politique ? Femme médiatisée ? Le cas spécifique de la rumeur ou de la médiatisation élevée de la cible et/ou des faits de harcèlement",
-          // },
-          // {
-          //   type: CONTENT_TYPE.LIST,
-          //   intro:
-          //     "Si vous rencontrez une répercussion d’une ampleur médiatique large. Veillez à vous entourer d’un dispositif médiatique avant de vous déconnecter et de laisser des traces de votre positionnement ou de votre défense :",
-          //   list: [
-          //     "Publiez un communiqué officiel sur les lieux où les contenues se sont déployés",
-          //     "Relations presse si l’on atteint un degré de crise médiatique",
-          //     "Ne pas répondre aux commentaires de façon individuelle",
-          //     "Mettre sur pied un dispositif de veille / monitoring (externe)",
-          //     "Organisez une communauté de soutien pour élargir votre porte-parolat",
-          //     "Suivre les même démarches ensuite de collecte de preuves et de plainte",
-          //   ],
-          // },
-          // {
-          //   type: CONTENT_TYPE.TITLE,
-          //   tiile: "Mineures d’âge",
-          // },
-          // {
-          //   type: CONTENT_TYPE.LIST,
-          //   list: [
-          //     `Parles-en d’urgence à un.e adulte de confiance : ton  prof, tes parents, ton assistan.et social, le Centre PMS de ton  école ou de ta ville,  à ton  planning familial,...", "Ne répondez pas aux messages, commentaires, cela découragera l’agresseur", "Vous pouvez aussi contacter : ${getInlineLink(
-          //       "Childfocus chat",
-          //       "http://www.childfocus.be/fr/besoin-daide/chat-116000"
-          //     )} et ${getInlineLink(
-          //       "103ecoute.be",
-          //       "http://www.103ecoute.be/"
-          //     )}`,
-          //   ],
-          // },
-          // {
-          //   type: CONTENT_TYPE.TITLE,
-          //   tiile: "Info box",
-          // },
-          // {
-          //   type: CONTENT_TYPE.LIST,
-          //   intro: `Vous avez rencontré un cas spécifique ? Une méthode a fonctionné pour vous ? Avez-vous des conseils ? Participez à notre boîte à idées pour nous armer: ${getInlineLink(
-          //     "collective@chayn.be",
-          //     "mailto:collective@chayn.be"
-          //   )}`,
-          //   list: [
-          //     `Vous êtes curieuse et/ou passionnée d’outils un peu plus techniques qui peuvent être utilisés pour analyser des éléments de preuve ? Attention, c’est assez technique. C’est ce qu’on appelle les outils d’OSINT (Open source investigation - les investigations sur base des données et informations accessibles librement mais parfois bien cachées, sur le web : ${getInlineLink(
-          //       "https://osintframework.com/",
-          //       "https://osintframework.com/"
-          //     )}`,
-          //     `L’outil développé par les deux victimes de cyberharcèlement par les plateformes: ${getInlineLink(
-          //       "https://siecledigital.fr/2021/04/22/instagram-outils-cyberharcelement-messsages-prives/",
-          //       "https://siecledigital.fr/2021/04/22/instagram-outils-cyberharcelement-messsages-prives/"
-          //     )}`,
-          //     `Outils développés par des soeurs: ${getInlineLink(
-          //       "https://www.ladn.eu/tech-a-suivre/block-party-twitter-troll/",
-          //       "https://www.ladn.eu/tech-a-suivre/block-party-twitter-troll/"
-          //     )}\n${getInlineLink(
-          //       "https://time.com/5916772/kid-of-the-year-2020/",
-          //       "https://time.com/5916772/kid-of-the-year-2020/"
-          //     )}`,
-          //     `Des ressources à destination des enfants, pour les parents, enseignants et autres acteur.ices en contact avec des mineures dans une situation de harcèlements et violences dans l’espace digital: ${getInlineLink(
-          //       "http://www.enseignement.be/index.php?page=27461&navi=4106",
-          //       "http://www.enseignement.be/index.php?page=27461&navi=4106"
-          //     )}`,
-          //     `En France, un numéro vert: ${getInlineLink(
-          //       "https://www.01net.com/actualites/cyberharcelement-le-numero-vert-net-ecoute-devient-le-3018-2041256.html",
-          //       "https://www.01net.com/actualites/cyberharcelement-le-numero-vert-net-ecoute-devient-le-3018-2041256.html"
-          //     )}`,
-          //     getInlineLink(
-          //       "Application cyberhelp",
-          //       "https://www.childfocus.be/fr/nouvelle/lancement-de-cyber-help-lapplication-qui-vole-au-secours-du-jeune-en-cas-de-cyber"
-          //     ),
-          //     getInlineLink(
-          //       "https://fr.wikihow.com/d%C3%A9masquer-un-faux-compte-Facebook",
-          //       "https://fr.wikihow.com/d%C3%A9masquer-un-faux-compte-Facebook"
-          //     ),
-          //   ],
-          // },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Les preuves et traces numériques",
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text:
+              "Veillez à soigneusement récolter et compiler l’ensemble des éléments susceptibles de prouver qu’il y a bien fraude ou intention de nuire. Conservez également tout indice pouvant mener à l’identité du/des auteur/s. Cet ensemble d’informations constitue ce que l’on appelle “les traces numériques”.",
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            intro:
+              "Dans un emplacement sécurisé, pensez à recenser et sauvegarder :",
+            list: [
+              `Les dates et heures des messages ou échanges litigieux,`,
+              `La plateforme le réseau social, l’application ou le site internet utilisé,`,
+              `Le type de document ou de support employé (Message privé, commentaire, contenu visuel, etc.),`,
+              `Les éventuels liens URL (vous pouvez utiliser Archive.is pour conserver une adresse URL)`,
+              `Le nombre de messages,`,
+              `La nature de l’incident en ligne (menace de nature sexuelle, attaque à caractère raciste, etc.)`,
+              `Le nom ou pseudonyme utilisé par l’auteur ainsi que ses potentielles autres identités digitales (accompagnées des différentes photos le représentant, ou désignées comme telles.) Si vous êtes en mesure d’y avoir accès, notez également son adresse email, son numéro de téléphone, son adresse IP ou encore des indices permettant sa localisation. Tout élément relatif à son identité peut s’avérer déterminant pour confronter la personne à l’origine du harcèlement,`,
+              `Les captures d’écran ou vidéos enregistrées,`,
+              `Votre matériel informatique, vos identifiants et votre nom d’utilisateur`,
+              `Les autres agressions, verbales et/ou physiques, subies hors de l’espace numérique, liées aux faits relatés en ligne,`,
+              `Toute éventuelle preuve de préjudice : certificat médical, bilan psychologique, ordonnance psychiatrique, ou tout autre témoignage de votre entourage, professionnel ou privé,`,
+              `La fréquence des attaques, le type d’attaque, ou tout autre élément de contexte que vous jugerez pertinent de mentionner.`,
+            ],
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Info box",
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Vous avez vécu une expérience particulière et vous aimeriez nous la partager ?  Vous avez appliqué une méthode efficace que vous voudriez nous exposer ? Vous avez trouvé un appui auprès d’un organisme ou d’une structure dont nous n’avons pas parlé ? 
+            Vous pouvez contribuer à enrichir notre boîte à idées.
+            Contactez-nous : ${getInlineLink(
+              "collective@chayn.be",
+              "mailto:collective@chayn.be"
+            )}`,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            intro: `Pour aller plus loin :`,
+            list: [
+              `Pour les curieuses ou passionnée d’outils informatiques , l’outil  « OSINT » (Open source investigation) ${getInlineLink(
+                "https://osintframework.com/",
+                "https://osintframework.com/"
+              )} investigations sur base des données et informations accessibles librement mais parfois bien cachées, sur le web`,
+              `Outil Instagram développé par deux victimes de cyberharcèlement: ${getInlineLink(
+                "https://siecledigital.fr/2021/04/22/instagram-outils-cyberharcelement-messsages-prives/",
+                "https://siecledigital.fr/2021/04/22/instagram-outils-cyberharcelement-messsages-prives/"
+              )}`,
+              `Deux initiatives que nous sommes fières de soutenir: ${getInlineLink(
+                "https://www.ladn.eu/tech-a-suivre/block-party-twitter-troll/",
+                "https://www.ladn.eu/tech-a-suivre/block-party-twitter-troll/"
+              )}\n${getInlineLink(
+                "https://time.com/5916772/kid-of-the-year-2020/",
+                "https://time.com/5916772/kid-of-the-year-2020/"
+              )}`,
+              `Des ressources à destination des enfants, ou de leurs parents, des enseignants et autres professionnels de l’enfance, confrontés à des situations de harcèlement et/ou de violences dans l’espace digital : ${getInlineLink(
+                "http://www.enseignement.be/index.php?page=27461&navi=4106",
+                "http://www.enseignement.be/index.php?page=27461&navi=4106"
+              )}`,
+              // `En France, un numéro vert: ${getInlineLink(
+              //   "https://www.01net.com/actualites/cyberharcelement-le-numero-vert-net-ecoute-devient-le-3018-2041256.html",
+              //   "https://www.01net.com/actualites/cyberharcelement-le-numero-vert-net-ecoute-devient-le-3018-2041256.html"
+              // )}`,
+              `${getInlineLink(
+                "Application Cyberhelp",
+                "https://www.childfocus.be/fr/nouvelle/lancement-de-cyber-help-lapplication-qui-vole-au-secours-du-jeune-en-cas-de-cyber"
+              )}, initiée par la fondation Child Focus`,
+              `Comment identifier un faux profil sur facebook ?\n${getInlineLink(
+                "https://fr.wikihow.com/d%C3%A9masquer-un-faux-compte-Facebook",
+                "https://fr.wikihow.com/d%C3%A9masquer-un-faux-compte-Facebook"
+              )}`,
+            ],
+          },
         ],
       },
+
       // {
       //   type: CONTENT_TYPE.CHAPTER,
       //   title: "Boîte 3: Porter plainte",
