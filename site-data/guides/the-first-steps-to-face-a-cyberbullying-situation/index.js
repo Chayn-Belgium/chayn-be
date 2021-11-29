@@ -477,9 +477,7 @@ module.exports = {
           },
           {
             type: CONTENT_TYPE.TEXT,
-            text: `Vous avez vécu une expérience particulière et vous aimeriez nous la partager ?  Vous avez appliqué une méthode efficace que vous voudriez nous exposer ? Vous avez trouvé un appui auprès d’un organisme ou d’une structure dont nous n’avons pas parlé ? 
-            Vous pouvez contribuer à enrichir notre boîte à idées.
-            Contactez-nous : ${getInlineLink(
+            text: `Vous avez vécu une expérience particulière et vous aimeriez nous la partager ?  Vous avez appliqué une méthode efficace que vous voudriez nous exposer ? Vous avez trouvé un appui auprès d’un organisme ou d’une structure dont nous n’avons pas parlé ?\n\vVous pouvez contribuer à enrichir notre boîte à idées.\nContactez-nous : ${getInlineLink(
               "collective@chayn.be",
               "mailto:collective@chayn.be"
             )}`,
