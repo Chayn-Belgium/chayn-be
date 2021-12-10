@@ -24,7 +24,7 @@ export const P = styled.p`
 
   > a {
     color: ${COLOR.BITTERSWEET};
-    font-weight: 900;
+    font-weight: 600;
 
     &:hover {
       text-decoration: underline;

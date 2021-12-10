@@ -8,7 +8,7 @@ export const Heading = styled.h2`
   font-family: ${FONT.NUNITO_SANS};
   font-size: ${({ level }) => `${getFontSize(level)}px`};
   line-height: ${({ level }) => `${getFontSize(level) + 6}px`};
-  font-weight: 700;
+  font-weight: ${({ level }) => (level > 3 ? "600" : "700")};
   white-space: pre-wrap;
   margin-bottom: ${({ level }) => `${getMarginBottom(level)}px`};
 

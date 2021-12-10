@@ -10,6 +10,7 @@ export const P = styled.p`
   font-weight: 300;
   white-space: pre-wrap;
   margin-bottom: 20px;
+  text-align: ${({ isJustify }) => (isJustify ? "justify" : "left")};
 
   ${MEDIA_QUERY.TABLET_AND_DOWN} {
     font-size: 18px;
@@ -26,6 +27,7 @@ export const List = styled.ul`
   flex-direction: column;
   list-style: none;
   width: 100%;
+  margin-bottom: 20px;
 `
 
 export const ListItem = styled.li`
@@ -39,6 +41,7 @@ export const ListItem = styled.li`
   font-family: ${FONT.NUNITO_SANS};
   font-weight: 300;
   white-space: pre-wrap;
+  text-align: ${({ isJustify }) => (isJustify ? "justify" : "left")};
 
   ${MEDIA_QUERY.TABLET_AND_DOWN} {
     font-size: 18px;
@@ -67,7 +70,7 @@ export const ListItem = styled.li`
 
   > a {
     color: ${COLOR.BITTERSWEET};
-    font-weight: 900;
+    font-weight: 600;
 
     &:hover {
       text-decoration: underline;

@@ -13,143 +13,195 @@ module.exports = {
       {
         type: CONTENT_TYPE.TITLE,
         title: "Introduction",
+        level: 2,
       },
       {
         type: CONTENT_TYPE.TEXT,
-        text:
-          "Commentaires à caractères sexistes, intimidation, humiliation, harcèlements, haine, violence, dans l’espace digital, public ou privé, ou sur des supports électroniques.\n\nVous sentez-vous inquiètes ou concernées ? Pensez-vous en être la cible ?",
-      },
-      {
-        type: CONTENT_TYPE.TEXT,
-        text:
-          "<b>Malheureusement, vous n’êtes pas seules !</b>\n\nEn 2015, à l’échelle mondiale, 76% des femmes avaient déjà été victimes de cyberviolences\nLe risque de harcèlement en ligne est 27 fois supérieur pour les femmes",
-      },
-      // Image
-      {
-        type: CONTENT_TYPE.TITLE,
-        title: "Informées et soudées, nous serons mieux armées",
-      },
-      {
-        type: CONTENT_TYPE.TEXT,
-        text: `Ce guide a pour objectif de rassembler les ressources, conseils et protocoles existants pour faire face au harcèlement et aux autres formes de violences en ligne. L’objectif étant de mieux comprendre ce phénomène et de fournir quelques pistes en “premier secours” pour réagir face au cyberharcèlement.\n\nToutes ces informations ont été récoltées auprès de personnes ayant traversé cette douloureuse expérience ainsi qu’auprès d’associations et d’organisations référentes en ce domaine.\n\nSi ce guide entend d’adresser exclusivement aux femmes, c’est qu’il en va de l'objectif premier de Chayn qui est de s’adapter à leurs besoins spécifiques en les guidant vers un meilleur accès à l’information.\n\nCe qui suit ne se donne pour autant pas pour vocation de se substituer au travail des organismes, services de médiation et autres services publics ou privés spécialisés dans l’accompagnement psychologique, social et juridique.\nNotre contribution entend simplement répondre à un besoin de prévention et d’information vous permettant de déceler les situations de cyberviolence pour, par la suite, vous fournir des outils pour y faire face. Vous trouverez ici un certain nombre d’interlocuteurs et d’espaces de confiance vers qui vous tourner en toute sécurité.\n\nRéagir face au cyberharcèlement et l’affronter demande de l’énergie, nous en sommes conscientes. C’est pourquoi nous avons tenu à vous partager un maximum des ressources à votre disposition. Il existe bien des structures en mesure de vous écouter, de vous conseiller et de vous soutenir dans vos démarches. C’est pourquoi nous avons recensé dans ce guide toutes les pistes que nous avons considérées comme pertinentes. Néanmoins, nous sommes conscientes des mécanismes sociétaux qui permettent au cyberharcèlement de prendre forme et du fait que ces enjeux méritent une réflexion approfondie Aussi, nous relaierons ici les plaidoyers de personnes impliquées dans ce champ d'expertise.\n\nSi vous souhaitez rester informé(e), inscrivez-vous à notre newsletter.`,
-      },
-      {
-        type: CONTENT_TYPE.TITLE,
-        title:
-          "N’hésitez pas à nous contacter si vous souhaitez apporter votre contribution.",
-      },
-      {
-        type: CONTENT_TYPE.TEXT,
-        text:
-          "Vous avez des connaissances particulières touchant aux sujets abordés dans ce guide ? Vous êtes une association active dans ce domaine ? Vous souhaitez proposer des pistes de réflexion en lien avec notre propos ?",
-      },
-      {
-        type: CONTENT_TYPE.TEXT,
-        text: `Vous avez rencontré une ou plusieurs situations de harcèlement ou de violence dans l’espace digital ? Vous souhaitez contribuer à notre wiki sur le sujet ?`,
-      },
-      {
-        type: CONTENT_TYPE.LIST,
-        intro: `Pour mieux nous armer, n’hésitez pas à nous proposer:`,
-        outro: `Contactez-nous ici : ${getInlineLink(
-          "collective@chayn.be",
-          "mailto:collective@chayn.be"
-        )}`,
-        list: [
-          "des réflexes ou réactions efficaces qui n’ont pas été mentionnées",
-          "toute information ou conseil absent de ce guide",
+        text: [
+          `Commentaires à caractères sexistes, intimidation, humiliation, harcèlements, haine, violence, dans l’espace digital, public ou privé, ou sur des supports électroniques.`,
+          `Vous sentez-vous inquiètes ou concernées ? Pensez-vous en être la cible ?`,
         ],
+        isJustify: true,
       },
+      // {
+      //   type: CONTENT_TYPE.TEXT,
+      //   text:
+      //     "<b>Malheureusement, vous n’êtes pas seules !</b>\n\nEn 2015, à l’échelle mondiale, 76% des femmes avaient déjà été victimes de cyberviolences\nLe risque de harcèlement en ligne est 27 fois supérieur pour les femmes",
+      // },
+      {
+        type: CONTENT_TYPE.TEXT,
+        text: [
+          `<b>Informées et soudées, nous serons mieux armées</b>`,
+          `Ce guide a pour objectif de rassembler les ressources, conseils et protocoles existants pour faire face au harcèlement et aux autres formes de violences en ligne. L’objectif étant de mieux comprendre ce phénomène et de fournir quelques pistes en “premier secours” pour réagir face au cyberharcèlement.`,
+          `Toutes ces informations ont été récoltées auprès de personnes ayant traversé cette douloureuse expérience ainsi qu’auprès d’associations et d’organisations référentes en ce domaine.`,
+          `Si ce guide entend s’adresser aux personnes susceptibles d'être victimes de violences fondées sur le genre, et particulièrement aux femmes c’est qu’il en va de l'objectif premier de Chayn qui est de s’adapter à leurs besoins spécifiques en les guidant vers un meilleur accès à l’information.`,
+          `Par ailleurs, certaines personnes se trouvant simultanément à l’intersection de plusieurs oppressions se retrouvent plus exposées à une forme de violence en ligne. En effet, au sexisme ou violence à l’égard des personnes LGBTQIA+ se superposent des violences basées sur l’appartenance ethnique, philosophique ou religieuse, au handicap ou encore la situation économique.`,
+          `Ce qui suit ne se donne pour autant pas pour vocation de se substituer au travail des organismes, services de médiation et autres services publics ou privés spécialisés dans l’accompagnement psychologique, social et juridique.\nNotre contribution entend simplement répondre à un besoin de prévention et d’information vous permettant de déceler les situations de cyberviolence pour, par la suite, vous fournir des outils pour y faire face. Vous trouverez ici un certain nombre d’interlocuteurs et d’espaces de confiance vers qui vous tourner en toute sécurité.`,
+          `Réagir face au cyberharcèlement et l’affronter demande de l’énergie, nous en sommes conscientes. C’est pourquoi nous avons tenu à vous partager un maximum des ressources à votre disposition. Il existe bien des structures en mesure de vous écouter, de vous conseiller et de vous soutenir dans vos démarches. C’est pourquoi nous avons recensé dans ce guide toutes les pistes que nous avons considérées comme pertinentes. Néanmoins, nous sommes conscientes des mécanismes sociétaux qui permettent au cyberharcèlement de prendre forme et du fait que ces enjeux méritent une réflexion approfondie. Aussi, nous relaierons ici les plaidoyers de personnes impliquées dans ce champ d'expertise.`,
+        ],
+        isJustify: true,
+      },
+
+      // {
+      //   type: CONTENT_TYPE.TITLE,
+      //   title:
+      //     "N’hésitez pas à nous contacter si vous souhaitez apporter votre contribution.",
+      // },
+      // {
+      //   type: CONTENT_TYPE.TEXT,
+      //   text:
+      //     "Vous avez des connaissances particulières touchant aux sujets abordés dans ce guide ? Vous êtes une association active dans ce domaine ? Vous souhaitez proposer des pistes de réflexion en lien avec notre propos ?",
+      // },
+      // {
+      //   type: CONTENT_TYPE.TEXT,
+      //   text: `Vous avez rencontré une ou plusieurs situations de harcèlement ou de violence dans l’espace digital ? Vous souhaitez contribuer à notre wiki sur le sujet ?`,
+      // },
+      // {
+      //   type: CONTENT_TYPE.LIST,
+      //   intro: `Pour mieux nous armer, n’hésitez pas à nous proposer:`,
+      //   outro: `Contactez-nous ici : ${getInlineLink(
+      //     "collective@chayn.be",
+      //     "mailto:collective@chayn.be"
+      //   )}`,
+      //   list: [
+      //     "des réflexes ou réactions efficaces qui n’ont pas été mentionnées",
+      //     "toute information ou conseil absent de ce guide",
+      //   ],
+      // },
       {
         type: CONTENT_TYPE.CHAPTER,
         title: "Boîte 1: Comprendre et reconnaître le cyberharcèlement",
         id: "boite-1-comprendre-et-reconnaitre-le-cyberharcelement",
         content: [
           {
+            type: CONTENT_TYPE.TITLE,
+            title: "De quoi parle-t-on ?",
+            level: 3,
+          },
+          {
             type: CONTENT_TYPE.TEXT,
-            text:
-              "Le cyberharcèlement peut prendre différents visages, s’inscrire sur différents supports et revêtir de nombreuses formes. Pour autant, le phénomène prend toujours racine dans l’espace numérique. Il est donc souvent difficile à isoler.",
+            text: `Avec la digitalisation de nos sociétés, de nouvelles formes de violences apparaissent . Elles peuvent prendre différents visages, s’inscrire sur différents supports, et mener rapidement à du cyberharcèlement. Les violences sexistes et sexuelles y sont majoritaires.`,
+            isJustify: true,
+          },
+          // WORK ON INFOBOX
+          // {
+          //   type: CONTENT_TYPE.TITLE,
+          //   title: "Infobox",
+          // },
+          // {
+          //   type: CONTENT_TYPE.TEXT,
+          //   text:
+          //     "Le harcèlement ne trouve pas de définition claire dans le Code pénal. Néanmoins, le texte qui l’encadre stipule qu’il est composé de deux éléments : l’un matériel (les agissements doivent affecter la tranquillité d’une ou de plusieurs personnes) et l’autre, moral (l’intention de nuire).",
+          // },
+          // {
+          //   type: CONTENT_TYPE.LIST,
+          //   intro:
+          //     "Il précise  également les Conditions à remplir pour qu’une situation soit acceptée juridiquement comme du harcèlement :",
+          //   list: [
+          //     "Le comportement doit être répétitif et abusif.",
+          //     "Il doit y avoir atteinte à la tranquillité.",
+          //     "Le harceleur doit être conscient du préjudice causé à sa victime.",
+          //   ],
+          // },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title:
+              "En quoi le cyberharcèlement se distingue-t-il du harcèlement physique ?",
+            level: 4,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              "La diffusion et la publicité peuvent être massives et l’impact instantané. Les contenus peuvent atteindre un public large et difficilement identifiable.   La rapidité de propagation du message rend la reprise de contrôle particulièrement complexe. Ceci ayant pour effet de générer un sentiment d’impuissance chez les victimes et de les plonger dans une détresse d’autant plus intense.",
+              "De manière générale, le cyberharcèlement se combine à sa variante physique, ce qui finit d’en isoler la victime. Chaque espace de vie se voit alors contrôlé et assujetti à la traque.",
+              "La personne à l’origine du harcèlement peut agir sous le couvert de l’anonymat grâce à l’utilisation de pseudonymes, par exemple. Cela renforce le sentiment d’insécurité que peut ressentir la victime et peut même parfois provoquer crises d’angoisses et épisodes paranoïaques. Sans compter que le ou les auteur(s) jouissent d’une impunité telle qu’il devient difficile, voire impossible, de leur appliquer toute sanction légale.",
+              "En raison de la relative nouveauté des enjeux en présence, la législation n’a pas encore atteint sa phase de totale maturité en ce qui concerne la régulation du web et de l’ensemble des outils numériques, en constante expansion.. De même, le web n’est pas organisé selon une structure stricte, ni par un fonctionnement, susceptible de facilité l’intervention d’une autorité, qu’elle soit juridique ou institutionnelle.",
+              `Avant d’envisager les différentes étapes que vous pourrez entreprendre pour réagir face à une telle situation, voici une liste des principaux espaces numériques où ces situations apparaissent, les différents supports numériques utilisés, les différentes formes que peuvent prendre les cyber violences/harcèlements ainsi que les types de violences discriminatoires véhiculées par celles-ci.`,
+            ],
+            isJustify: true,
           },
           {
             type: CONTENT_TYPE.TITLE,
-            title: "Infobox",
-          },
-          {
-            type: CONTENT_TYPE.TEXT,
-            text:
-              "Le harcèlement ne trouve pas de définition claire dans le Code pénal. Néanmoins, le texte qui l’encadre stipule qu’il est composé de deux éléments : l’un matériel (les agissements doivent affecter la tranquillité d’une ou de plusieurs personnes) et l’autre, moral (l’intention de nuire).",
+            title: "Les espaces numériques du cyberharcèlement",
+            level: 3,
           },
           {
             type: CONTENT_TYPE.LIST,
-            intro:
-              "Il précise  également les Conditions à remplir pour qu’une situation soit acceptée juridiquement comme du harcèlement :",
             list: [
-              "Le comportement doit être répétitif et abusif.",
-              "Il doit y avoir atteinte à la tranquillité.",
-              "Le harceleur doit être conscient du préjudice causé à sa victime.",
+              "<b>Emails :</b> chaînes, conversations, etc.",
+              "<b>Forums et salles de chat.</b>",
+              "<b>Conversations privées et en groupe</b> sur les applications comme Whatsapp, Facebook, Messenger, Signal, Telegram, Viber, Twitter, Instagram, Youtube, etc.",
+              "<b>Réseaux sociaux :</b> Publications, tags, commentaires et messages",
+              "<b>Plateformes de jeux</b>, en streaming ou en réseau :</b> chat privés ou publics",
+              "<b>Commentaires</b> sur les sites web des différents médias,  sur YouTube, etc.",
+              "<b>Plateformes collaboratives en milieu professionnel :</b> visioconférence, canaux de discussions de groupe, commentaire de documents, etc.",
+              "<b>Sites de rencontre</b>",
+            ],
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Les supports et médias, vecteurs du cyberharcèlement",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            list: [
+              "<b>Supports écrits :</b> messages,  commentaires",
+              "<b>Supports images :</b> photomontages, infographies, caricatures, dessins, photographies, gifs, etc. ",
+              "<b>Supports vidéo :</b> Reels, Stories, live chat et autres contenus vidéo.",
+              "<b>Supports audios :</b> messages et commentaires vocaux, podcast, appels en ligne, etc.",
+              "<b>Création de profils virtuels ou de pages, piratages de compte, vol d’identité, etc.</b>",
             ],
           },
           {
             type: CONTENT_TYPE.TITLE,
             title:
-              "En quoi le cyberharcèlement se distingue-t-il du harcèlement physique ?",
+              "Les formes que peuvent prendre la cyber violences/harcèlements : de la cyberintimidation au revenge porn",
+            level: 3,
           },
           {
-            type: CONTENT_TYPE.LIST,
-            list: [
-              "La diffusion et la publicité peuvent être massives et l’impact instantané. Les contenus peuvent atteindre un public large et difficilement identifiable.   La rapidité de propagation du message rend la reprise de contrôle particulièrement complexe. Ceci ayant pour effet de générer un sentiment d’impuissance chez les victimes et de les plonger dans une détresse d’autant plus intense.",
-              "De manière générale, le cyberharcèlement se combine à sa variante physique, ce qui finit d’en isoler la victime. Chaque espace de vie se voit alors contrôlé et assujetti à la traque.",
-              "La personne à l’origine du harcèlement peut agir sous le couvert de l’anonymat grâce à l’utilisation de pseudonymes, par exemple. Cela renforce le sentiment d’insécurité que peut ressentir la victime et peut même parfois provoquer crises d’angoisses et épisodes paranoïaques. Sans compter que le ou les auteur(s) jouissent d’une impunité telle qu’il devient difficile, voire impossible, de leur appliquer toute sanction légale.",
-              "En raison de la relative nouveauté des enjeux en présence, la législation n’a pas encore atteint sa phase de totale maturité en ce qui concerne la régulation du web et de l’ensemble des outils numériques, en constante expansion.. De même, le web n’est pas organisé selon une structure stricte, ni par un fonctionnement, susceptible de facilité l’intervention d’une autorité, qu’elle soit juridique ou institutionnelle.",
-            ],
-            outro: `Avant d’envisager les différentes étapes que vous pourrez entreprendre pour réagir face à une telle situation, nous avons identifié les grands types de cyberharcèlement, leurs lieux et leurs formes.`,
+            type: CONTENT_TYPE.TITLE,
+            title: "Affichage",
+            level: 4,
           },
           {
-            type: CONTENT_TYPE.LIST,
-            intro: "Les lieux du cyberharcèlement :",
-            list: [
-              "Emails : chaînes, conversations, etc.",
-              "Forums et salles de chat.",
-              "Conversations privées et en groupe sur les applications comme Whatsapp, Facebook, Messenger, Signal, Telegram, Viber, Twitter, Instagram, Youtube, etc.",
-              "Réseaux sociaux : Publications, tags, commentaires et messages",
-              "Plateformes de jeux, en streaming ou en réseau: chat privés ou publics",
-              "Commentaires sur les sites web des différents médias,  sur YouTube, etc.",
-              "Plateformes collaboratives en milieu professionnel : visioconférence, canaux de discussions de groupe, commentaire de documents, etc.",
-              "Sites de rencontre",
-            ],
+            type: CONTENT_TYPE.TEXT,
+            text: `Création d’un sujet de discussion, d’une salle de chat, d’un groupe ou d’une page sur un réseau social à votre encontre dans le but d’attirer l’attention sur vous ou de vous dénigrer auprès d’autres utilisateurs.\n${getInlineLink(
+              "Premiers gestes (boîte 2)",
+              "#boîte-2-agir-fac-au-cyberharcèlement",
+              false
+            )}`,
+            isJustify: true,
           },
           {
-            type: CONTENT_TYPE.LIST,
-            intro: "Les supports et médias, vecteurs du cyberharcèlement",
-            list: [
-              "Supports écrits : messages,  commentaires",
-              "Supports images:  photomontages, infographies, caricatures, dessins, photographies, gifs, etc. ",
-              "Supports vidéo : Reels, Stories, live chat et autres contenus vidéo.",
-              "Supports audios : messages et commentaires vocaux, podcast, appels en ligne, etc.",
-              "Création de profils virtuels ou de pages, piratages de compte, vol d’identité, etc.",
-            ],
+            type: CONTENT_TYPE.TITLE,
+            title: "Cyberstalking",
+            level: 4,
           },
           {
-            type: CONTENT_TYPE.LIST,
-            intro:
-              "Les formes de cyberharcèlement : de la cyberintimidation au revenge porn\nQuelle réaction adopter ?",
-            list: [
-              `<b>Affichage</b> : Création d’un sujet de discussion, d’une salle de chat, d’un groupe ou d’une page sur un réseau social à votre encontre dans le but d’attirer l’attention sur vous ou de vous dénigrer auprès d’autres utilisateurs.\n -> ${getInlineLink(
-                "Suivez les consignes en boîte 2",
-                "#boîte-2-agir-fac-au-cyberharcèlement",
-                false
-              )}`,
-              `<b>Cyberstalking</b> : Création d’un sentiment d’oppression chez une personne cible en la mettant dans une position de proie traquée. Technique qui vise à se saisir de l’ensemble de l’identité virtuelle d’une personne afin d’ augmenter son sentiment d’insécurité et ainsi affecter sa vie personnelle.\n -> ${getInlineLink(
-                "Suivez les consignes en boîte 2",
-                "#boîte-2-agir-fac-au-cyberharcèlement",
-                false
-              )}`,
-              `<b>Diffamation et propagation de rumeurs</b> : Diffusion large et récurrente de faits, avérés ou non, impliquant un individu afin de promouvoir une image négative de celui-ci par dénigrement.Certains agissements constituent du harcèlement.\n -> ${getInlineLink(
-                "Suivez les consignes en boîte 2",
-                "#boîte-2-agir-fac-au-cyberharcèlement",
-                false
-              )}`,
-            ],
+            type: CONTENT_TYPE.TEXT,
+            text: `Création d’un sentiment d’oppression chez une personne cible en la mettant dans une position de proie traquée. Technique qui vise à se saisir de l’ensemble de l’identité virtuelle d’une personne afin d’ augmenter son sentiment d’insécurité et ainsi affecter sa vie personnelle.\n${getInlineLink(
+              "Premiers gestes (boîte 2)",
+              "#boîte-2-agir-fac-au-cyberharcèlement",
+              false
+            )}`,
+            isJustify: true,
           },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Diffamation et propagation de rumeurs",
+            level: 4,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Diffusion large et récurrente de faits, avérés ou non, impliquant un individu afin de promouvoir une image négative de celui-ci par dénigrement.Certains agissements constituent du harcèlement.\n${getInlineLink(
+              "Premiers gestes (boîte 2)",
+              "#boîte-2-agir-fac-au-cyberharcèlement",
+              false
+            )}`,
+            isJustify: true,
+          },
+
           {
             type: CONTENT_TYPE.LIST,
             intro:
