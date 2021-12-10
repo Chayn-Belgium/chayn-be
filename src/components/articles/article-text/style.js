@@ -9,7 +9,8 @@ export const P = styled.p`
   font-family: ${FONT.NUNITO_SANS};
   font-weight: 300;
   white-space: pre-wrap;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  text-align: ${({ isJustify }) => (isJustify ? "justify" : "left")};
 
   ${MEDIA_QUERY.TABLET_AND_DOWN} {
     font-size: 18px;
