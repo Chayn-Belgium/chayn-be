@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{iUdo:function(n,e,a){"use strict";a.r(e);var t=a("q1tI"),o=a.n(t),c=a("f21E"),i=a("YGHo");e.default=function(){return o.a.createElement(c.a,{lang:"en",articleName:i.RESOURCE.HOW_TO_BE_A_GOOD_ALLIED})}}}]);
+//# sourceMappingURL=component---src-pages-en-ressources-how-to-be-a-good-allied-index-jsx-a16b457f2e4582b13fde.js.map
