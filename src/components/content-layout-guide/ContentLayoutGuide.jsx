@@ -13,6 +13,7 @@ import {
   IconContainer,
 } from "./style"
 import { Icon } from "../ui"
+import { capitalize } from "../../utils/helpers"
 
 const isElementActive = el => {
   if (!el) return
@@ -90,7 +91,7 @@ const ContentLayoutGuide = ({
               key={item.href}
               to={item.href}
             >
-              {item.title.toLowerCase()}
+              {capitalize(item.title.toLowerCase())}
             </TextMenu>
           ))}
         </AsideContent>
@@ -109,8 +110,9 @@ const ContentLayoutGuide = ({
                 setAnchorTarget(item.id)
                 handleClick(item.id)
               }}
+              level={item.level}
             >
-              {item.title.toLowerCase()}
+              {capitalize(item.title.toLowerCase())}
             </TextMenu>
           ))}
         </AsideContent>

@@ -83,12 +83,14 @@ export const IconContainer = styled.div`
 `
 
 export const TextMenu = styled.h3`
+  display: inline-block;
   font-size: 14px;
   font-family: ${FONT.NUNITO_SANS};
-  opacity: ${({ isActive }) => (isActive ? "1" : "0.3")};
+  opacity: ${({ isActive }) => (isActive ? "1" : "0.5")};
   cursor: pointer;
   color: ${COLOR.CAPE_COD};
   font-weight: 300;
+  padding-left: ${({ level }) => (level > 2 ? `${Number(level) * 6}px` : "0")};
 
   &:not(:last-child) {
     margin: 0 0 10px 0;

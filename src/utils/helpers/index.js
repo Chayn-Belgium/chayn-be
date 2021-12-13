@@ -18,6 +18,7 @@ import {
 } from "../../components/guide"
 
 export * from "./propTypes"
+export * from "./strings"
 
 export const getImage = (imageName, pictures) => {
   let picture = pictures.find(pic => {

@@ -51,11 +51,11 @@ module.exports = {
           {
             type: CONTENT_TYPE.TITLE,
             title: "De quoi parle-t-on ?",
-            level: 3,
+            level: 2,
           },
           {
             type: CONTENT_TYPE.TEXT,
-            text: `Avec la digitalisation de nos sociétés, de nouvelles formes de violences apparaissent . Elles peuvent prendre différents visages, s’inscrire sur différents supports, et mener rapidement à du cyberharcèlement. Les violences sexistes et sexuelles y sont majoritaires.`,
+            text: `Avec la digitalisation de nos sociétés, de nouvelles formes de violences sexistes et sexuelles apparaissent. Elles peuvent prendre différents visages, s’inscrire sur différents supports, et mener rapidement à du cyberharcèlement.`,
             isJustify: true,
           },
           // WORK ON INFOBOX
@@ -80,35 +80,37 @@ module.exports = {
           // },
           {
             type: CONTENT_TYPE.TITLE,
-            title:
-              "En quoi le cyberharcèlement se distingue-t-il du harcèlement physique ?",
-            level: 4,
-          },
-          {
-            type: CONTENT_TYPE.TEXT,
-            text: [
-              "La diffusion et la publicité peuvent être massives et l’impact instantané. Les contenus peuvent atteindre un public large et difficilement identifiable.   La rapidité de propagation du message rend la reprise de contrôle particulièrement complexe. Ceci ayant pour effet de générer un sentiment d’impuissance chez les victimes et de les plonger dans une détresse d’autant plus intense.",
-              "De manière générale, le cyberharcèlement se combine à sa variante physique, ce qui finit d’en isoler la victime. Chaque espace de vie se voit alors contrôlé et assujetti à la traque.",
-              "La personne à l’origine du harcèlement peut agir sous le couvert de l’anonymat grâce à l’utilisation de pseudonymes, par exemple. Cela renforce le sentiment d’insécurité que peut ressentir la victime et peut même parfois provoquer crises d’angoisses et épisodes paranoïaques. Sans compter que le ou les auteur(s) jouissent d’une impunité telle qu’il devient difficile, voire impossible, de leur appliquer toute sanction légale.",
-              "En raison de la relative nouveauté des enjeux en présence, la législation n’a pas encore atteint sa phase de totale maturité en ce qui concerne la régulation du web et de l’ensemble des outils numériques, en constante expansion.. De même, le web n’est pas organisé selon une structure stricte, ni par un fonctionnement, susceptible de facilité l’intervention d’une autorité, qu’elle soit juridique ou institutionnelle.",
-              `Avant d’envisager les différentes étapes que vous pourrez entreprendre pour réagir face à une telle situation, voici une liste des principaux espaces numériques où ces situations apparaissent, les différents supports numériques utilisés, les différentes formes que peuvent prendre les cyber violences/harcèlements ainsi que les types de violences discriminatoires véhiculées par celles-ci.`,
-            ],
-            isJustify: true,
-          },
-          {
-            type: CONTENT_TYPE.TITLE,
-            title: "Les espaces numériques du cyberharcèlement",
+            title: "Différences entre cyberharcèlement et harcèlement physique",
             level: 3,
           },
           {
             type: CONTENT_TYPE.LIST,
             list: [
-              "<b>Emails :</b> chaînes, conversations, etc.",
-              "<b>Forums et salles de chat.</b>",
-              "<b>Conversations privées et en groupe</b> sur les applications comme Whatsapp, Facebook, Messenger, Signal, Telegram, Viber, Twitter, Instagram, Youtube, etc.",
-              "<b>Réseaux sociaux :</b> Publications, tags, commentaires et messages",
-              "<b>Plateformes de jeux</b>, en streaming ou en réseau :</b> chat privés ou publics",
-              "<b>Commentaires</b> sur les sites web des différents médias,  sur YouTube, etc.",
+              `La diffusion de cyberviolences (en “meute” par exemple) peut être massive et l’impact instantané et les contenus peuvent atteindre un public large difficilement identifiable.  La rapidité de propagation du message rend la reprise de contrôle particulièrement complexe. Ceci ayant pour effet de générer un sentiment d’impuissance chez les victimes et de les plonger dans une détresse d’autant plus intense.`,
+              `De manière générale, le cyberharcèlement se combine à sa variante physique. Chaque espace de vie devient contrôlé et assujetti à la traque. Exemple : le domicile d’une personne est publié sur un forum.`,
+              `La personne à l’origine du harcèlement peut agir sous le couvert de l’anonymat grâce à l’utilisation de pseudonymes, par exemple. Cela renforce le sentiment d’insécurité que peut ressentir la victime et peut parfois provoquer crises d’angoisses et épisodes paranoïaques. Sans compter que le ou les auteur(s) jouissent d’une impunité telle qu’il devient difficile, voire impossible, de leur appliquer toute sanction légale.`,
+              `En raison de la relative nouveauté des cyberviolences, la législation n’est pas encore mature  en ce qui concerne la régulation du web et de l’ensemble des outils numériques. De même, le web n’est pas organisé selon une structure stricte, ni par un fonctionnement, susceptible de faciliter l’intervention d’une autorité, qu’elle soit juridique ou institutionnelle.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Avant d’envisager les différentes étapes que vous pourrez entreprendre pour réagir face à une telle situation, voici une liste des principaux espaces numériques où ces situations apparaissent, les différents supports numériques utilisés, les différentes formes que peuvent prendre les cyber violences/harcèlements ainsi que les types de violences discriminatoires véhiculées par celles-ci.`,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Les espaces numériques du cyberharcèlement",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            list: [
+              "<b>Emails</b>",
+              "<b>Forums et salles de chat</b>",
+              "<b>Conversations privées et en groupe</b> sur des applications comme Whatsapp, Facebook, Messenger, Signal, Telegram, Viber, Twitter, Instagram, Youtube, etc.",
+              "<b>Réseaux sociaux :</b> Publications, tags, commentaires et messages.",
+              "<b>Plateformes de jeux :</b> en streaming ou en réseau, chat privés ou publics.",
+              "<b>Commentaires :</b> sur les sites web des différents médias,  sur YouTube, etc.",
               "<b>Plateformes collaboratives en milieu professionnel :</b> visioconférence, canaux de discussions de groupe, commentaire de documents, etc.",
               "<b>Sites de rencontre</b>",
             ],
@@ -116,7 +118,7 @@ module.exports = {
           {
             type: CONTENT_TYPE.TITLE,
             title: "Les supports et médias, vecteurs du cyberharcèlement",
-            level: 3,
+            level: 2,
           },
           {
             type: CONTENT_TYPE.LIST,
@@ -132,201 +134,317 @@ module.exports = {
             type: CONTENT_TYPE.TITLE,
             title:
               "Les formes que peuvent prendre la cyber violences/harcèlements : de la cyberintimidation au revenge porn",
-            level: 3,
-          },
-          {
-            type: CONTENT_TYPE.TITLE,
-            title: "Affichage",
-            level: 4,
-          },
-          {
-            type: CONTENT_TYPE.TEXT,
-            text: `Création d’un sujet de discussion, d’une salle de chat, d’un groupe ou d’une page sur un réseau social à votre encontre dans le but d’attirer l’attention sur vous ou de vous dénigrer auprès d’autres utilisateurs.\n${getInlineLink(
-              "Premiers gestes (boîte 2)",
-              "#boîte-2-agir-fac-au-cyberharcèlement",
-              false
-            )}`,
-            isJustify: true,
+            level: 2,
           },
           {
             type: CONTENT_TYPE.TITLE,
             title: "Cyberstalking",
-            level: 4,
+            level: 3,
           },
           {
             type: CONTENT_TYPE.TEXT,
-            text: `Création d’un sentiment d’oppression chez une personne cible en la mettant dans une position de proie traquée. Technique qui vise à se saisir de l’ensemble de l’identité virtuelle d’une personne afin d’ augmenter son sentiment d’insécurité et ainsi affecter sa vie personnelle.\n${getInlineLink(
-              "Premiers gestes (boîte 2)",
-              "#boîte-2-agir-fac-au-cyberharcèlement",
-              false
-            )}`,
+            text: `Création d’un sentiment d’oppression chez une personne cible en la mettant dans une position de proie traquée. Technique qui vise à se saisir de l’ensemble de l’identité virtuelle d’une personne afin d’ augmenter son sentiment d’insécurité et ainsi affecter sa vie personnelle.`,
+            // \n${getInlineLink(
+            //   "Premiers gestes (boîte 2)",
+            //   "#boîte-2-agir-fac-au-cyberharcèlement",
+            //   false
+            // )}`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Affichage",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Création d’un sujet de discussion, d’une salle de chat, d’un groupe ou d’une page sur un réseau social à votre encontre dans le but d’attirer l’attention sur vous ou de vous dénigrer auprès d’autres utilisateurs.`,
+            // \n${getInlineLink(
+            //   "Premiers gestes (boîte 2)",
+            //   "#boîte-2-agir-fac-au-cyberharcèlement",
+            //   false
+            // )}`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Insultes et discours haineux",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Formulation ou reprise de discours haineux, de menaces, de provocations ou d’insultes dans le but de blesser ou d’attenter à la réputation de quelqu’un, ou d’un groupe. De là est né le terme de trolling en anglais.`,
+            // \n${getInlineLink(
+            //   "Premiers gestes (boîte 2)",
+            //   "#boîte-2-agir-fac-au-cyberharcèlement",
+            //   false
+            // )}`,
             isJustify: true,
           },
           {
             type: CONTENT_TYPE.TITLE,
             title: "Diffamation et propagation de rumeurs",
-            level: 4,
+            level: 3,
           },
           {
             type: CONTENT_TYPE.TEXT,
-            text: `Diffusion large et récurrente de faits, avérés ou non, impliquant un individu afin de promouvoir une image négative de celui-ci par dénigrement.Certains agissements constituent du harcèlement.\n${getInlineLink(
-              "Premiers gestes (boîte 2)",
-              "#boîte-2-agir-fac-au-cyberharcèlement",
-              false
-            )}`,
+            text: `Diffusion large et récurrente de faits, avérés ou non, impliquant une personne afin de promouvoir une image négative de celle-ci par dénigrement.`,
+            // \n${getInlineLink(
+            //   "Premiers gestes (boîte 2)",
+            //   "#boîte-2-agir-fac-au-cyberharcèlement",
+            //   false
+            // )}`,
             isJustify: true,
           },
-
           {
-            type: CONTENT_TYPE.LIST,
-            intro:
-              "Lorsque vous jouissez du soutien d’une communauté déjà active ou que vous êtes une personne médiatisée/influente, vous pouvez également :",
-            list: [
-              `Demander à une personne de confiance de prendre note des narratifs et de veiller aux volumes`,
-              `Vous pouvez lancer une contre-offensive munie d’une copie des contenus inappropriés , en demandant à des allié.e.s (des personnes que vous avez fédéré.e.s) de porter votre parole. Attention, ce dispositif est conseillé uniquement dans le cas d’une crise médiatique forte et si vous bénéficiez d’un soutien suffisamment large.`,
-              `<b>Discours et insultes</b> : Formulation ou reprise de discours haineux, de menaces, de provocations ou d’insultes dans le but de blesser ou d’attenter à la réputation de quelqu’un, ou d’un groupe. De là est né le terme de trolling en anglais.\n -> ${getInlineLink(
-                "Suivez les consignes en boîte 2",
-                "#boîte-2-agir-fac-au-cyberharcèlement",
-                false
-              )}`,
-              `<b>Exclusion</b> : Technique de discrimination volontaire et ciblée visant à évincer une personne d’un groupe, d’une conversation ou encore d’un jeux.\n -> ${getInlineLink(
-                "Suivez les consignes en boîte 2",
-                "#boîte-2-agir-fac-au-cyberharcèlement",
-                false
-              )}`,
-            ],
-          },
-          {
-            type: CONTENT_TYPE.LIST,
-            intro:
-              "Lorsque vous jouissez du soutien d’une communauté  déjà active ou que vous êtes une personne médiatisée/influente, vous pouvez également :",
-            list: [
-              `Demander à une personne de confiance de prendre note des narratifs et de veiller aux volumes`,
-              `Vous pouvez lancer une contre-offensive munie d’une copie des contenus inappropriés , en demandant à des allié.e.s (des personnes que vous avez fédéré.e.s) de porter votre parole. Attention, ce dispositif est conseillé uniquement dans le cas d’une crise médiatique forte et si vous bénéficiez d’un soutien suffisamment large.`,
-              `<b>Harcèlement sexuel par le biais de supports numériques</b> : Sollicitations à connotations sexuelles ou sexistes exercée de manière répétée sur une personne constituant une atteinte à la dignité d’une personne en raison de leur caractère dégradant. Phénomène incluant notamment le sexting et l’envoi de contenus sexuellement explicites non désirés.\n -> ${getInlineLink(
-                "Suivez les consignes en boîte 2",
-                "#boîte-2-agir-fac-au-cyberharcèlement",
-                false
-              )}`,
-              `<b>Exposition et abus de la vie privée</b> : Utilisation et divulgation publique d'informations personnelles. Cette technique, communément appelée doxing, est utilisée par les harceleurs afin d'affaiblir la victime ou encore d’accentuer le processus d’intimidation.\n-> En cas de situation de doxing, suivez les conseils disponibles grâce au lien suivant : ${getInlineLink(
-                "https://onlineharassmentfieldmanual.pen.org/fr/se-proteger-du-doxing/https:/onlineharassmentfieldmanual.pen.org/fr/se-proteger-du-doxing/",
-                "https://onlineharassmentfieldmanual.pen.org/fr/se-proteger-du-doxing/https:/onlineharassmentfieldmanual.pen.org/fr/se-proteger-du-doxing/"
-              )}\n -> ${getInlineLink(
-                "Suivez les consignes en boîte 2",
-                "#boîte-2-agir-fac-au-cyberharcèlement",
-                false
-              )}`,
-              `<b>Usurpation d’identité</b> : Création d’un compte, page ou profil sur un réseau social dans le but d’usurper l’identité digitale d’une personne.\nSignalez immédiatement l’usurpation d’identité à la plateforme concernée. N’oubliez pas au préalable, de faire des  captures d’écran des pages frauduleuses afin d’en garder la preuve.
-              \n -> ${getInlineLink(
-                "Suivez les consignes en boîte 2",
-                "#boîte-2-agir-fac-au-cyberharcèlement",
-                false
-              )}`,
-              `<b>Phishing</b> : Fraude à l’identité reposant sur la confiance et le crédit accordé à un organisme public ou privé pour en imiter les usages. Cette arnaque sert très souvent des fins lucratives en permettant l’accès à des informations personnelles ou bancaires. Le harcèlement découle du caractère répétitif et récurrent de cette technique.\n\nVous devez également signaler toute tentative de phishing en envoyant le message suspect à l’adresse ${getInlineLink(
-                "suspect@safeonweb.be",
-                "mailto:suspect@safeonweb.be"
-              )}. N’oubliez cependant pas d’en faire une capture d’écran, que vous conserverez, avant de le supprimer.
-              \n -> ${getInlineLink(
-                "Suivez les consignes en boîte 2",
-                "#boîte-2-agir-fac-au-cyberharcèlement",
-                false
-              )}`,
-              `<b>L’astroturfing</b> : Technique de harcèlement visant  à coordonner des actions (création de faux comptes, achats de followers actifs, etc.)  pour gonfler les volumes de propagation d’un message afin de faire croire à un engouement authentique. Cette méthode de pression est très souvent utilisée à des fins politiques ou polémiques. La pression exercée sur la personne ciblée est ainsi considérablement accrue par le soin apporté au réalisme et à la crédibilité du message véhiculé.\nPour identifier des contenus relevant d’astroturfing :\n- sur Facebook, rendez-vous  ${getInlineLink(
-                "ici",
-                "https://fr.wikihow.com/d%C3%A9masquer-un-faux-compte-Facebook"
-              )},\n-  sur Twitter, rendez-vous ${getInlineLink(
-                "ici",
-                "https://thenextweb.com/news/how-to-find-and-remove-fake-accounts-on-twitter"
-              )}\nSouvent, il s’agit d’images glanées sur le web, comme des fausses photo de profil par exemple. Vous pouvez donc tenter une recherche d’image inversée sur Google. Ainsi vous verrez si cette même  photographie a déjà été utilisée à d’autres fins.`,
-              `<b>Revenge porn</b> :  Très proche du “harcèlement sexuel par le biais de supports numériques Diffusions de photos ou de vidéos à caractère sexuel, mettant en scène la victime, sans son consentement et dans la volonté de lui nuire, le plus souvent dans un contexte de vengeance (partenaire éconduit, jalousie amoureuse, etc.). ${getInlineLink(
-                "Voir plus",
-                "https://igvm-iefh.belgium.be/fr/activites/violence/revenge_porn"
-              )}\n\nFaites une capture d’écran ou une copie vidéo du contenu indésirable et signalez-le à la plateforme  avant de le supprimer  pour éviter qu’il ne se propage davantage.\n\n -> Porter plainte d’urgence auprès de l’Institut de l’égalité entre les femmes et les hommes et suivez leurs conseils.\n -> ${getInlineLink(
-                "Suivez les consignes en boîte 2",
-                "#boîte-2-agir-fac-au-cyberharcèlement",
-                false
-              )}`,
-              `<b>Les cyberviolences conjugales : Lorsque le harcèlement s’inscrit dans les relations dsifonctionnelles et/ou abusives au sein d’un couple donné. Ces abus peuvent revêtir plusieurs formes</b> : contrôle des activités du conjoint “en ligne” (lecture des sms, pression téléphonique constante, viol de l’intimité, etc., d’injures et de campagnes de dénigrement sur les réseaux. Cela peut même mener à des menaces de mort dans certains cas. Les technologies numériques permettent également une surveillance accrue du conjoint( avec un contrôle des déplacements via des logiciels de traçage, par exemple. Il faut savoir que dans le cadre des violences conjugales, on observe depuis quelque temps un glissement vers l’espace numérique des violences sexuelles (comme c’est le cas du revenge porn mentionné plus haut) Une violence économique peut également découler de ce glissement (piratage des comptes bancaires, restriction des accès, etc.)
-              \n -> ${getInlineLink(
-                "Suivez les consignes en boîte 2",
-                "#boîte-2-agir-fac-au-cyberharcèlement",
-                false
-              )}`,
-            ],
-          },
-          {
-            type: CONTENT_TYPE.LIST,
-            intro: "Les formes de violence générées par le cyberharcèlement",
-            list: [
-              `<b>Sexisme</b>: Lorsque le harcèlement consiste en des gestes, propos ou des attitudes sexistes.\n${getInlineLink(
-                "Suivez les consignes en boîte 2",
-                "#boîte-2-agir-fac-au-cyberharcèlement",
-                false
-              )}`,
-              `<b>Slut shaming</b>:  Lorsque la démarche a pour but de générer  de la honte chez une  femme en portant le discrédit sur sa  sexualité, sa tenue vestimentaire, ou sur toute autre attitude ou posture jugé déshonorante.\n${getInlineLink(
-                "Suivez les consignes en boîte 2",
-                "#boîte-2-agir-fac-au-cyberharcèlement",
-                false
-              )}`,
-              `<b>Chantage, message de haine,  menaces et insulte, humiliation, envers des personnes, LGBT+</b>: Lorsque le harcèlement consiste en des gestes, propos ou attitudes portant sur l’orientation sexuelle d’une personne, son identité de genre et son expression de genre.\n${getInlineLink(
-                "Suivez les consignes en boîte 2",
-                "#boîte-2-agir-fac-au-cyberharcèlement",
-                false
-              )}`,
-              `<b>Humiliations et menaces à l’encontre de personnes racisées</b>: Lorsque le harcèlement consiste en des gestes, propos ou attitudes portant sur l’origine ethnique d’une personne.\n${getInlineLink(
-                "Suivez les consignes en boîte 2",
-                "#boîte-2-agir-fac-au-cyberharcèlement",
-                false
-              )}`,
-              `<b>Grossophobie</b>: Lorsque le harcèlement consiste en des gestes, propos ou attitudes portant sur le poids d’une personne, considéré comme supérieure aux standards esthétiques valorisés par le groupe.\n${getInlineLink(
-                "Suivez les consignes en boîte 2",
-                "#boîte-2-agir-fac-au-cyberharcèlement",
-                false
-              )}`,
-              `<b>Body Shaming</b>: Lorsque la démarche a pour but de générer de la honte chez une personne qui ne correspond pas, par l’un ou l’autre aspect, aux standards esthétiques valorisés par le groupe.\n${getInlineLink(
-                "Suivez les consignes en boîte 2",
-                "#boîte-2-agir-fac-au-cyberharcèlement",
-                false
-              )}`,
-            ],
+            type: CONTENT_TYPE.TITLE,
+            title: "Attaques coordonnées ou raids furtifs",
+            level: 3,
           },
           {
             type: CONTENT_TYPE.TEXT,
-            text: `Vous avez rencontré une ou plusieurs situations de harcèlement ou de violences dans l’espace digital ? Vous avez envie de contribuer à ce wiki sur le sujet ? De compléter cette liste ?  N’hésitez pas à nous contacter : ${getInlineLink(
-              "collective@chayn.be",
-              "mailto:collective@chayn.be"
-            )}`,
+            text: `Lorsque plusieurs personnes/comptes coordonnés accablent collectivement une personne ciblée en se servant d’attaques personnelles, de menaces ou d’insultes. Cette technique est souvent utilisée lors de débats d’opinion sur internet. Ces raids peuvent également se dérouler par messages privés ou par visio-conférence, via les messageries par exemple.`,
+            // \n${getInlineLink(
+            //   "Premiers gestes (boîte 2)",
+            //   "#boîte-2-agir-fac-au-cyberharcèlement",
+            //   false
+            // )}`,
+            isJustify: true,
           },
           {
-            type: CONTENT_TYPE.LIST,
-            intro: "Inforbox ressources",
-            list: [
-              `Cyberbullying and Hate Speech Online - What can social data tell us about cyberbullying and hate speech online? ${getInlineLink(
-                "Brandwatch and Ditch the Label, 2016",
-                "https://www.brandwatch.com/reports/cyberbullying-2016/"
-              )}`,
-              `La plateforme de conseil du gouvernement français, à destination des mineurs, de leurs parents, professeurs et écoles. ${getInlineLink(
-                "Qu’est-ce que le cyberharcèlement ?",
-                "https://www.nonauharcelement.education.gouv.fr/que-faire/quest-ce-que-le-cyberharcelement/"
-              )}`,
-              getInlineLink(
-                "Fiche thématique de l’UNICEF sur le cyberharcèlemet",
-                "https://www.unicef.fr/sites/default/files/fiche_thematique-myunicef-le_cyberharcelement.pdf"
-              ),
-              getInlineLink(
-                "10 types de cyberharcèlement",
-                "https://blog.securly.com/2018/10/04/the-10-types-of-cyberbullying/"
-              ),
-              getInlineLink(
-                "Note sur le cyberharcèlement",
-                "https://www.renaissancenumerique.org/ckeditor_assets/attachments/453/note_sur_le_cyberharcelement.pdf"
-              ),
-              getInlineLink(
-                "Se protéger contre le doxing",
-                "https://onlineharassmentfieldmanual.pen.org/fr/se-proteger-du-doxing/"
-              ),
-            ],
+            type: CONTENT_TYPE.TITLE,
+            title: "Exclusion",
+            level: 3,
           },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Technique de discrimination volontaire et ciblée visant à évincer une personne d’un groupe, d’une conversation ou encore d’un jeux.`,
+            // \n${getInlineLink(
+            //   "Premiers gestes (boîte 2)",
+            //   "#boîte-2-agir-fac-au-cyberharcèlement",
+            //   false
+            // )}`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Harcèlement sexuel par le biais de supports numériques",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Sollicitations à connotations sexuelles ou sexistes exercées de manière répétée sur une personne constituant une atteinte à la dignité d’une personne en raison de leur caractère dégradant. Phénomène incluant notamment le sexting et l’envoi de contenus sexuellement explicites non désirés.`,
+            // \n${getInlineLink(
+            //   "Premiers gestes (boîte 2)",
+            //   "#boîte-2-agir-fac-au-cyberharcèlement",
+            //   false
+            // )}`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title:
+              "Revenge porn (Diffusion non consentie, sextorsion, chantage à la cam, compte fisha, ...)",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Très proche du “harcèlement sexuel par le biais de supports numériques”. Diffusions de photos ou de vidéos à caractère sexuel, mettant en scène la victime, sans son consentement et dans la volonté de lui nuire, le plus souvent dans un contexte de vengeance (jalousie, rupture,violence, etc.).`,
+            // \n${getInlineLink(
+            //   "Premiers gestes (boîte 2)",
+            //   "#boîte-2-agir-fac-au-cyberharcèlement",
+            //   false
+            // )}`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Cyberviolences conjugales",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Lorsque le harcèlement s’inscrit dans les relations dysfonctionnelles et/ou abusives au sein d’un couple donné. Ces abus peuvent revêtir plusieurs formes : contrôle des activités du conjoint “en ligne” (lecture des sms, pression téléphonique constante, viol de l’intimité, etc.), d’injures et de campagnes de dénigrement sur les réseaux. Cela peut même mener à des menaces de mort dans certains cas. Les technologies numériques permettent également une surveillance accrue du conjoint (avec un contrôle des déplacements via des logiciels de traçage, par exemple). Il faut savoir que dans le cadre des violences conjugales, on observe depuis quelque temps un glissement vers l’espace numérique des violences sexuelles (comme c’est le cas du revenge porn mentionné plus haut) Une violence économique peut également découler de ce glissement (piratage des comptes bancaires, restriction des accès, etc.).`,
+            // \n${getInlineLink(
+            //   "Premiers gestes (boîte 2)",
+            //   "#boîte-2-agir-fac-au-cyberharcèlement",
+            //   false
+            // )}`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Exposition et abus de la vie privée (Doxing)",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Utilisation et divulgation publique d'informations personnelles. Cette technique, communément appelée doxing, est utilisée par les harceleurs afin d'affaiblir la victime ou encore d’accentuer le processus d’intimidation.`,
+            // \n${getInlineLink(
+            //   "Premiers gestes (boîte 2)",
+            //   "#boîte-2-agir-fac-au-cyberharcèlement",
+            //   false
+            // )}`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Usurpation d’identité",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Création d’un compte, page ou profil sur un réseau social dans le but d’usurper l’identité digitale d’une personne.`,
+            // \n${getInlineLink(
+            //   "Premiers gestes (boîte 2)",
+            //   "#boîte-2-agir-fac-au-cyberharcèlement",
+            //   false
+            // )}`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Phishing",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Fraude à l’identité reposant sur la confiance et le crédit accordé à  un organisme public ou privé pour en imiter les usages. Cette arnaque sert très souvent des fins lucratives en permettant l’accès à des informations personnelles ou bancaires. Le harcèlement découle du caractère répétitif et récurrent de cette technique.`,
+            // \n${getInlineLink(
+            //   "Premiers gestes (boîte 2)",
+            //   "#boîte-2-agir-fac-au-cyberharcèlement",
+            //   false
+            // )}`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Astroturfing",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Technique de harcèlement visant  à coordonner des actions (création de faux comptes, achats de followers actifs, etc.)  pour gonfler les volumes de propagation d’un message afin de faire croire à un engouement authentique. Cette méthode de pression est très souvent utilisée à des fins politiques ou polémiques. La pression exercée sur la personne ciblée est ainsi considérablement accrue par le soin apporté au réalisme et à la crédibilité du message véhiculé.`,
+            // \n${getInlineLink(
+            //   "Premiers gestes (boîte 2)",
+            //   "#boîte-2-agir-fac-au-cyberharcèlement",
+            //   false
+            // )}`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title:
+              "Les types de violences et discriminations véhiculées par le cyberharcèlement",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Les violences spécifiques entraînant une violation des droits humains  et une forme de discrimination à l’égard de certains publics sont majoritaires dans les types de violences en ligne menant aux harcèlement. Violences sexistes et sexuelles, mais également violences basées sur l’appartenance ethnique, philosophique ou religieuse, au handicap ou encore la situation économique, certaines personnes se trouvant à l’intersection de ces oppressions. Dans certains cas, la nature de ces violences tombent sous le coup de la loi et peuvent intervenir dans la définition du harcèlement.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Sexisme",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Lorsque le harcèlement consiste en des gestes, propos ou des attitudes sexistes. C'est-à-dire des remarques méprisantes et stéréotypées basées sur le genre.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title:
+              "Chantage, message de haine,  menaces et insulte, humiliation, envers des personnes, LGBTQIA+",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Lorsque le harcèlement consiste en des gestes, propos ou attitudes portant sur l’orientation sexuelle d’une personne, son identité de genre et/ou son expression de genre. Les violences à l’égard des publics LGBTQIA+ découlent des violences de genres et s’inscrivent clairement dans le continuum des violences lié aux stéréotypes de genre.*`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Racisme",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Lorsque le harcèlement consiste en des gestes, propos ou attitudes portant sur l’origine ethnique d’une personne, sa religion ou son appartenance philosophique.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Slut shaming",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Lorsque la démarche a pour but de générer de la honte chez une femme* en portant le discrédit sur sa sexualité, sa tenue vestimentaire, ou sur toute autre attitude ou posture jugée déshonorante.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Grossophobie",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Lorsque le harcèlement consiste en des gestes, propos ou attitudes portant sur le poids d’une personne, considéré comme supérieure aux standards esthétiques valorisés par le groupe.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Body Shaming",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Lorsque la démarche a pour but de générer de la honte chez une personne qui ne correspond pas, par l’un ou l’autre aspect, aux standards esthétiques valorisés par le groupe.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Validisme",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Le validisme ou capacitisme est une discrimination basée sur le handicap. C’est un système d’oppression qui considère que les personnes valides sont supérieures aux personnes handicapées. Le handicap est alors perçu comme quelque chose “d’anormal” et de honteux. L’idéal à atteindre est la validité.`,
+            isJustify: true,
+          },
+          // TODO: Infobox to design
+          // {
+          //   type: CONTENT_TYPE.LIST,
+          //   intro: "Inforbox ressources",
+          //   list: [
+          //     `Cyberbullying and Hate Speech Online - What can social data tell us about cyberbullying and hate speech online? ${getInlineLink(
+          //       "Brandwatch and Ditch the Label, 2016",
+          //       "https://www.brandwatch.com/reports/cyberbullying-2016/"
+          //     )}`,
+          //     `La plateforme de conseil du gouvernement français, à destination des mineurs, de leurs parents, professeurs et écoles. ${getInlineLink(
+          //       "Qu’est-ce que le cyberharcèlement ?",
+          //       "https://www.nonauharcelement.education.gouv.fr/que-faire/quest-ce-que-le-cyberharcelement/"
+          //     )}`,
+          //     getInlineLink(
+          //       "Fiche thématique de l’UNICEF sur le cyberharcèlemet",
+          //       "https://www.unicef.fr/sites/default/files/fiche_thematique-myunicef-le_cyberharcelement.pdf"
+          //     ),
+          //     getInlineLink(
+          //       "10 types de cyberharcèlement",
+          //       "https://blog.securly.com/2018/10/04/the-10-types-of-cyberbullying/"
+          //     ),
+          //     getInlineLink(
+          //       "Note sur le cyberharcèlement",
+          //       "https://www.renaissancenumerique.org/ckeditor_assets/attachments/453/note_sur_le_cyberharcelement.pdf"
+          //     ),
+          //     getInlineLink(
+          //       "Se protéger contre le doxing",
+          //       "https://onlineharassmentfieldmanual.pen.org/fr/se-proteger-du-doxing/"
+          //     ),
+          //   ],
+          // },
         ],
       },
       {
