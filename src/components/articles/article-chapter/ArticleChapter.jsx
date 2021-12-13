@@ -3,8 +3,8 @@ import React from "react"
 import { TitleContainer, BodyContainer, Heading, Container } from "./style"
 import { Wrapper } from "../style"
 
-const ArticleChapter = ({ isFull, title, level, children, ...props }) => (
-  <Wrapper isFull={isFull} {...props}>
+const ArticleChapter = ({ title, level, children, ...props }) => (
+  <Wrapper {...props}>
     <Container>
       <TitleContainer>
         <Heading level={level} size="s">
@@ -18,7 +18,6 @@ const ArticleChapter = ({ isFull, title, level, children, ...props }) => (
 
 ArticleChapter.defaultProps = {
   level: 2,
-  isFull: false,
 }
 
 export default ArticleChapter

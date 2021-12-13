@@ -6,72 +6,47 @@ module.exports = {
       "les-premiers-gestes-pour-affronter-une-situation-de-cyberharcelement",
     content: [
       {
-        type: CONTENT_TYPE.MAIN_TITLE,
-        title:
-          "Les premiers gestes pour affronter une situation de cyberharcèlement",
-      },
-      {
-        type: CONTENT_TYPE.TITLE,
+        type: CONTENT_TYPE.CHAPTER,
         title: "Introduction",
-        level: 2,
-      },
-      {
-        type: CONTENT_TYPE.TEXT,
-        text: [
-          `Commentaires à caractères sexistes, intimidation, humiliation, harcèlements, haine, violence, dans l’espace digital, public ou privé, ou sur des supports électroniques.`,
-          `Vous sentez-vous inquiètes ou concernées ? Pensez-vous en être la cible ?`,
+        id: "introduction",
+        content: [
+          {
+            type: CONTENT_TYPE.MAIN_TITLE,
+            title:
+              "Les premiers gestes pour affronter une situation de cyberharcèlement",
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Introduction",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Commentaires à caractères sexistes, intimidation, humiliation, harcèlements, haine, violence, dans l’espace digital, public ou privé, ou sur des supports électroniques.`,
+              `Vous sentez-vous inquiètes ou concernées ? Pensez-vous en être la cible ?`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `<b>Informées et soudées, nous serons mieux armées</b>`,
+              `Ce guide a pour objectif de rassembler les ressources, conseils et protocoles existants pour faire face au harcèlement et aux autres formes de violences en ligne. L’objectif étant de mieux comprendre ce phénomène et de fournir quelques pistes en “premier secours” pour réagir face au cyberharcèlement.`,
+              `Toutes ces informations ont été récoltées auprès de personnes ayant traversé cette douloureuse expérience ainsi qu’auprès d’associations et d’organisations référentes en ce domaine.`,
+              `Si ce guide entend s’adresser aux personnes susceptibles d'être victimes de violences fondées sur le genre, et particulièrement aux femmes c’est qu’il en va de l'objectif premier de Chayn qui est de s’adapter à leurs besoins spécifiques en les guidant vers un meilleur accès à l’information.`,
+              `Par ailleurs, certaines personnes se trouvant simultanément à l’intersection de plusieurs oppressions se retrouvent plus exposées à une forme de violence en ligne. En effet, au sexisme ou violence à l’égard des personnes LGBTQIA+ se superposent des violences basées sur l’appartenance ethnique, philosophique ou religieuse, au handicap ou encore la situation économique.`,
+              `Ce qui suit ne se donne pour autant pas pour vocation de se substituer au travail des organismes, services de médiation et autres services publics ou privés spécialisés dans l’accompagnement psychologique, social et juridique.\nNotre contribution entend simplement répondre à un besoin de prévention et d’information vous permettant de déceler les situations de cyberviolence pour, par la suite, vous fournir des outils pour y faire face. Vous trouverez ici un certain nombre d’interlocuteurs et d’espaces de confiance vers qui vous tourner en toute sécurité.`,
+              `Réagir face au cyberharcèlement et l’affronter demande de l’énergie, nous en sommes conscientes. C’est pourquoi nous avons tenu à vous partager un maximum des ressources à votre disposition. Il existe bien des structures en mesure de vous écouter, de vous conseiller et de vous soutenir dans vos démarches. C’est pourquoi nous avons recensé dans ce guide toutes les pistes que nous avons considérées comme pertinentes. Néanmoins, nous sommes conscientes des mécanismes sociétaux qui permettent au cyberharcèlement de prendre forme et du fait que ces enjeux méritent une réflexion approfondie. Aussi, nous relaierons ici les plaidoyers de personnes impliquées dans ce champ d'expertise.`,
+            ],
+            isJustify: true,
+          },
         ],
-        isJustify: true,
       },
-      // {
-      //   type: CONTENT_TYPE.TEXT,
-      //   text:
-      //     "<b>Malheureusement, vous n’êtes pas seules !</b>\n\nEn 2015, à l’échelle mondiale, 76% des femmes avaient déjà été victimes de cyberviolences\nLe risque de harcèlement en ligne est 27 fois supérieur pour les femmes",
-      // },
-      {
-        type: CONTENT_TYPE.TEXT,
-        text: [
-          `<b>Informées et soudées, nous serons mieux armées</b>`,
-          `Ce guide a pour objectif de rassembler les ressources, conseils et protocoles existants pour faire face au harcèlement et aux autres formes de violences en ligne. L’objectif étant de mieux comprendre ce phénomène et de fournir quelques pistes en “premier secours” pour réagir face au cyberharcèlement.`,
-          `Toutes ces informations ont été récoltées auprès de personnes ayant traversé cette douloureuse expérience ainsi qu’auprès d’associations et d’organisations référentes en ce domaine.`,
-          `Si ce guide entend s’adresser aux personnes susceptibles d'être victimes de violences fondées sur le genre, et particulièrement aux femmes c’est qu’il en va de l'objectif premier de Chayn qui est de s’adapter à leurs besoins spécifiques en les guidant vers un meilleur accès à l’information.`,
-          `Par ailleurs, certaines personnes se trouvant simultanément à l’intersection de plusieurs oppressions se retrouvent plus exposées à une forme de violence en ligne. En effet, au sexisme ou violence à l’égard des personnes LGBTQIA+ se superposent des violences basées sur l’appartenance ethnique, philosophique ou religieuse, au handicap ou encore la situation économique.`,
-          `Ce qui suit ne se donne pour autant pas pour vocation de se substituer au travail des organismes, services de médiation et autres services publics ou privés spécialisés dans l’accompagnement psychologique, social et juridique.\nNotre contribution entend simplement répondre à un besoin de prévention et d’information vous permettant de déceler les situations de cyberviolence pour, par la suite, vous fournir des outils pour y faire face. Vous trouverez ici un certain nombre d’interlocuteurs et d’espaces de confiance vers qui vous tourner en toute sécurité.`,
-          `Réagir face au cyberharcèlement et l’affronter demande de l’énergie, nous en sommes conscientes. C’est pourquoi nous avons tenu à vous partager un maximum des ressources à votre disposition. Il existe bien des structures en mesure de vous écouter, de vous conseiller et de vous soutenir dans vos démarches. C’est pourquoi nous avons recensé dans ce guide toutes les pistes que nous avons considérées comme pertinentes. Néanmoins, nous sommes conscientes des mécanismes sociétaux qui permettent au cyberharcèlement de prendre forme et du fait que ces enjeux méritent une réflexion approfondie. Aussi, nous relaierons ici les plaidoyers de personnes impliquées dans ce champ d'expertise.`,
-        ],
-        isJustify: true,
-      },
-
-      // {
-      //   type: CONTENT_TYPE.TITLE,
-      //   title:
-      //     "N’hésitez pas à nous contacter si vous souhaitez apporter votre contribution.",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TEXT,
-      //   text:
-      //     "Vous avez des connaissances particulières touchant aux sujets abordés dans ce guide ? Vous êtes une association active dans ce domaine ? Vous souhaitez proposer des pistes de réflexion en lien avec notre propos ?",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TEXT,
-      //   text: `Vous avez rencontré une ou plusieurs situations de harcèlement ou de violence dans l’espace digital ? Vous souhaitez contribuer à notre wiki sur le sujet ?`,
-      // },
-      // {
-      //   type: CONTENT_TYPE.LIST,
-      //   intro: `Pour mieux nous armer, n’hésitez pas à nous proposer:`,
-      //   outro: `Contactez-nous ici : ${getInlineLink(
-      //     "collective@chayn.be",
-      //     "mailto:collective@chayn.be"
-      //   )}`,
-      //   list: [
-      //     "des réflexes ou réactions efficaces qui n’ont pas été mentionnées",
-      //     "toute information ou conseil absent de ce guide",
-      //   ],
-      // },
       {
         type: CONTENT_TYPE.CHAPTER,
         title: "Boîte 1: Comprendre et reconnaître le cyberharcèlement",
-        id: "boite-1-comprendre-et-reconnaitre-le-cyberharcelement",
+        id: "comprendre-et-reconnaitre-le-cyberharcelement",
         content: [
           {
             type: CONTENT_TYPE.TITLE,
@@ -357,7 +332,7 @@ module.exports = {
       {
         type: CONTENT_TYPE.CHAPTER,
         title: "Boîte 2: Agir face au cyberharcèlement",
-        id: "boîte-2-agir-fac-au-cyberharcèlement",
+        id: "agir-face-au-cyberharcelement",
         content: [
           {
             type: CONTENT_TYPE.TITLE,
@@ -573,265 +548,6 @@ module.exports = {
           },
         ],
       },
-
-      // {
-      //   type: CONTENT_TYPE.CHAPTER,
-      //   title: "Boîte 3: Porter plainte",
-      //   id: "boîte-3-porter-plainte",
-      //   content: [
-      //     {
-      //       type: CONTENT_TYPE.TEXT,
-      //       text: `Si vous pensez être victime de cyberharcèlement sexiste ou si vous constatez de tels comportements, indiquez-le à la police lors de votre plainte. Vous pouvez aussi déposer un signalement auprès de l'Institut pour l'égalité des femmes et des hommes (sur le site ${getInlineLink(
-      //         "http://igvm-iefh.belgium.be",
-      //         "http://igvm-iefh.belgium.be"
-      //       )}) ou appeler le numéro gratuit 0800/12.800`,
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.TEXT,
-      //       text: `Votre cas peut faire jurisprudence et même aider à améliorer le fonctionnement juridique et le préciser. Au plus de cas seront témoignés, au plus un système adapté et performant pourra être envisagé dans un cadre juridique.\nSi vous décidez de porter plainte, nous avons rassemblé pour vous les étapes par lesquelles vous allez passer afin de ne rien oublier pour constituer votre dossier.`,
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.LIST,
-      //       intro: "Avant de porter plainte",
-      //       list: [
-      //         `Il est primordial de bien recenser et garder les preuves du harcèlement avant de signaler du contenu ou de bloquer un utilisateur.`,
-      //         `Un message outrancier ne sera pas considéré comme du harcèlement, il vous sera demandé de prouver une insistance, une obsession.`,
-      //         `Les preuves doivent être légalement acceptées et s’installer dans un cadre légal. Vous retrouverez les cadres légaux mobilisables à ce jour en boîte 4`,
-      //         `Listez bien les préjudices matériels comme moraux que cette situation douloureuse vous incombe. Cela alourdira les charges.`,
-      //         `Si des faits et agissements en lien avec ce cyberharcèlement ont également lieu hors ligne, mentionnez-les.`,
-      //       ],
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.LIST,
-      //       intro:
-      //         "Conservez et récoltez les preuves, en respectant bien les conseils émis en boîte 2, concernant la récolte des preuves et les premiers soins à prodiguer :",
-      //       list: [
-      //         `Dates, heures, plateforme, réseau social ou application`,
-      //         `Types de documents et supports (Messages directs ? Images ? Commentaires Facebook ?...)`,
-      //         `Liens (vous pouvez utiliser Archive.is pour conserver une adresse URL)`,
-      //         `Le volume`,
-      //         `Nature de l’incident en ligne (menace de violence sexuelle, attaque à caractère raciste, etc.)`,
-      //         `Plateformes, site web ou application sur lesquelles ont eu lieu les agissements`,
-      //         `Nom du compte de l’auteur ? Autres comptes actifs ? Adresse email ? Numéro de téléphone ? Adresse IP ? Une photo ? Indices de localisation ?  Tout élément d’identité qui permettrait  d’identifier la/les personnes (un message qu’il ou elle aurait laissé traîner quelque part sur le web ?)`,
-      //         `Captures d’écran ou vidéos`,
-      //         `Votre matériel informatique, vos identifiants et votre nom d’utilisateur`,
-      //         `Agissements et faits ayant lieu  “hors-ligne”  et qui seraient liés à ce harcèlement en ligne`,
-      //         `Preuves du préjudice : certificat médical, attestations, psychologues, psychothérapeutes, employeurs,...`,
-      //         `La fréquence des attaques, le type d’attaque, ou tout autre élément de contexte (le message a-t-il été amplifié par exemple par des réseaux plus influents ?)`,
-      //         `Si vous avez des compétences en informatique ou que vous vous débrouillez avec les techniques du web, il existe des techniques de recherche en ligne (OSINT) permettant dans certains cas de retrouver l’identité d’auteurs ou encore de capter sa localisation: ${getInlineLink(
-      //           "https://osintframework.com/",
-      //           "https://osintframework.com/"
-      //         )}`,
-      //       ],
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.TEXT,
-      //       text: `Nous développons actuellement une application pour faciliter cette récolte. Vous souhaitez être informé.e de sa sortie ? Inscrivez vous à notre newsletter ou contactez-nous par ici : ${getInlineLink(
-      //         "collective@chayn.be",
-      //         "collective@chayn.be"
-      //       )}`,
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.TITLE,
-      //       title: `Porter plainte`,
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.TEXT,
-      //       text: `Toutes les démarches pour porter plainte sont recensées sur le site de la fédération wallonie Bruxelles : ${getInlineLink(
-      //         "http://www.victimes.cfwb.be/procedures-judiciaires/deposer-plainte/",
-      //         "http://www.victimes.cfwb.be/procedures-judiciaires/deposer-plainte/"
-      //       )}\n\nNous en avons néanmoins résumé les étapes principales
-      //       `,
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.LIST,
-      //       intro: "Quand porter plainte ?",
-      //       list: [
-      //         `Rapidement après les faits, une fois toutes vos informations récoltées`,
-      //       ],
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.LIST,
-      //       intro: "Où porter plainte et qui contacter ?",
-      //       list: [
-      //         `Vous pouvez vous présenter dans n’importe quel commissariat de police. Certains sont ouverts 24 heures sur 24. Pour trouver votre commissariat local, rendez vous sur le site de la police et insérez dans le moteur de recherche le code postal de votre localité ou de votre quartier : ${getInlineLink(
-      //           "https://www.police.be/fr",
-      //           "https://www.police.be/fr"
-      //         )}`,
-      //         `Le service d’assistance policière au victime de votre zone peut également être contacté. Ces services sont à votre écoute pour vous accompagner moralement, vous apporter de l’aide dans vos démarches pratiques et administratives, répondre à vos questions sur vos droits. Ces services n’interviennent qu’à court terme et ne proposent pas de suivi psychothérapeutique. ils peuvent néanmoins vous orienter vers des services de prise en charge et de suivi sur du plus long terme: ${getInlineLink(
-      //           "http://www.victimes.cfwb.be/ou-trouver-aide/services-dassistance-policiere-aux-victimes-de-la-police-federale/#c7876",
-      //           "http://www.victimes.cfwb.be/ou-trouver-aide/services-dassistance-policiere-aux-victimes-de-la-police-federale/#c7876"
-      //         )}`,
-      //         `Vos antennes locales ont également leur propre service d’aide aux victimes. N'hésitez pas à contacter votre commissariat local pour vous assurer de ce numéro. Pour trouver votre commissariat local, rendez vous sur le site de la police et insérez dans le moteur de recherche le code postal de votre localité : ${getInlineLink(
-      //           "https://www.police.be/fr",
-      //           "https://www.police.be/fr"
-      //         )}`,
-      //       ],
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.LIST,
-      //       intro: "Comment se déroule le processus de plainte ?",
-      //       list: [
-      //         `1° Munissez-vous de vos documents d’identité et d’un maximum d’éléments que vous avez pu rassembler sur les faits et leurs préjudices : certificats médicaux, preuves des faits, horodatage des faits, preuves ou éléments  d’identité des personnes ou de la personne qui en est l’origine ou y contribuent. Voir liste en boîte 2`,
-      //         `2° La première personne que vous rencontrerez est chargée de vous accueillir, il ou elle prendra simplement votre identité et la raison de votre venue. Vous devrez peut-être patienter dans la salle d’attente du commissariat`,
-      //         `3° Ensuite, un.e inspecteur.rise vous recevra. Cet entretien est strictement confidentiel. Cette personne prendra votre plainte et l’écrira dans un “procès verbal” pendant que vous lui relatez les faits et énoncé les preuves que vous avez pu récolter. Cette personne vous demandera en préambule donc de relater précisément les faits, de les détailler, de les formuler. C’est ce qu’on appelle “l’audition” de votre plainte.\n\nVous avez le droit d’en recevoir une copie du procès-verbal de votre déposition. <b>N’hésitez pas à demander le numéro du service d’assistance policière aux victimes qui pourra vous épauler après votre audition.</b>`,
-      //         `4° Vous recevrez une attestation de dépôt de plainte. Conservez-là, elle vous sera utile pour les démarches que vous pourriez entamer ensuite, juridiquement ou administrativement. Vous y trouverez aussi les coordonnées des services d’aide.`,
-      //         `5° Vous pouvez également déclarer au cours de cette plainte comme une personne “lésée” , cela vous permettra notamment un meilleur suivi de votre dossier. En voici les avantages : ${getInlineLink(
-      //           "http://www.victimes.cfwb.be/procedures-judiciaires/victime-vos-droits/#c7953",
-      //           "http://www.victimes.cfwb.be/procedures-judiciaires/victime-vos-droits/#c7953"
-      //         )}`,
-      //       ],
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.TITLE,
-      //       title: "Après la plainte",
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.TEXT,
-      //       text: `Après la plainte, vous entrez dans ce qu’on appelle “une procédure judiciaire”. Le shéma  établit par la Fédération wallonie-Bruxelles vous permettra d’en comprendre chacune des étapes : ${getInlineLink(
-      //         "http://www.victimes.cfwb.be/procedures-judiciaires/apres-la-plainte/",
-      //         "http://www.victimes.cfwb.be/procedures-judiciaires/apres-la-plainte/"
-      //       )}`,
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.TEXT,
-      //       text: `=> N’hésitez pas à vous faire conseiller par les services d’accueil d’aide aux victimes, des tribunaux. Ces personnes vous accompagnent et vous informent durant tout le processus, du dépôt de plainte jusqu’à l’exécution de la peine, quand il y a : ${getInlineLink(
-      //         "http://www.victimes.cfwb.be/ou-trouver-aide/services-accueil-victimes/",
-      //         "http://www.victimes.cfwb.be/ou-trouver-aide/services-accueil-victimes/"
-      //       )}`,
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.TITLE,
-      //       title: "Quels sont vos droits ?",
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.TEXT,
-      //       text: `Vous êtes victime ? Vous avez des droits tout au long de la procédure, du dépôt de plainte jusqu’à l’exécution de la peine, s’il y a. Voici quels sont vos droits: ${getInlineLink(
-      //         "http://www.victimes.cfwb.be/procedures-judiciaires/victime-vos-droits/",
-      //         "http://www.victimes.cfwb.be/procedures-judiciaires/victime-vos-droits/"
-      //       )}`,
-      //     },
-      //   ],
-      // },
-      // {
-      //   type: CONTENT_TYPE.CHAPTER,
-      //   title: "Boîte 4: Prendre soin de soi et trouver de l’aide",
-      //   id: "boîte-4-prendre-soin-de-toi-et-trouver-de-l-aide",
-      //   content: [
-      //     {
-      //       type: CONTENT_TYPE.TEXT,
-      //       text: `Le cyberharcèlement n’est pas moins violent, ni impactant que le harcèlement dans l’espace physique. Au contraire. Il peut même avoir pour conséquences: pertes d’emploi, dépressions, traumatismes, suicides, ... Osons le dire, les conséquences peuvent être dévastatrices. Les frontières entre l’espace digital et la vie hors ligne sont ténues et parfois s’effacent même complètement. \n\nOutre un accompagnement des services de police et d’aides aux victimes, il est primordial pour traverser cette épreuve et ces démarches de prendre soin de vous et d’être entourée de vos ami.e.s, de votre famille, de vos proches, de votre ou d’un.e  thérapeute,...\n\nIl existe également différents services d’entraide et d’écoute vers lesquels vous pouvez vous diriger.`,
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.TITLE,
-      //       title: `Dans le cadre de violences conjugales - appelez le 0800/30.800`,
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.TEXT,
-      //       text: `Si la situation de cyberharcèlement a lieu dans le cadre de violences conjugales, il existe un numéro d’écoute : “Ecoute Violences Conjugales”. Il s’agit du 0800/30.800. Que vous soyez témoins, victimes ou encore si vous avez vous-même recours à la violence. Un chat est également accessible sur le site : ${getInlineLink(
-      //         "https://www.ecouteviolencesconjugales.be",
-      //         "https://www.ecouteviolencesconjugales.be"
-      //       )}. Ces échanges restent confidentiels et sont gratuits.`,
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.LIST,
-      //       intro:
-      //         "Ce service dispose également d’un moteur de recherche permettant de trouver dans votre ville :",
-      //       list: [
-      //         `Des services juridiques spécialisés,`,
-      //         `Des services d’aide à la jeunesse`,
-      //         `Des Maisons d’accueil spécialisées`,
-      //         `Des services ambulatoire`,
-      //       ],
-      //       outro: `Le voici : ${getInlineLink(
-      //         "https://www.ecouteviolencesconjugales.be/services-guide/",
-      //         "https://www.ecouteviolencesconjugales.be/services-guide/"
-      //       )}`,
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.TITLE,
-      //       title: "Les bureaux d’aide aux victimes",
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.LIST,
-      //       list: [
-      //         `Vous pouvez contacter le service d’assistance policière au victime de votre zone peut être contacté. Ces services sont à votre écoute pour vous accompagner moralement, vous apporter de l’aide dans vos démarches pratiques et administratives, répondre à vos questions sur vos droits. Ces services n’interviennent qu’à court terme et ne proposent pas de suivi psychothérapeutique. ils peuvent néanmoins vous orienter vers des services de prise en charge et de suivi sur du plus long terme: ${getInlineLink(
-      //           "http://www.victimes.cfwb.be/ou-trouver-aide/services-dassistance-policiere-aux-victimes-de-la-police-federale/#c7876",
-      //           "http://www.victimes.cfwb.be/ou-trouver-aide/services-dassistance-policiere-aux-victimes-de-la-police-federale/#c7876"
-      //         )}`,
-      //         `Vos antennes locales ont également leur propre service d’aide aux victimes. N'hésitez pas à contacter votre commissariat local pour vous assurer de ce numéro. Pour trouver votre commissariat local, rendez vous sur le site de la police et insérez dans le moteur de recherche le code postal de votre localité : ${getInlineLink(
-      //           "https://www.police.be/fr",
-      //           "https://www.police.be/fr"
-      //         )}`,
-      //       ],
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.TITLE,
-      //       title: "Soutien psychologique et lignes d’écoute",
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.LIST,
-      //       list: [
-      //         `Rapidement après les faits, une fois toutes vos informations récoltées`,
-      //         `Il existe 65 services de santé mentale, en Wallonie, vous les trouverez sur le site du CRESAM: ${getInlineLink(
-      //           "https://www.cresam.be/sante-mentale/les-ssm/les-ssm-de-wallonie-2/",
-      //           "https://www.cresam.be/sante-mentale/les-ssm/les-ssm-de-wallonie-2/"
-      //         )}\nA Bruxelles, il en existe 5: ${getInlineLink(
-      //           "https://www.ccc-ggc.brussels/fr/institutions/services-de-sante-mentale",
-      //           "https://www.ccc-ggc.brussels/fr/institutions/services-de-sante-mentale"
-      //         )}`,
-      //         `Les centres de planning familial: Vous pourrez trouver le centre le plus proche dans l’annuaire sur le site web des planning familial: ${getInlineLink(
-      //           "https://www.planningfamilial.net/liste-des-centres/",
-      //           "https://www.planningfamilial.net/liste-des-centres/"
-      //         )}`,
-      //         `Centre de Prévention du suicide : Ce service est joignable, au 0800/32.123, 24h/24 et reste anonyme.`,
-      //         `Si le harcèlement a lieu dans le cadre de  violences sexuelles:  Vous pouvez contacter le 0800/98.100, anonymement, gratuitement, chaque jour et 24h/24`,
-      //       ],
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.LIST,
-      //       intro: "Comme dans l’espace physique, gardons les bons réflexes:",
-      //       list: [
-      //         `Urgence médicale ? Composez le 112`,
-      //         `Urgence policière ? Composez le 100`,
-      //         `Urgence sociale ? Composez le 1718`,
-      //       ],
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.TITLE,
-      //       title: "Trouver de l’aide  à l’école",
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.TEXT,
-      //       text: `Le Centre psycho-médico-social (CPMS)\n\nTout au long de votre scolarité, jusqu’à la dernière année des secondaires, vous pouvez y aborder toutes questions qui vous préoccupent, également sur les aspects de vie sociale, de santé. Pas uniquement pour y aborder votre orientation scolaire. Vous y serez accueilli par des personnes ressources:  psychologues (conseillers et assistants psychopédagogiques), assistant.e.s sociaux.ales (auxiliaires sociaux) et infirmier.e.s (auxiliaires paramédicaux) qui travaillent en équipe.  Les CPMS sont des lieux d’accueil, d’écoute et de dialogue. Vous pouvez vous y rendre aussi avec votre famille.`,
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.LIST,
-      //       intro: "Comment contacter le Centre PMS ?",
-      //       list: [
-      //         `Par téléphone, par fax, par courrier, par mail…`,
-      //         `En consultant la page : ${getInlineLink(
-      //           "http://enseignement.be/index.php?page=26028&navi=149",
-      //           "http://enseignement.be/index.php?page=26028&navi=149"
-      //         )}`,
-      //         `Lorsque leurs services assistent aux  réunions de parents, des rencontres informelles et lors des permanences des services dans votre école.`,
-      //         `En demandant l’information à votre direction ou vos professeur.e.s`,
-      //       ],
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.TEXT,
-      //       text: `Le Service Écoute-Enfants\n\nLe numéro 103 est le numéro d’écoute pour les enfants et adolescent.e.s. Il répond à l’ensemble des questions qu’ils et elles peuvent se poser et des difficultés qu’elles et ils peuvent affronter. Tous les thèmes peuvent y être abordés, anonymement. Accessible de partout en Belgique.`,
-      //     },
-      //     {
-      //       type: CONTENT_TYPE.LIST,
-      //       intro: "Comment contacter le service d’écoute-enfants?",
-      //       list: [
-      //         `Par téléphone, au numéro 103`,
-      //         `Le site web :  http://www.103ecoute.be/`,
-      //       ],
-      //     },
-      //   ],
-      // },
     ],
   },
 }

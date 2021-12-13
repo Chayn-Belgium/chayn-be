@@ -1,90 +1,65 @@
-import React, { useMemo } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 
-import ArticleChapter from "../../articles/article-chapter"
 import Layout from "../../layout"
-import ContentLayout from "../../content-layout"
+import ContentLayoutGuide from "../../content-layout-guide"
 import { Container } from "../../../styles"
 import data from "../../../../site-data"
 import { guides } from "../../../../site-data/guides"
-import { CONTENT_TYPE, GUIDES } from "../../../../site-data/constants"
-import { getArticleSection } from "../../../utils/helpers"
+import { CONTENT_TYPE } from "../../../../site-data/constants"
+import { getGuideSection } from "../../../utils/helpers"
 
-const GuidePage = ({ name, lang }) => {
-  const hasChapter = guides[name][lang].content.some(
+const GuidePage = ({ name, lang, chapterId }) => {
+  const currentGuide = guides[name]
+  const currentGuideLocalize = currentGuide[lang]
+  const hasChapter = currentGuideLocalize.content.some(
     section => section.type === CONTENT_TYPE.CHAPTER
   )
-
-  const asideContent = hasChapter
-    ? guides[name][lang].content
+  const asideLeftContent = hasChapter
+    ? currentGuideLocalize.content
         .filter(section => section.type === CONTENT_TYPE.CHAPTER)
-        .map(section => ({ title: section.title, id: section.id }))
+        .map(section => ({
+          title: section.title,
+          id: section.id,
+          href: `/${lang}/guides/${currentGuideLocalize.slug}/${
+            section.id ? section.id : ""
+          }`,
+        }))
     : undefined
-
-  const content = useMemo(
-    () => (
-      <>
-        {guides[name][lang].content.map((resource, index) => {
-          const { type, ...props } = resource
-
-          if (type === CONTENT_TYPE.CHAPTER) {
-            return (
-              <ArticleChapter
-                isFull
-                id={props.id}
-                title={props.title}
-                key={index}
-                data-section="chapter"
-              >
-                {props.content.map((chapterResource, chapterIndex) => {
-                  const { type: chapterType, ...chapterProps } = chapterResource
-
-                  const section = getArticleSection(chapterType, {
-                    key: `${index}-${chapterIndex}`,
-                    ...chapterProps,
-                    isFull: true,
-                  })
-
-                  if (!section) {
-                    console.warn("Section missing:", chapterType)
-                  }
-
-                  return section
-                })}
-              </ArticleChapter>
-            )
-          }
-
-          const section = getArticleSection(type, {
-            key: index,
-            imageData: data,
-            ...props,
-            isFull: true,
-          })
-
-          if (!section) {
-            console.warn("Section missing:", type)
-          }
-
-          return section
-        })}
-      </>
-    ),
-    [name, lang]
+  const currentChapter = hasChapter
+    ? currentGuideLocalize.content.find(item =>
+        item.id ? item.id === chapterId : true
+      )
+    : undefined
+  const asideRightContent = currentChapter
+    ? currentChapter.content.filter(item => item.type === CONTENT_TYPE.TITLE)
+    : undefined
+  console.log("asideRightContent", asideRightContent)
+  const content = currentChapter.content.map((el, index) =>
+    getGuideSection(el.type, {
+      key: index,
+      // imageData: data,
+      ...el,
+    })
   )
 
   return (
     // TODO: don't use hardcoded languages
     <Layout lang={lang} nav={data.nav["fr"]} footer={data.footer["fr"]}>
       <Container>
-        <ContentLayout content={content} aside={asideContent} />
+        <ContentLayoutGuide
+          content={content}
+          asideLeft={asideLeftContent}
+          asideRight={asideRightContent}
+          chapterId={chapterId}
+        />
       </Container>
     </Layout>
   )
 }
 
 GuidePage.propTypes = {
-  name: PropTypes.oneOf(GUIDES),
+  name: PropTypes.string, //PropTypes.oneOf(GUIDES),
   // TODO: use constant instead of hardcoded values
   lang: PropTypes.oneOf(["fr"]),
   data: PropTypes.any,
