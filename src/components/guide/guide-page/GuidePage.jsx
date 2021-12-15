@@ -34,14 +34,15 @@ const GuidePage = ({ name, lang, chapterId }) => {
   const asideRightContent = currentChapter
     ? currentChapter.content.filter(item => item.type === CONTENT_TYPE.TITLE)
     : undefined
-  console.log("asideRightContent", asideRightContent)
-  const content = currentChapter.content.map((el, index) =>
-    getGuideSection(el.type, {
-      key: index,
-      // imageData: data,
-      ...el,
-    })
-  )
+  const content = currentChapter
+    ? currentChapter.content.map((el, index) =>
+        getGuideSection(el.type, {
+          key: index,
+          // imageData: data,
+          ...el,
+        })
+      )
+    : undefined
 
   return (
     // TODO: don't use hardcoded languages

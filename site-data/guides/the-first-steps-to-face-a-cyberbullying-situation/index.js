@@ -7,7 +7,8 @@ module.exports = {
     content: [
       {
         type: CONTENT_TYPE.CHAPTER,
-        title: "Introduction",
+        title:
+          "Les premiers gestes pour affronter une situation de cyberharcèlement",
         id: "introduction",
         content: [
           {

@@ -7,7 +7,6 @@ import {
   Body,
   AsideLeft,
   AsideRight,
-  Aside,
   AsideContent,
   TextMenu,
   IconContainer,
@@ -79,17 +78,18 @@ const ContentLayoutGuide = ({
         <AsideContent isOpen={isMobileMenuOpen}>
           <IconContainer
             isReverse={isMobileMenuOpen}
-            onClick={() => setIsMobileMenuOpen(true)}
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             <Icon name="right-arrow-angle" />
           </IconContainer>
-          {asideLeft.map(item => (
+          {asideLeft.map((item, index) => (
             <TextMenu
               as={Link}
-              isActive={chapterId ? chapterId === item.id : chapterId === ""}
-              isOpen={isMobileMenuOpen}
-              key={item.href}
+              $isActive={chapterId ? chapterId === item.id : chapterId === ""}
+              $isOpen={isMobileMenuOpen}
+              key={String(item.href) + String(index) + "left"}
               to={item.href}
+              $isMenuOpen={isMobileMenuOpen}
             >
               {capitalize(item.title.toLowerCase())}
             </TextMenu>
@@ -103,14 +103,14 @@ const ContentLayoutGuide = ({
         <AsideContent isOpen={isMobileMenuOpen}>
           {asideRight.map((item, index) => (
             <TextMenu
-              isActive={anchorTarget ? anchorTarget === item.id : index === 0}
-              isOpen={isMobileMenuOpen}
-              key={item.href}
+              $isActive={anchorTarget ? anchorTarget === item.id : index === 0}
+              $isOpen={isMobileMenuOpen}
+              key={String(item.href) + String(index) + "right"}
               onClick={() => {
                 setAnchorTarget(item.id)
                 handleClick(item.id)
               }}
-              level={item.level}
+              $level={item.level}
             >
               {capitalize(item.title.toLowerCase())}
             </TextMenu>
