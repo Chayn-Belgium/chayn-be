@@ -35,8 +35,10 @@ const resourcesData = [
     text:
       "Ressources et conseils pour vous aider à affronter une situation de cyberharclèment et de cyberviolences",
     imageName: "guide-coming-soon.jpg",
-    isComingSoon: true,
     langs: ["fr"],
+    link: {
+      href: `/${CURRENT_LANG}/guides/les-premiers-gestes-pour-affronter-une-situation-de-cyberharcelement/introduction`,
+    },
   },
   {
     title: "Comment être un(e) bon(ne) allié(e)",

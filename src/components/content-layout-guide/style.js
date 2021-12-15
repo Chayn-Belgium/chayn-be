@@ -34,6 +34,23 @@ export const AsideLeft = styled.aside`
   }
 `
 
+export const AsideContentLeft = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: calc(96px + 50px);
+  background-color: #fff;
+  width: 100%;
+
+  ${MEDIA_QUERY.TABLET_AND_DOWN} {
+    width: 100;
+    padding: 10px 20px;
+    max-height: ${({ isOpen }) => (isOpen ? "80vh" : "80px")};
+    box-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+`
+
 export const AsideRight = styled.aside`
   width: 300px;
   z-index: 1;
@@ -48,12 +65,11 @@ export const AsideRight = styled.aside`
   }
 `
 
-export const AsideContent = styled.div`
+export const AsideContentRight = styled.div`
   display: flex;
   flex-direction: column;
-  position: sticky;
-  top: calc(96px + 50px);
   background-color: #fff;
+  width: 100%;
 
   ${MEDIA_QUERY.TABLET_AND_DOWN} {
     width: 100;

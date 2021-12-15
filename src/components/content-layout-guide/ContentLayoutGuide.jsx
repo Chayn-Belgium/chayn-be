@@ -7,7 +7,8 @@ import {
   Body,
   AsideLeft,
   AsideRight,
-  AsideContent,
+  AsideContentLeft,
+  AsideContentRight,
   TextMenu,
   IconContainer,
 } from "./style"
@@ -75,7 +76,7 @@ const ContentLayoutGuide = ({
   return (
     <Container>
       <AsideLeft>
-        <AsideContent isOpen={isMobileMenuOpen}>
+        <AsideContentLeft isOpen={isMobileMenuOpen}>
           <IconContainer
             isReverse={isMobileMenuOpen}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -94,19 +95,20 @@ const ContentLayoutGuide = ({
               {capitalize(item.title.toLowerCase())}
             </TextMenu>
           ))}
-        </AsideContent>
+        </AsideContentLeft>
       </AsideLeft>
 
       <Body>{content}</Body>
 
       <AsideRight>
-        <AsideContent isOpen={isMobileMenuOpen}>
+        <AsideContentRight isOpen={isMobileMenuOpen}>
           {asideRight.map((item, index) => (
             <TextMenu
               $isActive={anchorTarget ? anchorTarget === item.id : index === 0}
               $isOpen={isMobileMenuOpen}
               key={String(item.href) + String(index) + "right"}
               onClick={() => {
+                console.log("item", item.id)
                 setAnchorTarget(item.id)
                 handleClick(item.id)
               }}
@@ -115,7 +117,7 @@ const ContentLayoutGuide = ({
               {capitalize(item.title.toLowerCase())}
             </TextMenu>
           ))}
-        </AsideContent>
+        </AsideContentRight>
       </AsideRight>
     </Container>
   )
