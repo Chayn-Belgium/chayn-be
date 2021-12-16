@@ -676,11 +676,6 @@ module.exports = {
             isJustify: true,
           },
           {
-            type: CONTENT_TYPE.TEXT,
-            text: `En cours de rédaction...`,
-            isJustify: true,
-          },
-          {
             type: CONTENT_TYPE.TITLE,
             title: "Cas particuliers",
             level: 2,
