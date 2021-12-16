@@ -592,7 +592,89 @@ module.exports = {
             title: "Quelques outils",
             level: 2,
           },
-          // TODO
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Récolter : les captures d’écrans",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Comme mentionné plus haut, faites toujours des <b>captures d’écrans</b> avant de bloquer ou de signaler les comptes et/ou les contenus indésirables car vous risquez de perdre définitivement de précieux éléments de preuve.`,
+              `En bref:\nMAC: Maj (⇧) ,command (⌘), et 4\nPC: Maj (⇧), Touche Windows et S\n${getInlineLink(
+                "Comment prendre une capture d'écran",
+                "https://www.lesnumeriques.com/vie-du-net/tuto-comment-prendre-une-capture-d-ecran-sur-pc-ou-mac-a154205.html",
+                true
+              )}`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Signaler",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Pour signaler des messages, ou autres contenus indésirables, aux plateformes qui les hébergent, vous pouvez suivre les instructions disponibles via ${getInlineLink(
+                "le manuel de défense contre le cyberharcèlement",
+                "https://onlineharassmentfieldmanual.pen.org/fr/le-signalement-aux-plateformes/",
+                true
+              )}`,
+              `Liens rapides de signalement:
+            ${getInlineLink(
+              "Twitter",
+              "https://help.twitter.com/fr/safety-and-security/report-abusive-behavior",
+              true
+            )} / ${getInlineLink(
+                "Facebook",
+                "https://www.facebook.com/help/1753719584844061?helpref=page_content",
+                true
+              )} /  ${getInlineLink(
+                "Whatsapp",
+                "https://faq.whatsapp.com/general/security-and-privacy/about-blocking-and-reporting-contacts",
+                true
+              )} / ${getInlineLink(
+                "Tiktok",
+                "https://support.tiktok.com/fr/safety-hc/report-a-problem",
+                true
+              )} / ${getInlineLink(
+                "Instagram",
+                "https://help.instagram.com/192435014247952",
+                true
+              )} / ${getInlineLink(
+                "Twitch",
+                "https://help.twitch.tv/s/article/how-to-file-a-user-report?language=fr",
+                true
+              )} / ${getInlineLink(
+                "Medium",
+                "https://help.medium.com/hc/en-us/articles/217047977-Report-posts-users",
+                true
+              )}`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Masquer et/ou supprimer des commentaires",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Sur Facebook, une fonctionnalité vous permet de <b>masquer certains commentaires</b> au bas de vos publications. L’auteur n’en sera pas alerté et sera, lui, toujours disposé à les voir. Ces contenus seront cependant bien conservés mais inaccessibles aux autres utilisateurs.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Démasquer",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Dans le cas d’attaques perpétrées par de très nombreux comptes, n’hésitez pas à questionner l’authenticité des comptes. En effet, lors de la création de faux comptes, il est fréquent qu’on laisse  de nombreux indices qui peuvent permettre de remonter vers l’identité de la ou des  personne, voire des organisations, dans certains cas, les ayant créés. Il existe de  nombreuses techniques de repérage de faux comptes et d’identifications de leur(s) source(s). Elles font partie de la discipline : <b>OSINT</b> (Open Source INTelligence). Certaines associations s’y spécialisent ainsi que les services de police en ligne.`,
+            isJustify: true,
+          },
           {
             type: CONTENT_TYPE.TEXT,
             text: `En cours de rédaction...`,
