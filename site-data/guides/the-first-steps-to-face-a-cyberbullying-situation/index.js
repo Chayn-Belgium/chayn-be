@@ -680,10 +680,196 @@ module.exports = {
             title: "Cas particuliers",
             level: 2,
           },
-          // TODO
           {
             type: CONTENT_TYPE.TEXT,
-            text: `En cours de rédaction...`,
+            text: [
+              `<b>Après avoir suivi les premiers gestes de base (aka: évitez de répondre, ne restez pas seul·e, gardez les preuves, signalez aux plateformes…)</b>`,
+              `Nous l’avons vu, les formes de harcèlement ou de violences rencontrées dans l’espace digital peuvent être nombreuses, leur impact important et leur diffusion très large. Certains cas spécifiques nécessiteront des protocoles d’action bien précis, et parfois plus complexes. En effet, certaines victimes, en raison de leur situation, de leur statut ou de leur âge, devront faire l’objet d’un traitement plus particulier.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title:
+              "Personnalité publique: journaliste, femme politique ou autre figure médiatique.",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Les femmes participant au débat public, exprimant librement leur opinion, ou notoirement identifiées comme féministes forment un groupe à risque très important en matière de cyberharcèlement et de cyberviolence. 88 % des féministes sur Twitter et 66% sur Facebook ont été victimes de harcèlement en ligne.`,
+              `Il s’agit ici d’un cas spécifique en raison de l’effet de la médiatisation sur la diffusion des contenus agressifs. Une rumeur, ou campagne de dénigrement, bénéficiera en effet d’un plus large écho en fonction de la notoriété de la personne visée.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            intro: `Si vous subissez les répercussions négatives d’une couverture médiatique, relative ou importante, renforçant le sentiment de détresse ressenti face à du cyberharcèlement, voici quelques conseils susceptibles de vous aider :`,
+            list: [
+              `Évitez de répondre ponctuellement aux agressions afin d’éviter que vos propos soient isolés de leur contexte et instrumentalisés à vos dépens. Il est également important d’éviter une surexposition qui vous desservirait.`,
+              `Après les premiers gestes de bases (captures, signalements aux plateformes), vous pouvez mettre sur pied un dispositif de veille ou de monitoring (externe). 
+            Demandez à une personne de confiance de prendre note des messages reçus ou qui circulent à votre sujet, de veiller à  l’évolution des narratifs qui y sont accolés et d’en mesurer l’ampleur et l’impact mesuré (en utilisant votre propre compte ou non). Cela vous sera utile si vous décidez de porter plainte et/ou de riposter.`,
+              `<b>Si vous bénéficiez d’une audience soutenante :</b> Essayer, à votre échelle, de fédérer une communauté de soutien disposée à porter votre parole et de témoigner en votre faveur. 
+            Vous pouvez par exemple lancer une contre-offensive (ce qu’on appelle une “riposte”) en demandant à des allié·e·s (des personnes que vous avez fédéré·e·s) de signaler des comptes problématiques, porter votre parole et de vous soutenir, en réponse.`,
+              `<b>En cas de crise médiatique forte :</b> Vous pouvez publier un communiqué officiel, en utilisant de préférence le même canal que celui dont sont issues les attaques (par exemple, dans le cas d’une rumeur diffusée sur Instagram, utilisez cette même plateforme pour émettre votre message.)`,
+              `Vous pouvez également envisager de contacter la presse, solliciter le concours de professionnels de l’information, si vous estimez que la situation vous échappe.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title:
+              "Cas de raids coordonnés via des faux comptes (Astroturfing)",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Technique de harcèlement visant  à coordonner des actions (création de faux comptes, achats de followers actifs, etc.)  pour gonfler les volumes de propagation d’un message afin de faire croire à un engouement authentique. Cette méthode de pression est très souvent utilisée à des fins politiques ou polémiques. La pression exercée sur la personne ciblée est ainsi considérablement accrue par le soin apporté au réalisme et à la crédibilité du message véhiculé.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            intro: `Pour identifier des contenus relevant d’astroturfing :`,
+            outro: `Vous pouvez décider de récolter les traces numériques laissées par vos harceleurs et constituer un dossier de plainte.`,
+            list: [
+              `sur Twitter, rendez-vous ${getInlineLink(
+                "ici",
+                "https://thenextweb.com/news/how-to-find-and-remove-fake-accounts-on-twitter",
+                true
+              )}.`,
+              `sur Facebook, rendez-vous ${getInlineLink(
+                "ici",
+                "https://fr.wikihow.com/d%C3%A9masquer-un-faux-compte-Facebook",
+                true
+              )}.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Cas de diffusion d’infos privées (Doxing)",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `La diffusion publique d’informations personnelles ou sensibles, est une tactique utilisée par les harceleurs en ligne afin d’intimider et d’affaiblir leurs cibles. En cas de situation de doxing protégez vous en utilisant ${getInlineLink(
+              "ces conseils",
+              "https://onlineharassmentfieldmanual.pen.org/fr/se-proteger-du-doxing/",
+              true
+            )}.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Cas de Revenge Porn",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Si vous êtes victime de la diffusion non consentie d’images et d’enregistrements à caractère sexuel.`,
+              `En Belgique, l’IEFH, l’institut pour l’égalité des femmes et des hommes peut vous aider en vous informant à propos de vos droits, de vos obligations et de vos possibilités d’actions, en vous apportant son soutien et parfois en entreprenant des démarches judiciaires avec vous.`,
+              `L’Institut a élaboré un ${getInlineLink(
+                "manuel",
+                "https://igvm-iefh.belgium.be/sites/default/files/downloads/manuel_revenge_porn_octobre_2021_f.pdf",
+                true
+              )} qui explique, étape par étape, comment procéder pour signaler vous-même des images auprès des plateformes afin de les faire supprimer. Le manuel explique également comment déposer plainte à la police, ainsi que les conséquences d’une plainte.`,
+              `Contacter l’IEFH:\n\n0800/12 800\n- ${getInlineLink(
+                "Le formulaire de signalement",
+                "https://apps.digital.belgium.be/forms/show_/igvm/complaint/latest?lng=fr",
+                true
+              )}\n- Email: egalite.hommesfemmes@iefh.belgique.be\n- ${getInlineLink(
+                "Le formulaire de contact",
+                "https://igvm-iefh.belgium.be/fr/contact",
+                true
+              )}`,
+              `Si la victime est mineure, vous pouvez prendre contact avec Child Focus\n\n- Le numéro d’urgence gratuit 116 000 (24h/24)\n- Email: 116000@childfocus.org`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Cas de phishing",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Fraude à l’identité reposant sur la confiance et le crédit accordé à  un organisme public ou privé pour en imiter les usages. Cette arnaque sert très souvent des fins lucratives en permettant l’accès à des informations personnelles ou bancaires. Le harcèlement découle du caractère répétitif et récurrent de cette technique.`,
+              `Après les premiers gestes de bases ( captures, signalements aux plateformes,...) signalez à Safeonweb, suspect@safeonweb.be.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Cas de cyberviolences conjugales",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Selon la Cour européenne des droits de l’Homme, des actes tels que surveiller, accéder à ou sauvegarder la correspondance du conjoint doivent être pris en compte par les autorités qui enquêtent sur des faits de violence domestique.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            intro: `On peut identifier 5 formes de cyberviolences conjugales :`,
+            list: [
+              `Le cybercontrôle (lecture des SMS, exigence que la partenaire soit joignable en permanence…).`,
+              `Le cyberharcèlement (appels incessants et envahissants, injures, menaces de mort).`,
+              `La cybersurveillance (contrôle continu des déplacements et agissements par exemple via un logiciel espion ou avec le GPS…).`,
+              `Les cyberviolences sexuelles (diffusion ou menace de diffusion d’images)`,
+              `Les cyberviolences économiques et administratives (comptes bancaires piratés)`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            intro: `Il est possible de vous protéger au mieux dans l’espace numérique.`,
+            list: [
+              getInlineLink(
+                "Protégez-vous du doxing",
+                "https://onlineharassmentfieldmanual.pen.org/fr/se-proteger-du-doxing/",
+                true
+              ),
+              `Améliorez votre cybersécurité en renforçant, par exemple, vos mots de passe. ${getInlineLink(
+                "Voir notre guide sur ce thème",
+                "https://chayn.gitbook.io/diy-online-safety/french",
+                true
+              )}`,
+              `Vous pouvez également suivre les conseils de notre ressource : ${getInlineLink(
+                "Comment construire un dossier judiciaire de violences domestiques sans un avocat",
+                "/fr/ressources/comment-construire-un-dossier-judiciaire-de-violences-domestiques-sans-un-avocat"
+              )}, et vous aider en prenant en compte ce qui constitue des preuves numériques.`,
+              `Suivez le chapitre suivant pour porter plainte qui vous aidera dans ces démarches.`,
+              `Ecoute violences conjugales : 0800/30.800`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Enfant, adolescent·e ou adulte sous tutelle",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Certaines personnes, par exemple en fonction de leur âge, peuvent être particulièrement vulnérables et constituer par conséquence des proies particulièrement attrayantes pour les prédateurs du web. Il peut être difficile pour elles d’identifier des contextes de harcèlement ou d’adopter les bons réflexes pour y faire face.`,
+              `Dès les premiers signes ou doutes quant à une situation de cyberharcèlement, tournez-vous directement vers un, ou plusieurs, adulte de confiance : parents, professeur, assistant social, etc.`,
+              `Évitez de répondre aux messages et aux sollicitations de la part de votre agresseur. Il est important pour vous de vous protéger et d’empêcher toute tentative de manipulation.`,
+              `Vous pouvez aussi contacter ${getInlineLink(
+                "ChildFocus",
+                "https://childfocus.be/fr/besoin-daide",
+                true
+              )}\nLe numéro d’urgence gratuit 116 000 (24h/24)\nEmail: 116000@childfocus.org\n${getInlineLink(
+                "Site ClickSafe sur la sécurité en ligne",
+                "https://childfocus.be/fr/prevention/clicksafe-tout-sur-la-securite-en-ligne",
+                true
+              )}\n${getInlineLink(
+                "Page Facebook ChildFocus",
+                "https://www.facebook.com/ChildFocusBelgium",
+                true
+              )}`,
+            ],
             isJustify: true,
           },
           {
@@ -691,10 +877,28 @@ module.exports = {
             title: "Les preuves et traces numériques",
             level: 2,
           },
-          // TODO
           {
             type: CONTENT_TYPE.TEXT,
-            text: `En cours de rédaction...`,
+            text: `Lorsque vous vous sentez prêt·e, compilez l’ensemble des éléments susceptibles de prouver qu’il y a bien fraude ou intention de nuire. Conservez également tout indice pouvant mener à l’identité du/des auteur·s. Cet ensemble d’informations constitue ce que l’on appelle “les traces numériques”.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            intro: `Dans un emplacement sécurisé, pensez à recenser et sauvegarder ce qui peut être considéré comme preuves numériques :`,
+            list: [
+              `Les dates et heures des messages ou échanges litigieux,`,
+              `La plateforme le réseau social, l’application ou le site internet utilisé,`,
+              `Le type de document ou de support employé (Message privé, commentaire, contenu visuel, etc.),`,
+              `Les éventuels liens URL (vous pouvez utiliser Archive.is pour conserver une adresse URL)
+            Le nombre de messages,`,
+              `La nature de l’incident en ligne (menace de nature sexuelle, attaque à caractère raciste, etc.),`,
+              `Le nom ou pseudonyme utilisé par l’auteur ainsi que ses potentielles autres identités digitales (accompagnées des différentes photos le représentant, ou désignées comme telles.) Si vous êtes en mesure d’y avoir accès, notez également son adresse email, son numéro de téléphone, son adresse IP ou encore des indices permettant sa localisation. Tout élément relatif à son identité peut s’avérer déterminant pour confronter la personne à l’origine du harcèlement,`,
+              `Les captures d’écran ou vidéos enregistrées,`,
+              `Votre matériel informatique, vos identifiants et votre nom d’utilisateur,`,
+              `Les autres agressions, verbales et/ou physiques, subies hors de l’espace numérique, liées aux faits relatés en ligne,`,
+              `Toute éventuelle preuve de préjudice : certificat médical, bilan psychologique, ordonnance psychiatrique, ou tout autre témoignage de votre entourage, professionnel ou privé,`,
+              `La fréquence des attaques, le type d’attaque, ou tout autre élément de contexte que vous jugerez pertinent de mentionner.`,
+            ],
             isJustify: true,
           },
           {
