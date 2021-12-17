@@ -13,7 +13,7 @@ import {
   IconContainer,
 } from "./style"
 import { Icon } from "../ui"
-import { capitalize } from "../../utils/helpers"
+import { capitalize, slugify } from "../../utils/helpers"
 
 const isElementActive = el => {
   if (!el) return
@@ -50,22 +50,21 @@ const ContentLayoutGuide = ({
   const [anchorTarget, setAnchorTarget] = useState(null)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
-  useEffect(() => {
-    const gatsbyContainer = document.getElementById("gatsby-focus-wrapper")
-    const sectionsResources = document.querySelectorAll(
-      '[data-section="chapter"]'
-    )
+  // useEffect(() => {
+  //   const gatsbyContainer = document.getElementById("gatsby-focus-wrapper")
+  //   const titles = document.querySelectorAll('[data-section="chapter"]')
 
-    const onScroll = () => handleScroll(sectionsResources, setAnchorTarget)
+  //   const onScroll = () => handleScroll(titles, setAnchorTarget)
 
-    gatsbyContainer.addEventListener("scroll", onScroll)
+  //   gatsbyContainer.addEventListener("scroll", onScroll)
 
-    return () => {
-      gatsbyContainer.removeEventListener("scroll", onScroll)
-    }
-  }, [])
+  //   return () => {
+  //     gatsbyContainer.removeEventListener("scroll", onScroll)
+  //   }
+  // }, [])
 
-  const handleClick = id => {
+  const handleClick = (event, id) => {
+    event.preventDefault()
     const elementToScroll = document.getElementById(id)
 
     if (!elementToScroll) return
@@ -104,13 +103,19 @@ const ContentLayoutGuide = ({
         <AsideContentRight isOpen={isMobileMenuOpen}>
           {asideRight.map((item, index) => (
             <TextMenu
-              $isActive={anchorTarget ? anchorTarget === item.id : index === 0}
+              $isActive={
+                anchorTarget
+                  ? anchorTarget === (item.id || slugify(item.title))
+                  : index === 0
+              }
               $isOpen={isMobileMenuOpen}
               key={String(item.href) + String(index) + "right"}
-              onClick={() => {
-                console.log("item", item.id)
+              onClick={event => {
+                if (!item.id) {
+                  item.id = slugify(item.title)
+                }
                 setAnchorTarget(item.id)
-                handleClick(item.id)
+                handleClick(event, item.id)
               }}
               $level={item.level}
             >

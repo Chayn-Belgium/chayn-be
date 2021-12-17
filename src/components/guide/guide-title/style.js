@@ -4,6 +4,7 @@ import { COLOR, FONT, MEDIA_QUERY } from "../../../utils/constants"
 import { getFontSize, getMarginBottom } from "./utils"
 
 export const Heading = styled.h2`
+  position: relative;
   color: ${COLOR.CAPE_COD};
   font-family: ${FONT.NUNITO_SANS};
   font-size: ${({ level }) => `${getFontSize(level)}px`};
@@ -16,4 +17,13 @@ export const Heading = styled.h2`
     font-size: 30px;
     line-height: 36px;
   }
+`
+
+export const Anchor = styled.span`
+  position: absolute;
+  background: red;
+  width: 2px;
+  height: 2px;
+  top: -116px;
+  left: 0;
 `
