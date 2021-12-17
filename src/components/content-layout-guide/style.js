@@ -100,7 +100,7 @@ export const IconContainer = styled.div`
   }
 `
 
-export const TextMenu = styled.h3`
+export const TextMenu = styled.div`
   display: inline-block;
   font-size: 14px;
   font-family: ${FONT.NUNITO_SANS};
@@ -112,8 +112,12 @@ export const TextMenu = styled.h3`
     $level > 2 ? `${Number($level) * 6}px` : "0"};
 
   &:not(:last-child) {
-    margin: ${({ $isActive, $isMenuOpen }) =>
-      $isActive && !$isMenuOpen ? "0" : "0 0 10px 0"};
+    margin: 0 0 10px 0;
+
+    ${MEDIA_QUERY.TABLET_AND_DOWN} {
+      margin: ${({ $isActive, $isMenuOpen }) =>
+        $isActive && !$isMenuOpen ? "0" : "0 0 10px 0"};
+    }
   }
 
   &:hover {
