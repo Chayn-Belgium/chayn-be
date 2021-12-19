@@ -66,4 +66,8 @@ export const LangTag = styled.span`
   background-color: ${COLOR.BITTERSWEET};
   margin: 5px;
   color: white;
+
+  &:hover {
+    transform: ${({ $isHoverable }) => ($isHoverable ? "scale(1.01)" : "none")};
+  }
 `

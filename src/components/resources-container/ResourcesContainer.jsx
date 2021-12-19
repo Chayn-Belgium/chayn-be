@@ -6,12 +6,13 @@ import {
   CardsContainer,
   SelectLang,
   ContentDropdown,
+  DropdownLink,
 } from "./style"
 import ResourceCard from "../resource-card"
 import { Container } from "../../styles"
 import { resources } from "../../../site-data/resources"
 import { RESOURCE } from "../../../site-data/constants"
-import { Dropdown, Button } from "../ui"
+import { Dropdown } from "../ui"
 import { LangTag } from "../resource-card/style"
 
 const CURRENT_LANG = "fr"
@@ -43,8 +44,12 @@ const resourcesData = [
   {
     title: "Comment être un(e) bon(ne) allié(e)",
     imageName: "guide-coming-soon.jpg",
-    isComingSoon: true,
-    langs: ["es", "fr", "pl", "nl", "en"],
+    // isComingSoon: true,
+    langs: ["es", /*"fr", "pl", "nl",*/ "en"],
+    links: {
+      en: `/en/resources/how-to-be-a-good-allied`,
+      es: `/es/recursos/guia-del-buen-amigo`,
+    },
   },
   {
     title: "How to be safe online",
@@ -92,13 +97,13 @@ const ResourcesContainer = ({ pictures }) => {
                 {["all", ...allLangs]
                   .filter(item => item !== selectedLang)
                   .map(lang => (
-                    <Button
+                    <DropdownLink
                       key={lang}
                       onClick={() => setSelectedLand(lang)}
                       type="minimal"
                     >
                       {lang}
-                    </Button>
+                    </DropdownLink>
                   ))}
               </ContentDropdown>
             )}
@@ -112,6 +117,7 @@ const ResourcesContainer = ({ pictures }) => {
               picture={getResourceImageByName(pictures, resource.imageName)}
               text={resource.text}
               link={resource.link}
+              links={resource.links}
               isComingSoon={resource.isComingSoon}
               langs={resource.langs}
             />

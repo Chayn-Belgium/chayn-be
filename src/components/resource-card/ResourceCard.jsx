@@ -38,7 +38,14 @@ const ResourceCard = ({
     {!!langs.length && (
       <LangsContainer>
         {langs.sort().map(l => (
-          <LangTag key={l}>{l}</LangTag>
+          <LangTag
+            $isHoverable={!!cardProps.links}
+            as={cardProps.links ? Cta : undefined}
+            key={l}
+            link={cardProps.links ? { href: cardProps.links[l] } : undefined}
+          >
+            {l}
+          </LangTag>
         ))}
       </LangsContainer>
     )}

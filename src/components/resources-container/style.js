@@ -36,3 +36,18 @@ export const ContentDropdown = styled.div`
 export const SelectLang = styled.p`
   font-family: ${FONT.NUNITO_SANS};
 `
+
+export const DropdownLink = styled.button`
+  font-family: ${FONT.NUNITO_SANS};
+  border: none;
+  background: none;
+  margin: 5px 0;
+  padding: 5px 0;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+
+  &:hover {
+    background-color: #0001;
+  }
+`

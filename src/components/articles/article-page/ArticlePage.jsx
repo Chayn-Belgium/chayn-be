@@ -83,7 +83,7 @@ const ArticlePage = ({ articleName, lang }) => {
 ArticlePage.propTypes = {
   articleName: PropTypes.oneOf(RESOURCES),
   // TODO: use constant instead of hardcoded values
-  lang: PropTypes.oneOf(["en", "fr"]),
+  lang: PropTypes.oneOf(["en", "fr", "es"]),
   data: PropTypes.any,
 }
 
