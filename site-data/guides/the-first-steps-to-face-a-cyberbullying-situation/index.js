@@ -914,6 +914,416 @@ module.exports = {
           },
         ],
       },
+      {
+        type: CONTENT_TYPE.CHAPTER,
+        title: "Boîte 3: Porter plainte",
+        id: "porter-plainte",
+        content: [
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Introduction",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `En amont de ce qui va suivre, il est important que vous sachiez qu’un dépôt de plainte n’est jamais vain. Au-delà de la reconnaissance du préjudice subi, votre témoignage est essentiel à une meilleure compréhension du phénomène et à une meilleure prise en charge des victimes. Dans certains cas, la jurisprudence permet de faire évoluer le cadre législatif et peut considérablement améliorer la reconnaissance juridique de ces affaires.`,
+              `Si vous décidez de porter plainte, voici ici rassemblées pour vous les différentes étapes que vous devrez aborder lors de la constitution d’un dossier.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Avant de porter plainte",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Il est primordial de bien compiler toutes les preuves et traces numériques dont vous disposez pour attester des faits de harcèlement devant la loi.`,
+              `<b>Attention</b> : un seul message outrancier ne suffira pas à caractériser des faits de harcèlement. Il vous sera demandé de prouver le caractère récurrent et insistant des sollicitations de la part de votre agresseur.`,
+              `Sachez également que les preuves récoltées doivent s’inscrire dans le cadre légal pour être acceptées comme telles. Vous retrouverez les instances référentes à ce jour en boîte 8.`,
+              `Listez bien les préjudices moraux, comme matériels,  que vous estimez avoir subi. Cela pourra être utilisé à charge contre le ou les auteur(s). Exemple : si les préjudices ont un impact sur votre vie professionnelle, pensez à le mentionner.`,
+              `Mentionnez également tous les faits de harcèlement subis hors de l’espace numérique.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            intro: `Conservez toutes les preuves, en respectant bien les conseils émis en boîte 2, concernant la récolte des éléments de preuve, pour rappel :`,
+            list: [
+              `Les dates et heures des messages ou échanges litigieux,`,
+              `La plateforme le réseau social, l’application ou le site internet utilisé,`,
+              `Le type de document ou de support employé (Message privé, commentaire, contenu visuel, etc.),`,
+              `Les éventuels liens URL (vous pouvez utiliser Archive.is pour conserver une adresse URL)`,
+              `Le nombre de messages,`,
+              `La nature de l’incident en ligne (menace de nature sexuelle, attaque à caractère raciste, etc.)`,
+              `Le nom ou pseudonyme utilisé par l’auteur ainsi que ses potentielles autres identités digitales (accompagnées des différentes photos le représentant, ou désignées comme telles.) Si vous êtes en mesure d’y avoir accès, notez également son adresse email, son numéro de téléphone, son adresse IP ou encore des indices permettant sa localisation. Tout élément relatif à son identité peut s’avérer déterminant pour confronter la personne à l’origine du harcèlement,`,
+              `Les captures d’écran ou vidéos enregistrées,`,
+              `Votre matériel informatique, vos identifiants et votre nom d’utilisateur`,
+              `Les autres agressions, verbales et/ou physiques, subies hors de l’espace numérique, liées aux faits relatés en ligne,`,
+              `Toute preuve de préjudice subi : certificat médical, bilan psychologique, ordonnance psychiatrique, ou tout autre témoignage de votre entourage, professionnel ou privé,`,
+              `La fréquence des attaques, le type d’attaque, ou tout autre élément de contexte que vous jugerez pertinent de mentionner.`,
+              `De même, si vous avez des compétences en informatique et que vous êtes à l’aise avec l’exploitation de DATA, il existe des techniques de recherche en ligne (cf. OSINT : https://osintframework.com/) permettant dans certains cas d’identifier l’auteur et parfois même de le localiser.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Porter plainte",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Toutes les démarches relatives à un dépôt de plainte sont recensées sur le Portail de la Fédération Wallonie-Bruxelles :  http://www.victimes.cfwb.be/procedures-judiciaires/deposer-plainte/`,
+              `Voici les étapes principales.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "À quel moment porter plainte ?",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Le plus rapidement possible après les faits constatés, et après une récolte minutieuse de toutes les informations et éléments de preuve.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Où porter plainte et qui contacter ?",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `N’hésitez pas à demander à une personne de confiance de vous accompagner. Vous n’êtes pas seul·e !`,
+              `Vous pouvez vous présenter dans n’importe quel commissariat de police. Certains sont ouverts 24h/24h. Pour trouver votre commissariat le plus proche, rendez-vous sur le site de la police (https://www.police.be/fr) et renseignez votre ville ou code postal.`,
+              `Le Service d’Assistance Policière aux Victimes (SAPV) de votre zone peut également être contacté. Ces services sont à votre écoute pour vous accompagner moralement, vous conseiller dans vos démarches administratives ou encore vous informer de vos droits. Ces services n’interviennent qu’à court terme et ne proposent pas de suivi psychologique. Ils peuvent néanmoins vous orienter vers des services de prise en charge spécialisés pour vous assurer un suivi sur du plus long terme.\nServices d'assistance policière aux victimes de la police fédérale.`,
+              `Les antennes locales ont également leur propre service d’aide aux victimes. N'hésitez pas à contacter votre commissariat local pour vous procurer leur numéro de téléphone`,
+              `L’institut pour l’égalité des femmes et des hommes - IEFH \nSi vous pensez être victime de cyberharcèlement sexiste ou si vous constatez de tels comportements, indiquez-le à la police lors de la plainte.  Vous pouvez aussi déposer un signalement auprès de l'Institut pour l'égalité des femmes et des hommes\nSur le site http://igvm-iefh.belgium.be)\nAppeler le numéro gratuit 0800/12.800`,
+              `L’institut interfédéral pour l’égalité des chances - UNIA\nSi vous pensez être victime de cyberharcèlement à caractère discriminatoire autre que fondé sur le genre ou si vous constatez de tels comportements, indiquez-le à la police lors de votre plainte.  Vous pouvez aussi déposer un signalement auprès de UNIA.\nNotez que: la discrimination fondée sur l’orientation sexuelle est traitée par UNIA, la transphobie, par l’IEHFH.\nSur le site: https://www.signalement.unia.be/fr/signale-le\nAppeler le numéro gratuit 0800/12.800`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Comment procéder concrètement lors d’un dépôt de plainte ?",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Munissez-vous de vos documents d’identité et de tous les éléments préalablement compilés: certificats médicaux, preuves des faits, horodatage des faits, preuves ou éléments  d’identité des personnes ou de la personne qui en est l’origine ou y contribuent. Voir liste en boîte 2.`,
+              `Sachez que la première personne que vous rencontrerez dans les locaux de la police se voit dans l’obligation de vous accueillir. Celle-ci sera, dans un premier temps, chargée de prendre note de  votre identité ainsi que de la raison de votre venue. Vous serez très certainement amenée à patienter dans la salle d’attente du commissariat jusqu’à ce que quelqu’un vous reçoive.`,
+              `Vous serez ensuite entendue par un·e inspecteur·trice. Cet entretien est strictement confidentiel. Cette personne établira un procès-verbal sur base des éléments que vous lui fournirez. Lors de cette audition, il est donc impératif que votre récit soit le plus précis et référencé possible.`,
+              `Vous avez le droit de demander une copie du procès-verbal établi lors de  votre déposition. N’hésitez pas à demander à ce stade le numéro du Service d’Assistance Policière aux Victimes qui sera en mesure de vous soutenir, et de répondre à vos questions, à la suite de cette audition.`,
+              `Sachez que vous pouvez aussi demander à remplir une « déclaration de personne lésée » Cette démarche vous permettra notamment de bénéficier d’un meilleur suivi de votre dossier. En voici les avantages : http://www.victimes.cfwb.be/procedures-judiciaires/victime-vos-droits/#c7953`,
+              `À la suite de l’entretien, il vous sera remis un document, votre attestation de dépôt de plainte, que vous devrez conserver. Ce document pourra vous être demandé par la suite lors de vos démarches administratives et juridiques. Vous y trouverez également les coordonnées des services d’aide.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Après la plainte",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Après la plainte, vous entrez dans la phase de « procédure judiciaire ». Le schéma établi par la Fédération Wallonie-Bruxelles vous permettra d’en comprendre chacune des étapes : http://www.victimes.cfwb.be/procedures-judiciaires/apres-la-plainte/`,
+              `N’hésitez pas à vous faire conseiller par les services d’accueil des victimes proposés au sein des tribunaux. Ces personnes vous accompagnent et vous informent tout au long de la procédure, du dépôt de plainte jusqu’aux délibérations finales et même dans le cadre de la mise en application de la peine. http://www.victimes.cfwb.be/ou-trouver-aide/services-accueil-victimes/`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Quels sont vos droits ?",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `En tant que victime, vous bénéficiez d’un certain nombre de droits qui vous protègent tout au long de la procédure et également par la suite, dans le cadre de la mise en application de la peine. http://www.victimes.cfwb.be/procedures-judiciaires/victime-vos-droits/`,
+            ],
+            isJustify: true,
+          },
+        ],
+      },
+      {
+        type: CONTENT_TYPE.CHAPTER,
+        title: "Boîte 4: Trouver de l’aide",
+        id: "trouver-de-l-aide",
+        content: [
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Introduction",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Le cyberharcèlement n’est pas moins violent, ni moins impactant, qu’un harcèlement subi dans l’espace physique. Au contraire, les conséquences sont parfois d’autant plus pernicieuses: perte d’emploi, dépression, traumatisme, etc. Des cas de suicides sont d’ailleurs assez régulièrement relayés dans la presse. Les frontières entre l’espace digital et la vie réelle sont extrêmement poreuses, allant même jusqu’à se confondre dans l’esprit de certaines personnes.`,
+              `Outre un accompagnement de la part des services de police ou des services d’aides aux victimes, il est primordial que vous puissiez bénéficier d’autres appuis. On ne vous conseillera jamais assez de faire appel à votre environnement familial, ou professionnel, pour faire face aux épreuves que vous traversez. Le cas échéant, il peut s’avérer nécessaire de solliciter l’aide de professionnels formés à l’écoute et au suivi thérapeutique de ce type de traumatisme.`,
+              `Il existe différents services d’entraide et d’écoute vers lesquels vous pouvez vous diriger.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Numéros importants",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            list: [
+              `<b>112</b> : Urgence médicale`,
+              `<b>101</b> : Urgence policière`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Aide aux violences conjugales",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            list: [
+              `<b>0800/30.800</b> : « Écoute Violence Conjugales »\nSi le cyberharcèlement s’inscrit dans le cadre de violences conjugales, la ligne “Écoute Violences Conjugales” répond à des situations de détresse en proposant une écoute bienveillante, confidentielle et gratuite.`,
+              `<b>Le site ecouteviolencesconjugales.be</b> : Urgence policière\nQue vous soyez témoin, victime ou que vous ayez vous-même recours à la violence au sein de votre foyer, un chat a également été mis en place sur le site.\nCe service dispose aussi d’un moteur de recherche permettant de trouver, près de chez vous :\n\nDes services juridiques spécialisés\nDes services d’aide à la jeunesse\nDes maisons d’accueil spécialisées\nDes services ambulatoires`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Les bureaux d’aide aux victimes",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title:
+              "Services d'assistance policière aux victimes de la police fédérale",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Vous pouvez contacter le service d’assistance policière aux victimes de votre zone. Ces services sont à votre écoute pour vous accompagner moralement, vous conseiller dans vos démarches administratives ou encore vous informer de vos droits. Ces services n’interviennent qu’à court terme et ne proposent pas de suivi psychologique. Ils peuvent néanmoins vous orienter vers des services de prise en charge spécialisés pour vous assurer un suivi sur du plus long terme.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Antennes locales d’aide aux victimes",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Vos antennes locales ont également leur propre service d’aide aux victimes. N'hésitez pas à contacter votre commissariat local pour vous procurer leur numéro de téléphone. Pour trouver votre commissariat le plus proche, rendez-vous sur le site de la police (https://www.police.be/fr) et renseignez votre ville ou code postal.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Soutien psychologique et autres lignes d’écoute",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Les services de santé mentale",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Il s’agit de services d’aide psycho-médico-sociale dans un cadre ambulatoire (prise en charge sans hospitalisation) à disposition de chaque personne qui en fait la demande. En Wallonie, il en existe 65, à Bruxelles, 5.`,
+              `Wallonie : Les SSM de Wallonie\nBruxelles: https://www.ccc-ggc.brussels/fr/institutions/services-de-sante-mentale`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Les centres de planning familial",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Vous pourrez trouver le centre le plus proche dans l’annuaire du site : https://www.planningfamilial.net/liste-des-centres/`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Centre de Prévention du suicide",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Ce service est joignable au 0800/32.123, il est disponible 24h/24h, il est gratuit et anonyme.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "SOS VIOL",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Si le cyberharcèlement s’inscrit dans le cadre de violences sexuelles, vous pouvez contacter les équipes de “SOS Viol” au 0800/98.100, ce service est également disponible 24h/24h, gratuit et anonyme.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Trouver de l’aide à l’école",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Les Centres Psycho-Médico-Sociaux (CPMS)",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Tout au long de votre scolarité, et ce jusqu’à la dernière année des secondaires, ces centres vous permettent d’aborder toutes questions qui vous préoccupent. Y compris sur des aspects relatifs à la vie sociale et à la santé et non seulement pour vous accompagner dans votre orientation scolaire. Vous y serez accueilli par des personnes ressources :  psychologues (conseillers et assistants psychopédagogiques), assistant·e·s sociaux·ales (auxiliaires sociaux) et infirmier·e·s (auxiliaires paramédicaux) qui travaillent en équipe. Les CPMS sont des lieux d’accueil, d’écoute et de dialogue. Ces centres accueillent aussi les familles.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Comment contacter le Centre PMS ?",
+            level: 4,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            list: [
+              `Par téléphone, courrier ou par mail.`,
+              `En consultant la page : http://enseignement.be/index.php?page=26028&navi=149`,
+              `Lorsque leurs services assistent aux réunions de parents d’élèves, à des rencontres informelles et lors de leurs éventuelles permanences au sein de votre école.`,
+              `En demandant l’information à votre direction ou à vos professeur·e·s.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Le Service Écoute-Enfants",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Le numéro 103 est le numéro d’écoute pour les enfants et adolescent·e·s. Il répond à l’ensemble des questions qu’elles ou ils peuvent se poser et abordent les difficultés qu’elles/ils peuvent affronter. Ce service est anonyme et il est accessible partout en Belgique.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Comment contacter le service Écoute-Enfants ?",
+            level: 4,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            list: [
+              `Par téléphone, au numéro 103`,
+              `Via le site http://www.103ecoute.be`,
+            ],
+            isJustify: true,
+          },
+        ],
+      },
+      {
+        type: CONTENT_TYPE.CHAPTER,
+        title: "Boîte 5: Prévention",
+        id: "prevention",
+        content: [
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: "En cours de rédaction...",
+            isJustify: true,
+          },
+        ],
+      },
+      {
+        type: CONTENT_TYPE.CHAPTER,
+        title: "Boîte 6: Vous êtes mineur(e) ?",
+        id: "vous-etes-mineure",
+        content: [
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: "En cours de rédaction...",
+            isJustify: true,
+          },
+        ],
+      },
+      {
+        type: CONTENT_TYPE.CHAPTER,
+        title: "Boîte 7: comment être un·e bon·ne allié·e",
+        id: "comment-etre-une-bonne-alliee",
+        content: [
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: "En cours de rédaction...",
+            isJustify: true,
+          },
+        ],
+      },
+      {
+        type: CONTENT_TYPE.CHAPTER,
+        title: "Boîte 8: Dispositifs juridiques",
+        id: "dispositifs-juridiques",
+        content: [
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: "En cours de rédaction...",
+            isJustify: true,
+          },
+        ],
+      },
+      // {
+      //   type: CONTENT_TYPE.CHAPTER,
+      //   title: "Boîte 9: ???",
+      //   id: "???",
+      //   content: [
+      //     {
+      //       type: CONTENT_TYPE.TEXT,
+      //       text: "En cours de rédaction...",
+      //       isJustify: true,
+      //     },
+      //   ],
+      // },
+      {
+        type: CONTENT_TYPE.CHAPTER,
+        title: "Boîte 10: Appel à témoignages",
+        id: "appel-a-temoignages",
+        content: [
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: "En cours de rédaction...",
+            isJustify: true,
+          },
+        ],
+      },
+      {
+        type: CONTENT_TYPE.CHAPTER,
+        title: "Boîte 11: Plaidoyers et synergies",
+        id: "plaidoyers-et-synergies",
+        content: [
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: "En cours de rédaction...",
+            isJustify: true,
+          },
+        ],
+      },
+      {
+        type: CONTENT_TYPE.CHAPTER,
+        title: "Boîte 12: Ressources",
+        id: "ressources",
+        content: [
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: "En cours de rédaction...",
+            isJustify: true,
+          },
+        ],
+      },
     ],
   },
 }
