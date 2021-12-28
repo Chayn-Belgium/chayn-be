@@ -1,45 +1,46 @@
-import React, { useState, useEffect } from "react"
-import throttle from "lodash.throttle"
+import React, { useState /*useEffect*/ } from "react"
+// import throttle from "lodash.throttle"
 import { Link } from "gatsby"
 
 import {
-  Container,
-  Body,
-  AsideLeft,
-  AsideRight,
   AsideContentLeft,
   AsideContentRight,
-  TextMenu,
+  AsideLeft,
+  AsideRight,
+  Body,
+  ComingSoonFlag,
+  Container,
   IconContainer,
+  TextMenu,
 } from "./style"
 import { Icon } from "../ui"
 import { capitalize, slugify } from "../../utils/helpers"
 
-const isElementActive = el => {
-  if (!el) return
+// const isElementActive = el => {
+//   if (!el) return
 
-  const { top, bottom } = el.getBoundingClientRect()
+//   const { top, bottom } = el.getBoundingClientRect()
 
-  if (top <= 50 && bottom > 0) return true
+//   if (top <= 50 && bottom > 0) return true
 
-  return false
-}
+//   return false
+// }
 
-const handleScroll = throttle((targetElements, setActiveId) => {
-  let activeElement = null
+// const handleScroll = throttle((targetElements, setActiveId) => {
+//   let activeElement = null
 
-  targetElements.forEach((el, index) => {
-    if (isElementActive(el)) {
-      activeElement = el
-    }
-  })
+//   targetElements.forEach((el, index) => {
+//     if (isElementActive(el)) {
+//       activeElement = el
+//     }
+//   })
 
-  if (activeElement && activeElement.id) {
-    setActiveId(activeElement.id)
-  } else {
-    setActiveId(null)
-  }
-}, 200)
+//   if (activeElement && activeElement.id) {
+//     setActiveId(activeElement.id)
+//   } else {
+//     setActiveId(null)
+//   }
+// }, 200)
 
 const ContentLayoutGuide = ({
   content,
@@ -85,13 +86,20 @@ const ContentLayoutGuide = ({
           {asideLeft.map((item, index) => (
             <TextMenu
               as={Link}
-              $isActive={chapterId ? chapterId === item.id : chapterId === ""}
+              $isActive={
+                index >= 5
+                  ? true
+                  : chapterId
+                  ? chapterId === item.id
+                  : chapterId === ""
+              }
               $isOpen={isMobileMenuOpen}
               key={String(item.href) + String(index) + "left"}
               to={item.href}
               $isMenuOpen={isMobileMenuOpen}
             >
               {capitalize(item.title.toLowerCase())}
+              {index >= 5 && <ComingSoonFlag>Coming soon</ComingSoonFlag>}
             </TextMenu>
           ))}
         </AsideContentLeft>

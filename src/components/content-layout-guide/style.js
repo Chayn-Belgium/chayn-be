@@ -102,6 +102,7 @@ export const IconContainer = styled.div`
 
 export const TextMenu = styled.div`
   display: inline-block;
+  position: relative;
   font-size: 14px;
   font-family: ${FONT.NUNITO_SANS};
   opacity: ${({ $isActive }) => ($isActive ? "1" : "0.5")};
@@ -132,4 +133,19 @@ export const TextMenu = styled.div`
     width: calc(100% - 20px);
     overflow: hidden;
   }
+`
+
+export const ComingSoonFlag = styled.span`
+  display: inline-block;
+  font-size: 8px;
+  color: #233442;
+  text-transform: uppercase;
+  font-family: ${FONT.NUNITO_SANS};
+  font-weight: 900;
+  background-color: #6698c1;
+  padding: 2px 6px;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  margin-left: 5px;
 `
