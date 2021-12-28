@@ -1234,8 +1234,166 @@ module.exports = {
         id: "prevention",
         content: [
           {
+            type: CONTENT_TYPE.TITLE,
+            title: "Introduction",
+            level: 2,
+          },
+          {
             type: CONTENT_TYPE.TEXT,
-            text: "En cours de rédaction...",
+            text: `Vous trouverez ici quelques conseils de cybersécurité qui vous permettront, sinon d’empêcher tout risque de harcèlement en ligne, du moins d’en limiter l’occurrence sans qu’il ne vous soit pour autant nécessaire de quitter définitivement l’espace digital.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Cybersécurité et digital care",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Le concept de digital care, développé par l’activiste britannique Seyi Akiwowo, également fondatrice de l’association Glitch (association du Royaume-Unis qui lutte contre les abus ayant lieu en ligne) , pourrait se traduire par « protection numérique”. Cette locution désigne ainsi la mise en place de systèmes de protection en ligne afin d’éviter certaines violences, ou abus, par le biais d’internet.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Les 5 règles principales de Digital Self Care",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Une évaluation personnelle",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Demandez-vous dans un premier temps si vous assumez ce que vous partagez en ligne ainsi que la pertinence des informations personnelles que vous dévoilez. Certaines personnes partageront beaucoup, d’autres moins. C’est tout simplement un choix.`,
+              `Nous vous conseillons de vous livrer à une petite expérience qui vous permettra d’évaluer votre « empreinte numérique », c’est-à-dire les informations vous concernant disponibles en libre accès sur internet. TW: Si vous vous ne vous sentez pas à l’aise dans cette démarche, n’hésitez pas à demander à une personne de confiance de le faire pour vous.`,
+              `Pour cela, il vous suffit de taper votre nom, adresse courriel ou numéro de téléphone dans votre moteur de recherche en n’oubliant pas de les encadrer de guillemets.  Vous vous apercevrez peut-être que certaines données confidentielles ont filtré sans votre consentement.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Un renouvellement de vos mots de passe",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Il paraît assez évident que la faible sécurité d’un mot de passe, couplée à sa récurrence, accroît considérablement les risques de piratage. Il n’est pour autant pas nécessaire de modifier tous vos mots de passe en une fois, cela prend littéralement des heures. Commencez par ceux qui sont liés à vos informations les plus intimes et essentielles à garder secrètes : données bancaires, mails, messagerie, réseaux sociaux, etc.`,
+              `À savoir : un bon mot de passe comporte au moins 8 caractères différents. Il est également conseillé d’y introduire chiffres, majuscules et caractères spéciaux. Nous vous recommandons d’utiliser un gestionnaire de mot de passe de type LastPass, qui vous permettra de générer des mots de passe en vous proposant une sauvegarde sécurisée par un coffre-fort digital.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "L’authentification à deux facteurs",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Il est possible de sécuriser l’accès à ses comptes importants en y apposant une double sécurité. Dans ce cas, il vous sera demandé 2 étapes d’authentification. La première, à l’aide de vos identifiants habituels, la seconde soit en vous envoyant un code par sms soit en vous envoyant un code par le biais d’un générateur de codes, via une application sur votre téléphone (authentificator est l’application la plus sécurisée).`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            list: [
+              `Étapes pour activer la double authentification pour Gmail : ${getInlineLink(
+                "Protéger votre compte avec la validation en deux étapes - Ordinateur - Aide Compte Google",
+                "https://support.google.com/accounts/answer/185839?hl=fr&co=GENIE.Platform%3DDesktop",
+                true
+              )}`,
+              `Étapes pour activer la double authentification pour Facebook : ${getInlineLink(
+                "What is two-factor authentication and how does it work on Facebook?",
+                "https://www.facebook.com/help/148233965247823",
+                true
+              )}`,
+              `Étapes pour activer la double authentification pour Twitter: ${getInlineLink(
+                "Comment utiliser l'authentification à deux facteurs (2FA) sur Twitter",
+                "https://help.twitter.com/fr/managing-your-account/two-factor-authentication",
+                true
+              )}`,
+              `Étapes pour activer la double authentification pour Instagram : ${getInlineLink(
+                "What's two-factor authentication and how does it work on Instagram? | Instagram Help Center",
+                "https://help.instagram.com/566810106808145",
+                true
+              )}`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Ce dispositif permet de rendre la tâche plus complexe aux éventuels hackeurs dans le cas d’un cyberharcèlement qui impliquerait une brèche de vos informations personnelles.`,
+              `Il est également possible de  recevoir une notification en cas de connexion suspecte sur un de vos comptes.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "La création d’une messagerie « poubelle »",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Comme vous pouvez sans doute le constater, de très nombreuses actions que vous effectuez en ligne requièrent votre adresse courriel. Que ce soit pour l’envoi de newsletter, de confirmations de commandes ou encore dans le but de transmettre des tickets, places ou billets en tous genres,  cette boîte se voit inlassablement sollicitée par les différents démarcheurs. C’est d’ailleurs très régulièrement le biais qu’utilisent certains faussaires pour accéder à vos informations confidentielles. Afin d’isoler ces contenus du reste de vos échanges, et donc d’éventuels éléments importants, il peut être pertinent de créer une messagerie entièrement dédiée à ces requêtes et activités plus secondaires.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Vos réseaux sociaux, vos règles !",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Vos comptes sur les réseaux sociaux vous appartiennent. En cela, vous êtes seul·e maître·sse de ce qui s’y déroule et des éléments qui y figurent. Pour marquer clairement votre volonté de contrôle ou pour imposer toute autre règle de conduite que vous souhaitez y voir respectée, rien ne vous empêche de le signifier clairement sur les profils ou comptes concernés. 
+              Sur Facebook, par exemple, vous pouvez exprimer votre refus de toute agressivité ou de contenus déplacés, dans la section « à propos ». Cela marquera ouvertement votre position et pourra peut-être dissuader certains comportements indésirables.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Prévention à destination des mineur(e)s",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title:
+              "Si vous êtes enseignant(e), le site web des autorités belges (Besafe), vous conseille de :",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            list: [
+              `Créer une ambiance positive et de bien-être dans la classe, intéressez-vous à ce que vos élèves font sur l’ordinateur/leur téléphone portable, abordez la discussion de manière positive.`,
+              `Apprendre aux élèves à utiliser internet de manière sûre et responsable (cf. Dossier proposé par ChildFocus), par des jeux de rôles, des discussions de groupe, des jeux d’opinion dans lesquels les élèves peuvent s’exprimer, etc.`,
+              `Élaborer des règles « anti-harcèlement » avec la participation des élèves en les exposant de manière visible dans la classe et/ou dans la classe informatique.`,
+              `Parler des responsabilités de chacun et des conséquences du harcèlement pour favoriser une prise de conscience.`,
+              `Prévoir un point de contact par le biais duquel les élèves ainsi que les parents peuvent signaler un cas de harcèlement en toute confiance en mettant en place une boîte aux lettres anonyme, par exemple.`,
+              `Informer les parents en cas de problème.`,
+              `Continuer à vous informer des pratiques et habitudes d'utilisation de l’outil internet par les élèves`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title:
+              "Si vous êtes parent(s),  le site web des autorités belges, (Besafe), vous conseille de :",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            list: [
+              `Vous intéresser aux activités en ligne de vos enfants, d’en parler de manière ouverte et positive tout en les sensibilisant aux risques qui y sont associés sans interdire leur accès aux nouveaux médias, même si vos enfants ont commis une erreur/négligence.`,
+              `Pour les enfants de moins de 12 ans, assurez-vous que l’ordinateur se trouve dans un lieu commun (pas dans la chambre à coucher par exemple), pour que vous puissiez de temps en temps jeter un coup d’œil à l’écran et que vous puissiez entendre si vos enfants s’effraient de certaines images, mails, etc.`,
+              `Continuer à vous informer pour rester à jour par rapport aux évolutions et à l’environnement des jeunes (tablettes, smartphones, applications, etc.)`,
+              `Si des problèmes se manifestent, signalez-les rapidement.`,
+            ],
             isJustify: true,
           },
         ],
@@ -1246,9 +1404,30 @@ module.exports = {
         id: "vous-etes-mineure",
         content: [
           {
+            type: CONTENT_TYPE.TITLE,
+            title: "Introduction",
+            level: 2,
+          },
+          {
             type: CONTENT_TYPE.TEXT,
-            text: "En cours de rédaction...",
+            text: [
+              `Une étude de Forbes nous apprend qu’aujourd’hui le phénomène touche principalement les jeunes, et plus particulièrement les jeunes filles. C’est pourquoi il était essentiel qu’un espace leur soit dédié.`,
+            ],
             isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Vous êtes mineur(e) et vivez une situation d’urgence ?",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            list: [
+              `Parlez-en à un.e adulte de confiance : votre prof, vos parents, votre assistant social, le Centre PMS de votre école ou de votre commune, votre planning familial,...`,
+              `Ne répondez pas aux messages, commentaires, cela le découragera et évitera un retour de flamme.`,
+              `Vous pouvez aussi contacter par téléphone le numéro “103”, ou vous rendre sur les sites web:  Childfocus chat et 103ecoute.be`,
+              `Child Focus en appelant le numéro d’urgence gratuit 116 000 (24h/24) ou en envoyant un e-mail à l’adresse suivante : 116000@childfocus.org`,
+            ],
           },
         ],
       },
@@ -1258,9 +1437,44 @@ module.exports = {
         id: "comment-etre-une-bonne-alliee",
         content: [
           {
+            type: CONTENT_TYPE.TITLE,
+            title: "Introduction",
+            level: 2,
+          },
+          {
             type: CONTENT_TYPE.TEXT,
-            text: "En cours de rédaction...",
+            text: [
+              `Si vous êtes témoin de cyberharcèlement, que l’un(e) de vos proches, ou de vos élèves, en est victime et que vous souhaitez lui apporter votre soutien, voici quelques conseils.`,
+            ],
             isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Ne lui dites pas",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            list: [
+              `“Tu exagères, c’est juste sur internet”. Les cyberviolences sont des violences réelles, elles ont simplement lieu dans l’espace digital.`,
+              `"Éteins ton téléphone, ça va se dissiper de soi-même. » Ces violences peuvent avoir un impact décisif sur la santé mentale des victimes et sur leur parcours de vie.`,
+              `“X a dit ça de toi, regarde”. Il n’est pas nécessaire de relayer davantage les attaques et d’ainsi accentuer la portée des messages et contenus blessants.`,
+            ],
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Il est préférable de",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            list: [
+              `Lui dire que vous la croyez et la soutenez.`,
+              `Lui proposer de l’aider à rassembler des preuves afin de lui permettre de monter un dossier solide avant de porter plainte.`,
+              `Proposez-lui de vous déléguer l’accès à ses comptes et ne lui faites seulement parvenir que les messages positifs et les manifestations de soutien.`,
+              `Proposez également de témoigner en sa faveur auprès des instances judiciaires.`,
+              `Une fois les preuves récoltées, n’hésitez pas massivement signaler et reporter les contenus`,
+            ],
           },
         ],
       },

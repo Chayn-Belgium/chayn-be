@@ -87,7 +87,7 @@ const ContentLayoutGuide = ({
             <TextMenu
               as={Link}
               $isActive={
-                index >= 5
+                index >= 8
                   ? true
                   : chapterId
                   ? chapterId === item.id
@@ -99,7 +99,7 @@ const ContentLayoutGuide = ({
               $isMenuOpen={isMobileMenuOpen}
             >
               {capitalize(item.title.toLowerCase())}
-              {index >= 5 && <ComingSoonFlag>Coming soon</ComingSoonFlag>}
+              {index >= 8 && <ComingSoonFlag>Coming soon</ComingSoonFlag>}
             </TextMenu>
           ))}
         </AsideContentLeft>
