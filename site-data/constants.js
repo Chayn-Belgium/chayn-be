@@ -12,6 +12,7 @@ module.exports.EXTERNAL_LINK_ATTRIBUTES = {
 /**
  * @param {string} text
  * @param {string} href
+ * @param {string} isExternal Default : true
  */
 module.exports.getInlineLink = (text, href, isExternal = true) =>
   `<a href="${href}" ${

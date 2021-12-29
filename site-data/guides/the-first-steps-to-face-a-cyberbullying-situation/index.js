@@ -1,5 +1,12 @@
 const { LANG, CONTENT_TYPE, getInlineLink } = require("../../constants")
 
+const CHAPTER_LINK = {
+  BOITE_1:
+    "/fr/guides/les-premiers-gestes-pour-affronter-une-situation-de-cyberharcelement/comprendre-et-reconnaitre-le-cyberharcelement",
+  BOITE_2:
+    "/fr/guides/les-premiers-gestes-pour-affronter-une-situation-de-cyberharcelement/agir-face-au-cyberharcelement",
+}
+
 module.exports = {
   [LANG.FR]: {
     slug:
@@ -1484,39 +1491,448 @@ module.exports = {
         id: "dispositifs-juridiques",
         content: [
           {
+            type: CONTENT_TYPE.TITLE,
+            title: "Introduction",
+            level: 2,
+          },
+          {
             type: CONTENT_TYPE.TEXT,
-            text: "En cours de rédaction...",
+            text: [
+              `Nous avons vu plus haut les différentes formes que peuvent prendre le cyberharcèlement et comment il vous est conseillé de réagir.  Malheureusement, dans certains cas, les démarches juridiques peinent à aboutir en raison du vide juridique entourant les pratiques en cours sur internet.`,
+              `Pour rappel, il est important que vous sachiez qu’un dépôt de plainte n’est jamais vain. Au-delà de la reconnaissance du préjudice subi, votre témoignage est essentiel à une meilleure compréhension du phénomène et à une meilleure prise en charge des victimes. Dans certains cas, la jurisprudence permet de faire évoluer le cadre législatif et peut considérablement améliorer la reconnaissance juridique de ces affaires.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Le harcèlement en ligne est-il passible de sanctions ?",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Au moment de la rédaction de ce guide, en 2021, il n’existe pas encore de texte spécifique encadrant le harcèlement dans l’espace numérique. Juridiquement, ce phénomène est considéré comme une forme de harcèlement moral définie par l’article 442bis du code pénal belge.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            intro: `Ainsi, le texte précise les “Conditions à remplir pour qu’une situation soit acceptée juridiquement comme du harcèlement” :`,
+            list: [
+              `Le comportement doit être répétitif et abusif.`,
+              `Il doit y avoir atteinte à la tranquillité.`,
+              `Le harceleur doit être conscient du préjudice causé à sa victime.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Or, dans le contexte de cyberviolences, il existe des situations dans lesquelles ces conditions ne peuvent être remplies, alors que le préjudice subi par la victime n’en n’est pas moins important. 
+            C’est notamment le cas des attaques groupées, ou raids furtifs, que nous avons décrit plus haut. En effet, le phénomène de multiplication des agressions portées sur une seule et même victime viendra intensifier leur portée. Pourtant, chaque auteur, pris isolément et n’ayant émis qu’un seul message, ne saura remplir la condition de récurrence nécessaire à la qualification du harcèlement. Tous ces individus seront donc difficilement poursuivis.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Qu’en est-il des agissements sexistes ?",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: `Si les femmes sont davantage confrontées aux phénomènes de cyberharcèlement c’est que, très souvent, les faits impliquent des propos et intentions sexistes. Dans ce cadre, ${getInlineLink(
+              "la loi du 3 août 2014",
+              "https://www.ejustice.just.fgov.be/cgi_loi/change_lg.pl?language=fr&la=F&cn=2014052240&table_name=loi",
+              true
+            )} destinée à lutter contre le sexisme dans l’espace public, peut également être saisie. Une qualification d'agissement sexiste pourra s’ajouter à celle de harcèlement et peser sur les délibérations et alourdir la peine.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            intro: `Pour être considéré comme sexiste, tout comportement doit correspondre aux 5 caractéristiques suivantes :`,
+            list: [
+              `Se définir par des <b>agissements physiques</b> comme <b>verbaux</b> (insultes, gestes obscènes, etc.) Ce qui comprend par conséquent les publications sur les réseaux sociaux, par exemple.`,
+              `Avoir lieu dans des <b>circonstances publiques</b> (dans un lieu public, en milieu professionnel en présence d’autres personnes, sur les réseaux sociaux, sur des forums, etc.)`,
+              `Êtres commis dans le <b>but manifeste de nuire</b> à la/aux victime(s). Cette volonté peut se traduire dans l’attitude de l’auteur mais aussi dans l’acte en lui-même.`,
+              `Viser une ou plusieurs cible·s <b>clairement définies</b> en fonction de leur sexe et identifiables en tant que telles.`,
+              `Être commis dans l’intention <b>d’humilier ou de mépriser</b> la personne en raison de son sexe, avec pour conséquence une atteinte grave à la dignité. C'est le juge qui détermine si les faits sont de nature à constituer <b>une atteinte grave à la dignité</b>.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Et concernant d’autres agissements haineux…",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `<b>La loi antiracisme et de la législation antidiscrimination</b>`,
+              `Si les faits impliquent des propos et intentions incitant à la haine, à la violence et à la discrimination envers un individu ou un groupe dont un ou plusieurs critères sont dit “protégés” par la législation antidiscrimination (lois fédérales, décrets et ordonnances), ils sont interdits et punissables.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Les freins au bon encadrement des pratiques sur internet",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "L’interprétation des textes de loi",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Pour chaque affaire, la personne représentant la loi est censée appliquer des règles et recommandations définies par la législation sur une situation unique et singulière, avec tout ce que cela implique d’interprétation, de compréhension et donc parfois de subjectivité.`,
+              `En ce qui concerne les infractions commises dans l’espace numérique, cette lecture peut s’avérer problématique pour plusieurs raisons, et notamment parce qu’agents de police, avocats et magistrats ne sont pas suffisamment sensibilisés à ces phénomènes. C’est ce qu’on appelle la problématique de “l’application des textes”.`,
+              `Les juges, comme les avocats, sont peu sensibilisés à ces phénomènes et trop souvent les plaintes n’aboutissent pas ou bien sur des actions dérisoires pour les victimes. Le souci réside surtout dans l’interprétation que font les juges des lois.`,
+              `Certains agents de police qui réceptionnent la plainte ne sont pas non plus suffisamment sensibilisés. Des formations sont co-organisées avec l’Institut de l’égalité entre les femmes et les hommes.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "La temporalité",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `La plupart des faits de harcèlement sur internet se développent et se propagent à une vitesse telle que cela peut parfois suffire à décourager la victime en impliquant un sentiment d’impuissance parfois paralysant.`,
+              getInlineLink(
+                "Pour adopter les bons réflexes et réagir rapidement, rendez-vous boîte 1",
+                CHAPTER_LINK.BOITE_1,
+                false
+              ),
+              `D’autre part, il existe une sorte d’incompatibilité de fond entre le temps du web, qui est celui de l’instantané, et celui de la démarche judiciaire, qui se traduit par un processus parfois long d’enquête et de délibérations.`,
+              `La rapidité de propagation d’un message sur le web est élevée et dépourvue contrairement à l’espace physique d’intervention policière directe. Ces critères rendent difficiles les interventions directes. Ceci oblige la victime  à mettre sur pied d’autres dispositifs de “premiers soins” lorsqu’elle est confrontée à une situation de harcèlement en ligne. Nous les abordons ${getInlineLink(
+                "en boîte 2",
+                CHAPTER_LINK.BOITE_2
+              )}`,
+              `En effet, le temps juridique est long, il ne permet pas l’action ou la réparation urgente, imminente.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Territorialité",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `La notion de frontières administratives ne s’appliquant pas à l’espace digital, la question de la juridiction compétente peut se poser lorsqu’un litige met en cause des individus issus de plusieurs territoires.`,
+              `Pourtant, la territorialité est un des principes fondamentaux du droit belge. Ainsi, en Belgique, une infraction commise en dehors du royaume, par un belge ou un étranger, ne sera punie que dans des cas spécifiquement cités par la loi. Ce qui n’est pas encore le cas des violences commises sur internet.`,
+              `Dans le cas où vous seriez concerné·e par ce cas de figure, signalez-le lors de votre dépôt de plainte et discutez-en avec votre avocat·e qui vous aidera à mettre en place une stratégie.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "La charge de la preuve",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Sur internet, les éléments matériels et preuves de harcèlement sont extrêmement volatiles. Il n’est pas difficile d’effacer ou de modifier un message, de bloquer un utilisateur pour lui empêcher l’accès à vos contenus, etc. Bien souvent, l'absence de ces contenus à charge empêchent les poursuites d’aboutir. 
+              Vous trouverez nos conseils relatifs à la collecte de preuves en ${getInlineLink(
+                "en “boîte 2”",
+                CHAPTER_LINK.BOITE_2
+              )}.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Les témoins",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Dans certains cas, ce sont les témoignages qui font défaut pour obtenir justice, ce qui est assez paradoxal au vu du caractère public et de la large diffusion de certaines attaques.\nLors de votre dépôt de plainte, n’hésitez pas à fournir le nom, et pseudos si besoin, des personnes que vous pensez pouvoir témoigner.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Régulation du web",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Si en Belgique, ainsi qu’en Europe (notamment grâce au Digital Service Act), nous assistons à certaines avancées en termes de contrôle sur l’espace numérique, l’autorégulation est encore très largement la norme dans ce domaine. Cette absence d’intervention étatique claire engendre des conséquences perverses en normalisant un certain nombre de comportements immoraux ou abusifs.  Ce constat soulève un problème de taille ; cette politique du « tout est permis » n’impose-t-il pas un principe d’impunité contraire à l’ordre social défendu par un Etat de droit ?\nPour y répondre, les législateurs tentent depuis quelques années d’imposer un cadre général aux pratiques en ligne, se heurtent inévitablement à de nombreuses difficultés dans sa mise en œuvre concrète.\nL’entrave principale réside en l’architecture même du réseau internet qui n’a pas été conçu pour se soumettre à une autorité centralisée et ne présente donc pas de structure stricte, observable et maîtrisable.`,
+              `Dans certaines démarches permettant d’établir la responsabilité de harcèlement, de modification des lois, ainsi que dans certains essais de régulation des acteurs du web, les services publics et gouvernements entrent en conflits de territoire avec les normes préexistantes sur le web. En effet, quand des normes nouvelles viennent essayer de réguler cet espace, elles ne sont pas toujours perçues comme légitimes par les 3 grandes fédérations et autorités du web : L’ICANN ( Société pour l'attribution des noms de domaine et des numéros sur Internet. Elle gère l’adressage IP et coordonne les acteurs techniques), W3C (L’organisme de standardisation des techniques permettant de générer des langages communs : HTML, PNG,etc.) et l’IETF (l’organisme qui établit des standards techniques d’internet). Des parties-prenantes très techniques, des informaticiens, confrontées à des interlocuteurs étatiques, politiques ou encore associatifs auxquels ils ne prêtent pas de légitimité. Ces autorités bloquent ainsi parfois certaines avancées de régulation.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Gestion du cyberharcèlement sur les plateformes",
+            level: 2,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Chaque plateforme possède aujourd’hui ses propres dispositifs de protection et de contrôle de ses usagers. Sur Facebook, par exemple, il existe effectivement un guide, ainsi qu’un espace consacré au cyberharcèlement, mais ceux-ci sont malheureusement très dissimulés.`,
+              `D’autre part, nous ne vous rappellerons jamais assez la nécessité d'effectuer des captures d’écrans et copies avant tout signalement. En effet, la grande majorité des protocoles de censure consiste en une suppression pure et simple des contenus indésirables. D’autre part, comme nous l’avons évoqué plus haut dans ce guide, le signalement doit être massif pour être pris en compte. Veillez donc à vous assurer du soutien d’autres utilisateurs dans cette démarche.`,
+              `Néanmoins, les algorithmes restent aléatoires et relativement opaques (car protégés par le secret d’entreprise) et leur délai de réactivité parfois assez longs.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Les lignes bougent…",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Si la loi n’a pas encore pris la mesure du phénomène de cyberharcèlement,  les mentalités semblent évoluer en faveur d’une relative prise de conscience de la part de la société, en général. Nous notons certaines avancées significatives qui sont, notamment, le fruit de l’acharnement de victimes et autres associations concernées.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            list: [
+              `Le premier juillet 2020, est entrée en vigueur en Belgique une nouvelle loi  punissant “la diffusion non consensuelle d’images/d’enregistrements à caractères sexuels”, relevant de ce que nous avons désigné sous le terme de revenge porn.`,
+              `Le 30 mars 2020, après un an de travaux et d’auditions, le Parlement fédéral a voté une résolution sur la régulation des plateformes numériques et leur impact.`,
+              `Un groupe de travail pour l’égalité entre les femmes et les hommes réunissant des expert(e)s et des organisations de terrains a été lancé par Sarah Schiltz, la Secrétaire d'État belge à l’Égalité des genres, à l'Égalité des chances et à la Diversité.\nCette initiative a aboutit ${getInlineLink(
+                "à un plan d’action national de lutte contre la violence basée sur le genre",
+                "https://sarahschlitz.be/wp-content/uploads/sites/300/2021/11/20211125-PAN-2021-2025-clean-FR.pdf"
+              )}. Ce plan prend en compte la question des cyberviolences, leur cadre juridique et opérationnel.`,
+              `La majorité du Parlement bruxellois a voté une résolution requérant une étude sur les cyberviolences afin d’apporter de la lumière sur leur ampleur. Celle-ci prévoit également l’organisation d’une campagne d’information et de sensibilisation, notamment dans les écoles.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "…. Et en attendant ?",
+            level: 3,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `En attendant que l’Etat belge se dote d’un cadre légal plus adapté aux différentes formes de harcèlement en ligne et aux supports numériques, voici les quelques textes existants sur lesquels vous pouvez vous appuye.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Article 442 bis du Code pénal",
+            level: 4,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Ce texte précise que "quiconque aura harcelé une personne, alors qu’il devait savoir qu’il affecterait gravement la tranquillité de la personne visée" peut se voir condamné à des peines de prison ferme allant de 15 jours à 2 ans et/ou à une amende s’élevant de 50 à 300 euros.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            intro: `Pour rappel, les « Conditions à remplir pour qu’une situation soit acceptée juridiquement comme du harcèlement » sont :`,
+            list: [
+              `Le comportement doit être répétitif et abusif`,
+              `Il doit y avoir une atteinte à la tranquillité`,
+              `Le harceleur devait savoir qu’avec ses agissements, il allait préjudicier la victime.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title:
+              "Chapitre V - Titre 7 du code pénal : Loi contre la diffusion non consensuelle d’images/d’enregistrements à caractère sexuel",
+            level: 4,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            intro: `Cette loi condamne, d’une peine de prison ferme allant de 6 mois à 5 ans, « toute personne qui aura :`,
+            list: [
+              `Observé, filmé (…) une personne, sans autorisation ou à son insu, alors que celle-ci était dénudée ou se livrait à une activité sexuelle explicite (…).`,
+              `Montré, rendu accessible ou diffusé des images ou l’enregistrement (…) d’une personne dénudée ou se livrant à une activité sexuelle explicite, sans son accord ou à son insu, même si cette personne a consenti à sa réalisation. »`,
+            ],
+            outro: `Il faut noter que l’infraction sera reconnue à partir du moment où l’acte aura été initié. D’autre part, la peine se verra amplifiée si la diffusion des images ou des enregistrements a été commis dans l’intention de nuire ou dans un but lucratif.`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title:
+              "Article 145 de la loi du 13 juin 2005, relative aux communications électroniques",
+            level: 4,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `À ${getInlineLink(
+                "l'alinéa 3 (bis) de cet article",
+                "http://www.ejustice.just.fgov.be/eli/loi/2005/06/13/2005011238/justel#Art.144"
+              )}, peut se voir punie d’une amende de 30 à 300 euros et/ou d’une période d’emprisonnement allant de 15 jours à 2 ans, « la personne qui utilise un réseau ou un service de communications électroniques ou d'autres moyens de communications électroniques afin d'importuner son correspondant ou de provoquer des dommages ainsi que la personne qui installe un appareil quelconque destiné à commettre l'infraction susmentionnée, ainsi que la tentative de commettre celle-ci. »`,
+              `Nous observons que le terme harcèlement n’est pas mentionné dans cette disposition. La nécessité de récurrence des actes est donc incertaine.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title:
+              "Articles 443 et 444 du Code pénal relatifs à la calomnie et à la diffamation",
+            level: 4,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `${getInlineLink(
+                "L’article 443 du code pénal",
+                "https://www.ejustice.just.fgov.be/cgi_loi/loi_a1.pl?language=fr&nm=1867060850&la=F&dd=1867-06-08&cn=1867060801&table_name=loi&&caller=list&F&fromtab=loi&tri=dd+AS+RANK&rech=1&numero=1&sql=(text+contains+(%27%27))#Art.444"
+              )} indique que : « Celui qui, dans les cas ci-après indiqués, a méchamment imputé à une personne un fait précis qui est de nature à porter atteinte à l’honneur de cette personne ou à l’exposer au mépris public, et dont la preuve légale n’est pas rapportée, est coupable de calomnie lorsque la loi admet la preuve du fait imputé, et de diffamation lorsque la loi n’admet pas cette preuve. »`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            intro: `Pour faire suite à ce texte, l’une des dispositions de l’article 444 institue qu’il y a calomnie ou diffamation, lorsque ${getInlineLink(
+              "« les imputations auront été faites »",
+              "https://www.ejustice.just.fgov.be/cgi_loi/loi_a1.pl?language=fr&nm=1867060850&la=F&dd=1867-06-08&cn=1867060801&table_name=loi&&caller=list&F&fromtab=loi&tri=dd+AS+RANK&rech=1&numero=1&sql=(text+contains+(%27%27))#Art.444"
+            )} :`,
+            list: [
+              `Soit dans des réunions ou lieux public ;`,
+              `Soit en présence de plusieurs individus, dans un lieu non public, mais ouvert à un certain nombre de personnes ayant le droit de s'y assembler ou de le fréquenter ;`,
+              `Soit dans un lieu quelconque, en présence de la personne offensée et devant témoins ;`,
+              `Soit par des écrits imprimés ou non, des images ou des emblèmes affichés, distribués ou vendus, mis en vente ou exposés aux regards du public ;`,
+              `Soit enfin par des écrits non rendus publics, mais adressés ou communiqués à plusieurs personnes. »`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Article 448 du Code pénal relatif à l’injure",
+            level: 4,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `${getInlineLink(
+                "Cet article",
+                "https://www.ejustice.just.fgov.be/cgi_loi/loi_a1.pl?language=fr&nm=1867060850&la=F&dd=1867-06-08&cn=1867060801&table_name=loi&&caller=list&F&fromtab=loi&tri=dd+AS+RANK&rech=1&numero=1&sql=(text+contains+(%27%27))#Art.448"
+              )} condamne  « quiconque aura injurié une personne soit par des faits, soit par des écrits, images ou emblèmes, dans l'une des circonstances indiquées à l'article 444” à “un emprisonnement de huit jours à six mois et à une amende de vingt-six euros à cinq cents euros. »`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Article 383 du code pénal",
+            level: 4,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `${getInlineLink(
+                "Cet article",
+                "https://www.ejustice.just.fgov.be/cgi_loi/loi_a1.pl?language=fr&nm=1867060850&la=F&dd=1867-06-08&cn=1867060801&table_name=loi&&caller=list&F&fromtab=loi&tri=dd+AS+RANK&rech=1&numero=1&sql=(text+contains+(%27%27))#Art.383bis"
+              )} déclare que :  « Quiconque aura exposé, vendu ou distribué des chansons, pamphlets ou autres écrits imprimés ou non, des figures ou des images contraires aux bonnes mœurs, sera condamné à un emprisonnement de huit jours à six mois et à une amende de vingt-six euros à cinq cents euros. »`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "L’article 210bis du code pénal : Le faux en informatique",
+            level: 4,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            intro: `${getInlineLink(
+              "Cet article",
+              "https://www.ejustice.just.fgov.be/cgi_loi/loi_a1.pl?language=fr&nm=1867060850&la=F&dd=1867-06-08&cn=1867060801&table_name=loi&&caller=list&F&fromtab=loi&tri=dd+AS+RANK&rech=1&numero=1&sql=(text+contains+(%27%27))#LNK0053"
+            )} déclare que :`,
+            list: [
+              `(§ 1er) « Celui qui commet un faux, en introduisant dans un système informatique, en modifiant ou effaçant des données, qui sont stockées, traitées ou transmises par un système informatique, ou en modifiant par tout moyen technologique l'utilisation possible des données dans un système informatique, et par là modifie la portée juridique de telles données, est puni d'un emprisonnement de six mois à cinq ans et d'une amende de vingt-six euros à cent mille euros ou d'une de ces peines seulement. »`,
+              `(§ 2) « Celui qui fait usage des données ainsi obtenues, tout en sachant que celles-ci sont fausses, est puni comme s'il était l'auteur du faux. »`,
+              `(§ 3) «  La tentative de commettre l'infraction visée au § 1er et est punie d'un emprisonnement de six mois à trois ans et d'une amende de vingt-six euros à cinquante mille euros ou d'une de ces peines seulement. »`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Article 231 du Code pénal : l’usurpation d’identité",
+            level: 4,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `${getInlineLink(
+                "Cet article",
+                "https://www.ejustice.just.fgov.be/cgi_loi/loi_a1.pl?language=fr&caller=list&cn=1867060801&la=f&fromtab=loi#Art.230"
+              )} déclare que « quiconque aura publiquement pris un nom qui ne lui appartient pas sera puni d'un emprisonnement de huit jours à trois mois, et d'une amende de vingt-cinq à trois cents euros, ou d'une de ces peines seulement »`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Articles 550bis et 550ter du code pénal",
+            level: 4,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `Ces articles condamnent notamment les atteintes à la confidentialité des données stockées et des systèmes informatiques les hébergeant. Cela concerne donc majoritairement les situations de piratage ou de hacking.`,
+              `Ainsi ${getInlineLink(
+                "l’article 550bis",
+                "https://www.ejustice.just.fgov.be/cgi_loi/loi_a1.pl?language=fr&nm=1867060850&la=F&dd=1867-06-08&cn=1867060801&table_name=loi&&caller=list&F&fromtab=loi&tri=dd+AS+RANK&rech=1&numero=1&sql=(text+contains+(%27%27))#Art.550"
+              )} condamne « celui qui, sachant qu'il n'y est pas autorisé, accède à un système informatique ou s'y maintient. »`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            intro: `Pour sanctionner le hacking, deux éléments matériels sont requis, d’après ${getInlineLink(
+              "l’article 550ter",
+              "https://www.ejustice.just.fgov.be/cgi_loi/loi_a1.pl?language=fr&nm=1867060850&la=F&dd=1867-06-08&cn=1867060801&table_name=loi&&caller=list&F&fromtab=loi&tri=dd+AS+RANK&rech=1&numero=1&sql=(text+contains+(%27%27))#Art.550"
+            )} :`,
+            list: [
+              `Le système de traitement des données concernées doit être automatisé.`,
+              `Il doit y avoir une absence d’autorisation.`,
+            ],
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.TITLE,
+            title: "Autres dispositions",
+            level: 4,
+          },
+          {
+            type: CONTENT_TYPE.TEXT,
+            text: [
+              `D’autres dispositions peuvent encore être mobilisés dans certains cas de violences ou de propos haineux, que l’infraction ait lieu en ligne ou non. Un(e) avocat(e) pourra vous aider pour les identifier grâce aux éléments que vous lui fournirez.`,
+              `C’est notamment le cas des manifestations racistes et xénophobes, homophobes ou sexistes.`,
+            ],
             isJustify: true,
           },
         ],
       },
-      // {
-      //   type: CONTENT_TYPE.CHAPTER,
-      //   title: "Boîte 9: ???",
-      //   id: "???",
-      //   content: [
-      //     {
-      //       type: CONTENT_TYPE.TEXT,
-      //       text: "En cours de rédaction...",
-      //       isJustify: true,
-      //     },
-      //   ],
-      // },
       {
         type: CONTENT_TYPE.CHAPTER,
-        title: "Boîte 10: Appel à témoignages",
+        title: "Boîte 9: Appel à témoignages",
         id: "appel-a-temoignages",
         content: [
           {
             type: CONTENT_TYPE.TEXT,
-            text: "En cours de rédaction...",
+            text: `Vous avez rencontré une ou plusieurs situations de harcèlement ou de violence dans l’espace digital ? Vous souhaitez contribuer à notre wiki sur le sujet ?`,
+            isJustify: true,
+          },
+          {
+            type: CONTENT_TYPE.LIST,
+            intro: `Pour mieux nous armer, n’hésitez pas à nous proposer :`,
+            list: [
+              `Des réflexes ou réactions efficaces qui n’ont pas été mentionnées.`,
+              `Toute information ou conseil absent de ce guide.`,
+            ],
             isJustify: true,
           },
         ],
       },
       {
         type: CONTENT_TYPE.CHAPTER,
-        title: "Boîte 11: Plaidoyers et synergies",
+        title: "Boîte 10: Plaidoyers et synergies",
         id: "plaidoyers-et-synergies",
         content: [
           {
@@ -1528,7 +1944,7 @@ module.exports = {
       },
       {
         type: CONTENT_TYPE.CHAPTER,
-        title: "Boîte 12: Ressources",
+        title: "Boîte 11: Ressources",
         id: "ressources",
         content: [
           {
