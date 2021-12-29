@@ -86,13 +86,8 @@ const ContentLayoutGuide = ({
           {asideLeft.map((item, index) => (
             <TextMenu
               as={Link}
-              $isActive={
-                index >= 10
-                  ? true
-                  : chapterId
-                  ? chapterId === item.id
-                  : chapterId === ""
-              }
+              $isActive={chapterId ? chapterId === item.id : chapterId === ""}
+              $index={index}
               $isOpen={isMobileMenuOpen}
               key={String(item.href) + String(index) + "left"}
               to={item.href}
