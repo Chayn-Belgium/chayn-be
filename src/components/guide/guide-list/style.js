@@ -20,6 +20,15 @@ export const P = styled.p`
   > b {
     font-weight: 700;
   }
+
+  > a {
+    color: ${COLOR.BITTERSWEET};
+    font-weight: 600;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `
 
 export const List = styled.ul`
