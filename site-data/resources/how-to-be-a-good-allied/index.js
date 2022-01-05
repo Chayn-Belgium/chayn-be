@@ -1142,51 +1142,49 @@ module.exports = {
         type: CONTENT_TYPE.MAIN_TITLE,
         title: "Przewodnik dobrego sojusznika",
       },
-      // {
-      //   type: CONTENT_TYPE.TITLE,
-      //   title: "How others have helped loved ones?",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TEXT,
-      //   text:
-      //     "It’s often helpful to understand a situation by hearing from those who have lived through the experience. If you’re here, we know it’s because you want to know what more you can do to be a source of support. Below we have shared advice from those who have supported friends experiencing domestic abuse, or survivors who have had a friend support them through their journey. This may help you in your experiences.\nBefore we share those stories, we want to highlight the experience of one survivor.",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TITLE,
-      //   title: "All I needed was...",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TEXT,
-      //   text:
-      //     "My partner was always complaining about “his suffering,” and how he was misunderstood. To add to it, he had a terrible temper, one that led him to impart violence against me in more than one occasion. Somehow, I was always the one to blame. For everything that happened to me, him, and us. It was me who had to change for him to get better. At times, I really wish I had a good friend at that time. All I really needed was someone, anyone, who would have approached me and asked if my relationship was bad. Only if someone had asked me to confide in them, and offered to help.",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TITLE,
-      //   title: "Helping my sister",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TEXT,
-      //   text:
-      //     'My story is about being a sister-cum-friend. They say, "you have to help yourself before anyone else will help you". I agree 200%. I tried to help my sister to come out a stale relationship by giving her moral, physical, financial support but she is not ready to put her kids under stress that would be a result of taking any decision. I believe victims have to be ready to realise and have assurance of security and wellbeing, if they choose to take action against abuse or violence from their partners.\nKey Takeaway: Realise that your friend/family member has to be willing to help themselves first, for a breakthrough to take place, patience is key.',
-      // },
-      // {
-      //   type: CONTENT_TYPE.TITLE,
-      //   title: "Helping a friend",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TEXT,
-      //   text:
-      //     "\"My friend was in a relationship with a controlling guy for about a year. All seemed normal throughout the relationship in my outsider's eyes and she didn't really notice any 'warning signs' as they were very much in love with each other. After a year, I had a chat with her as he was behaving shitty towards her - it was never his fault and he would always blame her for things; even going quiet for a couple of days and making her feel bad. She talked me through certain situations during their relationship when he had been really controlling and manipulative. She said she feels stupid for never recognising these signs. She was scared of meeting him to break up with him - as she didn't know how he'd react. We made a plan together and I supported her and was available to chat with her all the time. She met him in a public place, set her agenda, broke up with him, and I advised her to secretly record the chat (just in case). Then I helped move her things from his flat - this way, she didn't have to see him.\"\nKey Takeaway: It takes time - you can point to all the resources and tips/tricks you want, but don't be pushy. Individuals need to make up their own mind and come to their own conclusions - this is the only way a decision becomes sustainable, long-term and feels right.",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TITLE,
-      //   title: "Having a supportive friend gave me courage",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TEXT,
-      //   text:
-      //     "“In the depths of my nightmare, having a friend was the only thing that kept me going. Her perseverance to encourage me to seek further help and being someone who offered unwavering support and consistency against a tumultuous background was so important to me. One day I did take the leap and left my abusive partner. It wasn’t easy, and without the help of my friend, I don’t think I would be living the positive new lifestyle that I do now, and I am eternally grateful for that.”\nKey Takeaway: As a friend, be consistent with your support",
-      // },
+      {
+        type: CONTENT_TYPE.TITLE,
+        title: "Jak inni pomogli bliskim",
+      },
+      {
+        type: CONTENT_TYPE.TEXT,
+        text:
+          "Często pomocne w zrozumieniu sytuacji jest wysłuchanie tych, którzy doświadczyli jej na własnej skórze. Jeśli tu jesteś, to wiemy, że chcesz wiedzieć, co jeszcze możesz zrobić, aby stać się źródłem wsparcia. Poniżej przedstawiamy rady osób, które wspierały przyjaciół doświadczających przemocy domowej, jak również tych, którzy jej doświadczyli, a których przyjaciel wspierał w tej sytuacji. Być może pomogą Ci one w Twoich doświadczeniach.\nZanim podzielimy się z wami tymi historiami, chcemy zwrócić uwagę na przykład jednej osoby, która doświadczyła przemocy:.",
+      },
+      {
+        type: CONTENT_TYPE.TITLE,
+        title: "Wszystko czego pragnęłam to...",
+      },
+      {
+        type: CONTENT_TYPE.TEXT,
+        text: `Mój partner ciągle narzekał na "swoje nieszczęście" i na to, że jest nierozumiany. Na domiar złego miał silny temperament, który niejednokrotnie doprowadził go do użycia przemocy wobec mnie. W jakiś sposób to właśnie ja byłam zawsze winna. Za wszystko, co działo się ze mną, z nim i z nami. To ja musiałam się zmienić, żeby on mógł poczuć się lepiej. Czasami naprawdę żałuję, że nie miałam wtedy dobrego przyjaciela. Wszystko, czego naprawdę potrzebowałam, to ktoś, ktokolwiek, kto by do mnie podszedł i zapytał, czy mój związek jest zły. Tylko wówczas, gdyby ktoś poprosił mnie o zwierzenie się i zaoferował pomoc.`,
+      },
+      {
+        type: CONTENT_TYPE.TITLE,
+        title: "Pomoc siostrze",
+      },
+      {
+        type: CONTENT_TYPE.TEXT,
+        text:
+          'Moja historia jest o byciu siostrą-przyjaciółką. Mówi się, że "musisz pomóc sobie, zanim ktoś inny ci pomoże". Zgadzam się z tym stwierdzeniem w 200%. Próbowałam pomóc mojej siostrze wyjść z nieudanego związku, dając jej moralne, fizyczne i finansowe wsparcie, ale ona nie jest gotowa, by narazić swoje dzieci na stres, który byłby wynikiem podjęcia jakiejkolwiek decyzji. Uważam, że ofiary muszą być przygotowane na uświadomienie sobie i zapewnienie sobie bezpieczeństwa i dobrego samopoczucia, jeśli zdecydują się podjąć działania przeciwko przemocy ze strony swoich partnerów.\n\nKluczowy wniosek: Uświadom sobie, że twój przyjaciel/członek rodziny musi najpierw chcieć pomóc sobie samemu, aby nastąpił przełom, cierpliwość jest kluczem.',
+      },
+      {
+        type: CONTENT_TYPE.TITLE,
+        title: "Pomoc przyjaciółce",
+      },
+      {
+        type: CONTENT_TYPE.TEXT,
+        text: `"Moja przyjaciółka była przez rok w związku z facetem,który ją kontrolował. W oczach osoby z zewnątrz, w moich oczach wydawało się, że to normalny związek. Moja przyjaciółka naprawdę nie zauważyła żadnych "flag ostrzegawczych", ponieważ byli w sobie bardzo zakochani. Po roku odbyłem z nią rozmowę, ponieważ on zachowywał się wobec niej kiepsko - nigdy nie była to jego wina i zawsze obwiniał ją o różne rzeczy; nawet milkł na kilka dni i sprawiał, że czuła się źle. Opowiedziała mi o pewnych sytuacjach podczas trwania ich związku, kiedy jej chłopak był kontrolujący i manipulujący. Powiedziała, że czuje się głupio, że nigdy nie rozpoznała tych znaków. Bała się z nim spotkać, żeby z nim zerwać, ponieważ nie wiedziała, jak on zareaguje. Wspólnie opracowaliśmy plan, a ja wspierałem ją i byłem dostępny, aby z nią rozmawiać przez cały czas. Spotkała się z nim w miejscu publicznym, ustaliła swój plan, zerwała z nim, a ja poradziłem jej, żeby potajemnie nagrywała rozmowę (na wszelki wypadek). Następnie pomogłem jej przenieść rzeczy z jego mieszkania - w ten sposób nie musiała go więcej widzieć."\n\nKluczowe wnioski: To wymaga czasu - możesz wskazać wszystkie zasoby i wskazówki/sztuczki, jakie chcesz, ale nie bądź natarczywy. Każdy musi sam wypracować swoje zdanie i dojść do własnych wniosków - to jedyny sposób, aby decyzja stała się trwała, długoterminowa i słuszna.`,
+      },
+      {
+        type: CONTENT_TYPE.TITLE,
+        title: "Wspierająca przyjaciółka dodała mi odwagi",
+      },
+      {
+        type: CONTENT_TYPE.TEXT,
+        text: `"W głębi mojego koszmaru posiadanie przyjaciółki było jedyną rzeczą, która trzymała mnie przy życiu. Jej wytrwałość w zachęcaniu mnie do szukania dalszej pomocy i bycie kimś, kto oferował niezachwiane wsparcie i konsekwencję w burzliwym kontekście, było dla mnie niezmiernie ważne. Pewnego dnia podjęłam decyzję i odeszłam od maltretującego mnie partnera. Nie było to łatwe, a bez pomocy mojej przyjaciółki nie sądzę, że prowadziłabym teraz taki pozytywny, nowy styl życia, jaki prowadzę, i jestem jej za to dozgonnie wdzięczna.\n\nKluczowe wnioski: Jako przyjaciel, bądź konsekwentny w swoim wsparciu.
+          `,
+      },
       // {
       //   type: CONTENT_TYPE.TITLE,
       //   title: "Being helped…",
@@ -1422,124 +1420,110 @@ module.exports = {
         type: CONTENT_TYPE.MAIN_TITLE,
         title: "İyi müttefikin rehberi",
       },
-      // {
-      //   type: CONTENT_TYPE.TITLE,
-      //   title: "How others have helped loved ones?",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TEXT,
-      //   text:
-      //     "It’s often helpful to understand a situation by hearing from those who have lived through the experience. If you’re here, we know it’s because you want to know what more you can do to be a source of support. Below we have shared advice from those who have supported friends experiencing domestic abuse, or survivors who have had a friend support them through their journey. This may help you in your experiences.\nBefore we share those stories, we want to highlight the experience of one survivor.",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TITLE,
-      //   title: "All I needed was...",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TEXT,
-      //   text:
-      //     "My partner was always complaining about “his suffering,” and how he was misunderstood. To add to it, he had a terrible temper, one that led him to impart violence against me in more than one occasion. Somehow, I was always the one to blame. For everything that happened to me, him, and us. It was me who had to change for him to get better. At times, I really wish I had a good friend at that time. All I really needed was someone, anyone, who would have approached me and asked if my relationship was bad. Only if someone had asked me to confide in them, and offered to help.",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TITLE,
-      //   title: "Helping my sister",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TEXT,
-      //   text:
-      //     'My story is about being a sister-cum-friend. They say, "you have to help yourself before anyone else will help you". I agree 200%. I tried to help my sister to come out a stale relationship by giving her moral, physical, financial support but she is not ready to put her kids under stress that would be a result of taking any decision. I believe victims have to be ready to realise and have assurance of security and wellbeing, if they choose to take action against abuse or violence from their partners.\nKey Takeaway: Realise that your friend/family member has to be willing to help themselves first, for a breakthrough to take place, patience is key.',
-      // },
-      // {
-      //   type: CONTENT_TYPE.TITLE,
-      //   title: "Helping a friend",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TEXT,
-      //   text:
-      //     "\"My friend was in a relationship with a controlling guy for about a year. All seemed normal throughout the relationship in my outsider's eyes and she didn't really notice any 'warning signs' as they were very much in love with each other. After a year, I had a chat with her as he was behaving shitty towards her - it was never his fault and he would always blame her for things; even going quiet for a couple of days and making her feel bad. She talked me through certain situations during their relationship when he had been really controlling and manipulative. She said she feels stupid for never recognising these signs. She was scared of meeting him to break up with him - as she didn't know how he'd react. We made a plan together and I supported her and was available to chat with her all the time. She met him in a public place, set her agenda, broke up with him, and I advised her to secretly record the chat (just in case). Then I helped move her things from his flat - this way, she didn't have to see him.\"\nKey Takeaway: It takes time - you can point to all the resources and tips/tricks you want, but don't be pushy. Individuals need to make up their own mind and come to their own conclusions - this is the only way a decision becomes sustainable, long-term and feels right.",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TITLE,
-      //   title: "Having a supportive friend gave me courage",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TEXT,
-      //   text:
-      //     "“In the depths of my nightmare, having a friend was the only thing that kept me going. Her perseverance to encourage me to seek further help and being someone who offered unwavering support and consistency against a tumultuous background was so important to me. One day I did take the leap and left my abusive partner. It wasn’t easy, and without the help of my friend, I don’t think I would be living the positive new lifestyle that I do now, and I am eternally grateful for that.”\nKey Takeaway: As a friend, be consistent with your support",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TITLE,
-      //   title: "Being helped…",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TEXT,
-      //   text:
-      //     "“I had several friends who supported me in escaping an abusive relationship a number of years ago. It took time, lots of time; looking back far too much time. But the one thing that I really appreciated was my friends’ supportive listening skills. They were ALWAYS there to hear what I had to say, and kept me sane.”\nKey Takeaway: Don’t underestimate the power of listening\nWant to share your story? Email it to us on team at chayn.co or you can also send it to us on Facebook.",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TITLE,
-      //   title: "It’s not all about the ears",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TEXT,
-      //   text:
-      //     "When someone is living in a violent or abusive relationship, it is often difficult for them to speak about it with other people. They can be scared of being judged and accused of lying. They might feel forced into having to prove to others that they are in fact telling the truth or even embarrassed or ashamed to be in an abusive relationship.\nThere are many forms of abuse (physical, verbal, psychological, emotional, sexual) and when someone is living through it, it is not always easy to recognise abuse for what it is. The first step to someone leaving a violent or abusive relationship is to be able to acknowledge it. Speaking about what they are going through, even if it confuses them, is one way to share their feelings that things aren’t going well or as they should. How a friend listens to these stories is of key importance.",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TITLE,
-      //   title: "Tips",
-      // },
-      // {
-      //   type: CONTENT_TYPE.LIST,
-      //   intro:
-      //     "Listen patiently. Do not interrupt or force your own opinions on your friend. It is normal to have an urge to do so because you want to get them out of this situation as quickly as possible. Yet, you risk shutting them down and stopping them from speaking to you openly in the future.",
-      //   list: [
-      //     "Wait and respect the time they take to tell you their story. Your friend may not be ready to tell you everything that has happened to them in the first sitting.",
-      //     "Be sensitive to the surroundings in which you meet and talk. Try to meet in a quiet place which is neutral enough to help them talk about such difficult issues. Your friend may not want to talk about it in public, so perhaps go for a walk or do an activity - like cooking together. It is sometimes easier to talk when you are not just staring at one another across a table.",
-      //     "Do not judge. Your opinion is important but you shouldn’t make your friend feel judged. Try to maintain a conversation that allows them to speak freely. Ask open-ended questions that encourage them to elaborate on their situation and describe their experiences. For example, you can simply ask “How are you?” or “I’d love to hear what is going on. Would you like to share with me?”. You can also mirror back what they are saying, using phrases such as “It sounds like you are…” or “From what I understand you are saying that…” You may also try to avoid questions that require your friend to justify their experiences, such as those that start with “why…?”.",
-      //     "Listen and be careful about what you say. Remember that your friend may have positive feelings such as love for their abuser. Attacking their abuser may cause your friend to become defensive and/or shut down.",
-      //     "Try to work out if your friend is in danger. Listen carefully and sensitively to what your friend is telling you. Try to assess carefully if they are in danger, but make sure not to scare or panic them. You will find sources at the end of this guide presenting the signs you should look out for.",
-      //     "Speak to your friend regularly. Do not let too much time pass between the occasions that you speak to your friend about their situation. Try to do this without being intrusive, and instead aim to create a safe space where they can speak to you in confidence.",
-      //     "Recommend your friend to speak to other people, but only if it is safe to do so. It is really important that in order to prevent increasing risk, they only tell sensitive information to people they know they can trust, especially if the individuals they are unsure about are connected to their abuser or the abuser’s family. One way of testing people is to entrust them with a small, innocent secret and wait to see if they break your friend’s trust. If they do, your friend will know not to trust them. If their family, friends and co-workers are supportive, then you can encourage your friend to build a network of trust. This will help them to get the support and protection they might need.",
-      //     "Speak to someone. Once your friend has confided in you about their situation you will need support too. While you are helping your friend through this difficult situation, it's important to take care of your own mental health in the process. You may feel frustrated and powerless if you try to resolve the situation alone.",
-      //     "Choose carefully who you speak to. Speak to someone who you can trust and who may help you to understand how to go forward. Make sure not to speak to someone who is also close to your friend in need, or someone who they may not want to confide in.",
-      //     "Do not speak about the situation to your friend’s partner. You cannot resolve the situation by mediating between your friend and their partner. You must not tell their partner what they have told you. Doing so can endanger your friend and may make their situation more difficult. Above all, you are likely to lose your friend’s trust.",
-      //     "Remember that you can seek professional support. It can be very emotionally difficult to support a friend in a violent relationship. If the situation continues, remember that it is not your fault. There are a variety of professional support networks to protect people in violent relationships. You can contact them for advice and to talk about your feelings. They are available for people in both homo- and heterosexual relationships. We are aware that these support structures might not exist or might be difficult to access from where you live and that this is a hard situation to be in. In this case, there might be other resources you can access over the internet, like online counseling or chat rooms. For example, have a look at 7 Cups of Tea or look at the end of this guide for more resources.",
-      //   ],
-      // },
-      // {
-      //   type: CONTENT_TYPE.TEXT,
-      //   text:
-      //     "At Chayn, we offer platforms that are designed to help people experiencing domestic abuse in different regions of the world, visit our local chapters Chayn Pakistan, Chayn India, Chayn Italia and our platform Supernova Project for information related to domestic abuse within LGBTQIA+ relationships and links to helpful organisations close to where you live.\n\nRemember that you cannot resolve the situation yourself. You are not in the relationship and hence, cannot control what happens. This can be frustrating and can make you feel like you are not doing anything to help. Try to remember that just listening and supporting your friend is one of the most important things you can do to make them feel stronger.",
-      // },
-      // {
-      //   type: CONTENT_TYPE.TITLE,
-      //   title: "Tips",
-      // },
-      // {
-      //   type: CONTENT_TYPE.LIST,
-      //   list: [
-      //     "Let them know they are not alone! Although it is clearly not acceptable that this is happening, there are many people who have experienced similar situations and have made it through.",
-      //     "Do not put your friend down. Remember that abuse against women cuts across socio-economic and political groups. We are all exposed to it.",
-      //     "Remember that each case is unique, even if there are similar patterns of abuse in many abusive relationships. There are no universal answers or ways out of violent and abusive relationships. Respect each individual case for what it is. Don’t compare your friend’s situation with a different one that might trivialise their incident or make them feel as if they weren’t taken seriously.",
-      //     "Make it clear you believe them. Never doubt that your friend is telling you the truth or they may not be able to confide in you. Remember that it is a huge step to tell someone that your partner is violent or abusive. You must trust your friend so they can trust you.",
-      //     "Be careful not to sound judgemental when expressing your opinion. For example, do not say “I would never have expected that you would let something like this happen to you!”",
-      //     "Do not assume that the violence and abuse is mutual. This assumption is made particularly often for same-sex relationships because it is sometimes believed that a closer similarity in physical strength will mean that mutual abuse is more likely. This is, of courses, incorrect logic. Be aware of any subconscious assumptions you make so that you are able to catch yourself out. Believe what your friend tells you and do not assume to know better. People who are suffering abuse at the hands of a partner tend to blame and belittle themselves. If you express doubts, then you are not helping them.",
-      //     "Remember you cannot get your friend out of this situation alone. The person who is in the abusive relationship must be free to leave in their own way and time. You may become frustrated if they stay in the relationship. Even if they keep putting themselves in that situation, do not blame them and do not try to force a quick solution. Respect your friend and the time they need. Do not try to solve the situation yourself, only your friend can choose to do that. The most important thing is remaining open and available to talk to.",
-      //     "Do not blame yourself if your friend stays in the relationship. It is difficult to leave an abusive relationship and it may take a lot of time. Continue to support them and provide a safe space where they can speak to you in confidence. Providing trust and support is essential to help them have some relief and eventually break free.",
-      //     "Try to focus the discussion on how your friend feels. Often people who experience abuse at the hands of a partner are blamed for the situation and their feelings can be dismissed. Help them explore their feelings and understand that they are not wrong or at fault.",
-      //     "Help them to clarify and interpret what has happened. Get your friend to speak to you about the times when their partner was violent or abusive. Ask them to speak about when they were controlling or coercive. Help them separate fact from feeling. Too often, the words ‘love’ and ‘passion’ are used to justify any kind of behaviour.",
-      //     "Ask your friend how you can help them. Your friend might know what they need your help with. Don’t make assumptions about their needs, ask first.",
-      //     "Try to help them explore the imbalance of power that characterises abusive relationships. Does your friend often make compromises to please their partner? Is their partner condescending? Is your friend changing their behaviour to please their partner? Are they avoiding friends in order to make their partner feel better? Help them understand and realise that they will never be able to make their abusive partner happy but instead will end up abandoning their own identity. Biderman’s Chart of Coercion is an example of a useful tool to identify abuse. It can also be particularly difficult for people who identify as LGBTQIA+ to identify abuse within their relationships because abuse in these relationships often do not follow the narrative we so often hear about abuse. The Supernova Project outlines what abuse can look like within LGBTQIA+ relationships, which can be a useful tool to identify abuse",
-      //     "Do not legitimise the violence and abuse. Although you should be careful not to scare them, you should recognise and name violence and abuse for what they are. No emotion can ever justify violence or abuse.",
-      //     "Make it clear that substance dependency is not an excuse. The use and abuse of drugs, alcohol and pharmaceuticals is not an excuse for violence or abuse in any situation.",
-      //     "Nothing is an excuse for violent behaviour! Even though it might explain the behaviour somehow, the abuser’s traumatic past or challenging circumstances are never a justification for abuse and violence.",
-      //     "Highlight your friend’s strengths and the possibilities open to them. Often people who suffer violence and abuse feel powerless and overwhelmed by the situation. Outside help can make them feel less alone and realise that they are far from being useless, even if their abuser might have made them feel this way. Help them understand that they can take back control of the situation and that they can determine their own life’s path. If they feel nervous that they do not have enough evidence of the abuse itself to convince family and/or authorities, you can go through our ‘How to build your own domestic violence case without a lawyer’ which provides tips and templates on how to collect and display evidence.",
-      //     "If you think it could help, take them to a women’s refuge or drop-in centre or the house of someone where they feel safe.",
-      //     "Help your friend find alternative accommodation, particularly if they need to get away from their partner or if you think that they are in immediate danger.",
-      //     "If you think it could help, and you feel comfortable doing so, speak to your friend about your own experiences of violent or abusive relationships. It could help them feel less inadequate and embarrassed. Gender-based and same-sex violence are a collective problem. Recognising them, sharing stories and supporting each other are essential in the fight against them.",
-      //   ],
-      // },
+      {
+        type: CONTENT_TYPE.TITLE,
+        title: "Başkaları sevdiklerine nasıl yardım etti",
+      },
+      {
+        type: CONTENT_TYPE.TEXT,
+        text:
+          "Bir durumu, deneyimi yaşamış olanlardan dinleyerek anlamak genellikle yararlıdır. Buradaysanız, bunun bir destek kaynağı olmak için daha neler yapabileceğinizi bilmek istediğinizden olduğunu biliyoruz. Aşağıda, aile içi tacize uğrayan arkadaşlarını destekleyenlerden veya yolculukları boyunca onları destekleyen bir arkadaşı olan kurtulanların tavsiyelerini paylaştık. Bu, deneyimlerinizde size yardımcı olabilir.\nBu hikayeleri paylaşmadan önce, hayatta kalan bir kişinin deneyimini vurgulamak istiyoruz.",
+      },
+      {
+        type: CONTENT_TYPE.TITLE,
+        title: "Tek ihtiyacım olan şey ...",
+      },
+      {
+        type: CONTENT_TYPE.TEXT,
+        text: `Erkek arkadaşım her zaman "çektiği acıdan" ve nasıl yanlış anlaşıldığından şikayet ediyordu. Ayrıca, birden fazla kez bana karşı şiddet uygulamasına neden olan korkunç bir mizacı vardı. Her nasılsa, suçlanacak kişi hep bendim. Bana, ona ve bize olan her şey için. İyileşmesi için değişmesi gereken bendim. Bazen, o zamanlar gerçekten iyi bir arkadaşım olmasını isterdim. Gerçekten ihtiyacım olan tek şey, bana bir arkadaş yaklaşıp ilişkimin kötü olup olmadığını sorması.Keşke biri benden ona güvenmemi istese ve yardım teklif etse.`,
+      },
+      {
+        type: CONTENT_TYPE.TITLE,
+        title: "Kız kardeşime yardım etmek",
+      },
+      {
+        type: CONTENT_TYPE.TEXT,
+        text: `Hikayem abla-arkadaş olmakla ilgili. "Başkası sana yardım etmeden önce kendine yardım etmelisin" diyorlar. % 200 katılıyorum. Kız kardeşime manevi, fiziksel, maddi destek vererek kötü bir ilişki kurmasına yardım etmeye çalıştım ama çocuklarını herhangi bir karar almanın sonucu olacak strese sokmaya hazır değil. Mağdurların, partnerlerinin tacizine veya şiddetine karşı harekete geçmeyi seçerlerse, güvenlik ve refahın farkına varmaya ve güvence altına almaya hazır olmaları gerektiğine inanıyorum.\n\nTemel Çıkarım: Arkadaşınızın / aile üyenizin önce kendilerine yardım etmeye istekli olması gerektiğini, bir atılımın gerçekleşmesi için sabırlı olmanın çok önemli olduğunu anlayın.`,
+      },
+      {
+        type: CONTENT_TYPE.TITLE,
+        title: "Bir arkadaşa yardım etmek",
+      },
+      {
+        type: CONTENT_TYPE.TEXT,
+        text: `Arkadaşım, kontrolcü bir adamla yaklaşık bir yıldır ilişki içindeydi. Yabancının gözünde her şey ilişki boyunca normal görünüyordu ve birbirlerine çok aşık oldukları için herhangi bir 'uyarı işareti' görmedi. Bir yıl sonra, ona karşı boktan davrandığı bana söyledi - bu her zaman erkek arkadaşı sucu olduğunu söylerdi ve her şey için arkadaşımı suçlardı; hatta bazen birkaç gün arkadaşım sessiz kalıyor ve onu kötü hissettiriyor.\n\nİlişkileri sırasında gerçekten kontrolcü ve manipülatif olduğu bazı durumlar hakkında benimle konuştu. Bu işaretleri asla görmediği için kendini aptal hissettiğini söyledi. Ondan ayrılmak söyleyeceği zaman nasıl tepki vereceğini bilmediği için onunla buluşmaktan korkuyordu.Birlikte bir plan yaptık ve onu destekledim ve onunla her zaman sohbet etmeye müsaittim. Onunla halka açık bir yerde tanıştı, gündemini belirledi, ondan ayrıldı ve onların sohbeti gizlice kaydetmesini tavsiye ettim (her ihtimale karşı).Sonra eşyalarını evinden taşımasına yardım ettim - bu şekilde onu görmesine gerek kalmadı. "\n\nTemel Çıkarım: Zaman alır - istediğiniz tüm kaynakları ve ipuçlarını / püf noktalarını gösterebilirsiniz, ancak ısrarcı olmayın. Bireylerin kendi kararlarını vermeleri ve kendi sonuçlarına varmaları gerekir - bu, bir kararın sürdürülebilir, uzun vadeli ve doğru hissettirmesinin tek yoludur.\n\nDestekleyici bir arkadaşım olması bana cesaret verdi\n\n“Kabusumun derinliklerinde, bir arkadaşım olması beni ayakta tutan tek şeydi. Beni daha fazla yardım aramaya cesaretlendırme çabaları  ve çalkantılı bir geçmişe karşı tereddütsüz destek ve tutarlılık sunan biri olmak benim için çok önemliydi. Bir gün beklenen adımı aldım ve istismarcı partnerimden ayrıldım. Kolay olmadı ve arkadaşımın yardımı olmadan şu anda kurduğum olumlu yeni yaşam tarzını yaşayacağımı sanmıyorum ve bunun için sonsuza dek minnettarım. "\n\nTemel Çıkarım: Bir arkadaş olarak desteğinizle tutarlı olun`,
+      },
+      {
+        type: CONTENT_TYPE.TITLE,
+        title: "Yardım edilen biri...",
+      },
+      {
+        type: CONTENT_TYPE.TEXT,
+        text: `“Birkaç yıl önce taciz içeren bir ilişkiden kaçmam için beni destekleyen birkaç arkadaşım vardı. Zaman aldı, çok zaman; geriye bakmak çok fazlaydı. Ama gerçekten takdir ettiğim tek şey beni destekleyen arkadaşlarımın dinleme becerileriydi. DAİMA söyleyeceklerimi duymak için oradaydılar ve aklımı başımda tuttular."\nTemel Çıkarım: Dinlemenin gücünü küçümsemeyin\nHikayeni paylaşmak ister misin? Chayn.co ekibinde bize e-posta gönderin veya bize Facebook üzerinden de gönderebilirsiniz.`,
+      },
+      {
+        type: CONTENT_TYPE.TITLE,
+        title: "Her şey dinlemekle ilgili değil:",
+      },
+      {
+        type: CONTENT_TYPE.TEXT,
+        text:
+          "Bir kişi şiddet ve istismar içeren bir ilişki içinde yaşadığında, bunun hakkında başka insanlarla konuşmak genellikle zordur. Yargılanmaktan ve yalan söylemekle suçlanmaktan korkabilirler. Doğruyu söylediklerini, hatta kötü niyetli bir ilişki içinde olmaktan utandıklarını veya utandıklarını başkalarına kanıtlamak zorunda hissedebilirler.\nİstismarın pek çok biçimi vardır (fiziksel, sözlü, psikolojik, duygusal, cinsel) ve birileri bununla yaşarken, istismarın ne olduğunu anlamak her zaman kolay değildir. Şiddet veya taciz içeren bir ilişkiyi bırakmanın ilk adımı, bunu kabul edebilmektir. Kafalarını karıştırsa bile, neler yaşadıkları hakkında konuşmak ve işlerin iyi gitmediği ya da olması gerektiği gibi hissettiklerini paylaşmanın bir yoludur. Bir arkadaşın bu hikayeleri nasıl dinlediği çok önemlidir.",
+      },
+      {
+        type: CONTENT_TYPE.TITLE,
+        title: "İpuçlar",
+      },
+      {
+        type: CONTENT_TYPE.LIST,
+        intro:
+          "Sabırla dinleyin. Arkadaşınıza kendi fikirlerinizi kesmeyin veya zorlamayın. Bunu iyi niyetinizden gelmesi normaldir çünkü onları bu durumdan mümkün olduğunca çabuk çıkarmak istiyorsun. Yine de, onları kapatma ve gelecekte sizinle açıkça konuşmalarını engelleme riskiyle karşı karşıyasınız.",
+        list: [
+          "Bekleyin ve size hikayelerini anlatmak için harcadıkları zamana saygı gösterin. Arkadaşınız ilk oturuşta başına gelen her şeyi size anlatmaya hazır olmayabilir.",
+          "Buluştuğunuz ve konuştuğunuz çevreye karşı duyarlı olun. Zor konular hakkında konuşmalarına yardımcı olacak kadar tarafsız, sessiz bir yerde buluşmaya çalışın. Arkadaşınız bu konu hakkında toplum içinde konuşmak istemeyebilir, bu yüzden belki yürüyüşe çıkın ya da birlikte yemek yapmak gibi bir aktivite yapın. Masanın üzerinden sadece birbirinize bakmadığınız zamanlarda konuşmak bazen daha kolaydır.",
+          `Yargılamayın. Fikriniz önemlidir ama arkadaşınızı yargılanmış hissettirmemelisiniz. Özgürce konuşmalarını sürdürmeye çalışın. Durumlarını detaylandırmaya ve deneyimlerini açıklamaya teşvik eden, açık ve uçlu sorular sorun. Örneğin, "Nasılsın?" Diye sorabilirsiniz. veya "Haberlerini ve hissettiklerini duymak için burdayım. Benimle paylaşmak ister misin? ”. Ayrıca, "demek ki..." veya "Anladığım kadarıyla şunu söylüyorsun ..." gibi ifadeler kullanarak söylediklerini geri yansıtabilirsiniz. Ayrıca, arkadaşınızın deneyimlerini haklı çıkarmasını gerektiren sorulardan kaçınmaya çalışabilirsiniz. "neden ...?" ile başlayanlar gibi.`,
+          `Dinleyin ve söylediklerinize dikkat edin. Arkadaşınızın, istismarcısına karşı sevgi gibi olumlu duyguları olabileceğini unutmayın. Tacizciye saldırmak, arkadaşınızın savunmaya geçmesine ve / veya kapatılmasına neden olabilir.`,
+          `Arkadaşınızın tehlikede olup olmadığını anlamaya çalışın. Arkadaşınızın size söylediklerini dikkatli ve hassas bir şekilde dinleyin. Tehlikede olup olmadıklarını dikkatlice değerlendirmeye çalışın, ancak onları korkutmamaya veya paniklememeye dikkat edin. Bu kılavuzun sonunda dikkat etmeniz gereken işaretleri sunan kaynakları bulacaksınız.`,
+          `Arkadaşınızla düzenli olarak konuşun. Arkadaşınızla durumu hakkında konuştuğunuz zamanlar arasında çok fazla zaman geçermeye izin vermeyin. Bunu müdahaleci olmadan yapmaya çalışın ve bunun yerine her zaman paylaşabileceği için güvenli bir alan yaratmayı hedefleyin.`,
+          `Arkadaşınıza başkalarıyla konuşmasını tavsiye edin, ancak bunu yapmak güvenli ise. Artan riski önlemek için, hassas bilgileri yalnızca güvenebileceklerini bildikleri kişilere söylemeleri gerçekten önemlidir, özellikle de emin olmadıkları kişiler istismarcıya veya istismarcının ailesine bağlıysa. İnsanları test etmenin bir yolu, onlara küçük, masum bir sırla güvenmek ve arkadaşınızın güvenini kırıp kırmadığını görmek için beklemektir. Eğer yaparlarsa, arkadaşınız onlara güvenmemesi gerektiğini bilecektir. Aileleri, arkadaşları ve iş arkadaşları destekleyiciyse, arkadaşınızı bir güven ağı oluşturmaya teşvik edebilirsiniz. Bu, ihtiyaç duyabilecekleri destek ve korumayı almalarına yardımcı olacaktır.`,
+          `Biriyle konuşun. Arkadaşınız size durumu hakkında bir kez güvendikten sonra, sizin de desteğe ihtiyacınız olacak. Arkadaşınıza bu zor durumda yardım ederken, bu süreçte kendi ruh sağlığınıza dikkat etmeniz önemlidir. Durumu tek başına çözmeye çalışırsan, hayal kırıklığına uğramış ve güçsüz hissedebilirsin.`,
+          `Kiminle konuşacağınızı dikkatlice seçin. Güvenebileceğiniz ve nasıl ilerleyeceğinizi anlamanıza yardımcı olabilecek biriyle konuşun. İhtiyacı olan arkadaşınıza yakın olan veya güvenmek istemeyebilecekleri biriyle konuşmayın.`,
+          `Arkadaşınızın partnerine durum hakkında konuşma. Arkadaşınız ve sevgilisi arasında arabuluculuk yaparak durumu çözemezsiniz. Arkadaşın partnerine size söylediklerini söylememelisiniz. Bunun yapması arkadaşınızı tehlikeye atabilir ve durumunu daha da zorlaştırabilir. Her şeyden önce, arkadaşınızın güvenini kaybetme olasılığı yükseliyor.`,
+          `Profesyonel destek alabileceğinizi unutmayın. Şiddet içeren bir ilişkide bir arkadaşı desteklemek duygusal olarak çok zor olabilir. Durum devam ederse, bunun senin hatan olmadığını unutma. Şiddet içeren ilişkilerde insanları korumak için çeşitli profesyonel destek ağları vardır. Tavsiye almak ve duygularınız hakkında konuşmak için onlarla iletişime geçebilirsiniz. Hem eşcinsel hem de heteroseksüel ilişkilerdeki insanlar için mevcutturlar. Bu destek yapılarının mevcut olmayabileceğinin veya yaşadığınız yerden erişmenin zor olabileceğinin ve bunun içinde bulunmanın zor bir durum olduğunun farkındayız. Bu durumda, çevrimiçi danışmanlık gibi internet üzerinden erişebileceğiniz başka kaynaklar olabilir. veya sohbet odaları. Örneğin, 7 Fincan Çaya bir göz atın veya daha fazla kaynak için bu kılavuzun sonuna bakın.`,
+        ],
+      },
+      {
+        type: CONTENT_TYPE.TEXT,
+        text: `Chayn'da, dünyanın farklı bölgelerinde aile içi istismara maruz kalan kişilere yardımcı olmak için tasarlanmış platformlar sunuyoruz, yerel bölümlerimizi ziyaret edin Chayn Pakistan, Chayn India, Chayn Italia. LGBTQIA + ilişkileri ve bağlantıları dahilinde aile içi istismarla ilgili bilgiler için platformumuz Supernova Project'i ziyaret edin. Yaşadığınız yere yakın yardım kuruluşlarına.\n\nDurumu kendi başınıza çözemeyeceğinizi unutmayın. İlişki içinde değilsiniz ve bu nedenle ne olacağını kontrol edemezsiniz. Bu sinir bozucu olabilir ve size yardımcı olacak hiçbir şey yapmadığınızı hissettirebilir. Arkadaşınızı sadece dinlemenin ve desteklemenin, onları daha güçlü hissettirmek için yapabileceğiniz en önemli şeylerden biri olduğunu hatırlamaya çalışın.`,
+      },
+      {
+        type: CONTENT_TYPE.TITLE,
+        title: "İpuçları",
+      },
+      {
+        type: CONTENT_TYPE.LIST,
+        list: [
+          `Onlara yalnız olmadıklarını bildirin! Bunun olması açıkça kabul edilemez olsa da, benzer durumları deneyimlemiş ve atlatmış birçok insan var.`,
+          `Arkadaşını aşağı koyma. Tüm sosyo-ekonomik ve politik gruplardan gelen Kadınlara tacize uğrayabilir.Hepimiz buna maruz kalıyoruz.`,
+          `Birçok taciz edici ilişkide benzer istismar örüntüleri olsa bile, her vakanın benzersiz olduğunu unutmayın. Şiddet ve taciz içeren ilişkilerden evrensel bir yanıt veya çıkış yolu yoktur. Her vakaya ne olduğu için saygı gösterin. Arkadaşınızın durumunu, olayını önemsizleştirebilecek veya ciddiye alınmamış gibi hissettirmeyin ve farklı bir durumla karşılaştırmayın.`,
+          `Onlara inandığınızı açıkça belirtin. Arkadaşınızın size doğruyu söylediğinden asla şüphe duymayın, aksi takdirde size güvenemeyebilirler. Eşinizden şiddet veya tacizde görduğunu birisine söylemenin çok büyük bir adım olduğunu unutmayın. Arkadaşınıza güvenmelisiniz ki size güvenebilsin.`,
+          `Fikrinizi ifade ederken yargılayıcı görünmemeye dikkat edin. Örneğin, "Başına böyle bir şey gelmesine izin vereceğini asla beklemiyordum!" Demeyin.`,
+          `Şiddet ve istismarın karşılıklı olduğunu varsaymayın. Bu varsayım özellikle aynı cinsiyetten ilişkiler için yapılır çünkü bazen fiziksel güçte daha yakın bir benzerliğin karşılıklı istismarın daha muhtemel olduğu anlamına geleceğine inanılır. Elbette bu yanlış bir mantıktır. Yaptığınız bilinçaltı varsayımların farkında olun. Arkadaşınızın size söylediklerine inanın ve daha iyi bileceğinizi varsaymayın. Tacize uğrayan insanlar kendilerini genellikle suçluyorlar ve küçümsüyorlar. Şüphelerinizi dile getirirseniz, onlara yardım etmiyorsunuz demektir.`,
+          `Arkadaşınızı bu durumdan tek başına çıkaramayacağınızı unutmayın. İstismarcı bir ilişki içinde olan kişi, kendi yolunda ve zamanında ayrılmakta özgür olmalıdır. İlişkide kalırlarsa hayal kırıklığına uğrayabilirsiniz. Kendilerini bu duruma sokmaya devam etseler bile, onları suçlamayın ve hızlı bir çözüm bulmaya çalışmayın. Arkadaşınıza ve ihtiyaç duydukları zamana saygı gösterin. Durumu kendiniz çözmeye çalışmayın, sadece arkadaşınız bunu yapmayı seçebilir. En önemli şey açık ve konuşmaya hazır kalmaktır.`,
+          `Arkadaşınız ilişkide kalırsa kendinizi suçlamayın. İstismarcı bir ilişkiden ayrılmak zordur ve çok zaman alabilir. Onları desteklemeye devam edin ve sizinle güven içinde konuşabilecekleri güvenli bir alan sağlayın. Güven ve destek sağlamak, biraz rahatlamalarına ve sonunda özgürleşmelerine yardımcı olmak için çok önemlidir.`,
+          `Konuşurken arkadaşınızın nasıl hissettiğine odaklamaya çalışın. Bir partnerin elinde tacize uğrayan insanlar genellikle bu durumdan sorumlu tutulur ve duyguları olabilir.`,
+          `Olanları netleştirmelerine ve yorumlamalarına yardımcı olun. Arkadaşınızın, partnerinin şiddet veya tacizde bulunduğu zamanlar hakkında sizinle konuşmasını sağlayın. Hakkında konuşmalarını isteyin`,
+          `Arkadaşınıza onlara nasıl yardımcı olabileceğinizi sorun. Arkadaşınız neye ihtiyaç duyduğunu biliyor olabilir. İhtiyaçları hakkında varsayımlarda bulunmayın, önce sorun.`,
+          `İstismarcı ilişkileri karakterize eden güç dengesizliğini keşfetmelerine yardımcı olmaya çalışın. Arkadaşınız partnerini memnun etmek için sık sık taviz veriyor mu? Partnerleri arkadaşınızı küçümsüyor mu? Arkadaşınız partnerini memnun etmek için davranışını değiştiriyor mu? Partnerlerini daha iyi hissettirmek için arkadaşlarından kaçıyorlar mı? İstismarcı partnerlerini asla mutlu edemeyeceklerini, bunun yerine kendi kimliklerini terk edeceklerini anlamalarına yardımcı olun. Biderman’ın Zorlama Şeması, bir ilişkide istismarın olup olmadığını belirlemek için yararlı bir araç örneğidir. Kendini LGBTQIA + olarak tanımlayan kişilerin ilişkilerinde istismarı tespit etmeleri özellikle zor olabilir çünkü bu ilişkilerdeki istismar çoğu zaman istismar hakkında sık sık duyduğumuz anlatıyı takip etmez. Süpernova Projesi, LGBTQIA + ilişkilerinde istismarı belirtmek için önemli bir araç olabilir. Bu proje istismarı nasıl görünebileceğinin ana hatlarını çiziyor.`,
+          `Şiddet ve istismarı meşrulaştırmayın. Onları korkutmamaya dikkat etmen gerekse de, şiddeti ve istismarı tanımalı ve ismini vermelisin. Hiçbir duygu şiddeti veya tacizi haklaştırmaz.`,
+          `Madde bağımlılığının bir bahane olmadığını açıkça belirtin. Uyuşturucu, alkol ve ilaç kullanımı, hiçbir durumda şiddet veya istismar için bir mazeret değildir.`,
+          `Şiddet içeren davranışlar için hiçbir bir bahane olamaz! Davranışı bir şekilde açıklasa da, istismarcının travmatik geçmişi veya zor hayat koşulları asla istismar ve şiddetin bahanesi değildir.`,
+          `Arkadaşınızın güçlü yönlerini ve onlara açık olan olasılıkları vurgulayın. Şiddete ve tacize maruz kalan insanlar genellikle kendilerini güçsüz ve durumdan bunalmış hissederler. Dışarıdan yardım, onları daha az yalnız hissetmelerine ve işe yaramaz olmaktan uzak olduklarını fark etmelerine neden olabilir. Durumun kontrolünü geri alabileceklerini ve kendi yaşam yollarını belirleyebileceklerini anlamalarına yardımcı olun. Aileyi ve / veya yetkilileri ikna etmek için yeterli taciz deliline sahip olmadıklarından endişeleniyorlarsa, nasıl toplanacağına dair ipuçları sunan 'Kendi aile içi şiddet davanızı bir avukat olmadan nasıl oluşturabilirsiniz?' Bölümümüzü inceleyebilirsiniz.`,
+          `Yardım edebileceğini düşünüyorsanız, onları bir kadın sığınma evine veya huzurevine veya kendilerini güvende hissettikleri birinin evine götürün.`,
+          `Arkadaşınızın, özellikle partnerinden uzaklaşmaları gerekiyorsa veya acil bir tehlike altında olduklarını düşünüyorsanız, alternatif bir barınma yeri bulmasına yardımcı olun.`,
+          `Yardımcı olabileceğini düşünüyorsanız ve bunu yapmakta kendinizi rahat hissediyorsanız, arkadaşınızla şiddet içeren veya taciz edici ilişkilerle ilgili kendi deneyimleriniz hakkında konuşun. Kendilerini daha az yetersiz ve utanmış hissetmelerine yardımcı olabilir. Cinsiyete dayalı ve aynı cinsiyetten şiddet, toplu bir sorundur. Onları tanımak, hikayeleri paylaşmak ve birbirlerini desteklemek cinsiyete dayalı ve aynı cinsiyetten şiddete  karşı mücadelede çok önemlidir.`,
+        ],
+      },
       // {
       //   type: CONTENT_TYPE.TITLE,
       //   title: "If they have children",
