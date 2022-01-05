@@ -23,12 +23,13 @@ const resourcesData = [
       "Comment construire un dossier judiciaire de violences domestiques sans l’aide d’un·e avocat·e",
     imageName: "building-case-no-lawyer.png",
     text: "Comment collecter et présenter des preuves d’abus",
-    link: {
-      href: `/${CURRENT_LANG}/ressources/${
+    langs: ["fr", "nl"],
+    links: {
+      fr: `/${CURRENT_LANG}/ressources/${
         resources[RESOURCE.BUILD_CASE_NO_LAWYER][CURRENT_LANG].slug
       }`,
+      nl: `/nl/bronnen/${resources[RESOURCE.BUILD_CASE_NO_LAWYER].nl.slug}`,
     },
-    langs: ["en", "fr", "nl"],
   },
   {
     title:
@@ -45,17 +46,24 @@ const resourcesData = [
     title: "Comment être un(e) bon(ne) allié(e)",
     imageName: "guide-coming-soon.jpg",
     // isComingSoon: true,
-    langs: ["es", /*"fr", "pl", "nl",*/ "en"],
+    langs: ["es", "pl", "nl", "tr", "en"],
     links: {
       en: `/en/resources/how-to-be-a-good-allied`,
       es: `/es/recursos/guia-del-buen-amigo`,
+      pl: `/pl/surowce/przewodnik-dobrego-sojusznika`,
+      nl: `/nl/bronnen/de-gids-van-de-goede-bondgenoot`,
+      tr: `/tr/kaynaklar/iyi-muttefikin-rehberi`,
     },
   },
   {
     title: "How to be safe online",
     imageName: "guide-coming-soon.jpg",
-    isComingSoon: true,
-    langs: ["nl", "en", "tr", "pt"],
+    // isComingSoon: true,
+    // langs: ["en"],
+    link: {
+      href: "https://www.chayn.co/themes/online-safety",
+      target: "_blank",
+    },
   },
 ]
 
@@ -74,11 +82,11 @@ const ResourcesContainer = ({ pictures }) => {
     if (selectedLang === "all") {
       return true
     }
-    return r.langs.includes(selectedLang)
+    return r.langs?.includes(selectedLang)
   })
 
   const allLangs = resourcesData
-    .map(({ langs }) => langs)
+    .map(data => data?.langs || [])
     .reduce((acc, curr) => [...acc, ...curr], [])
     .reduce((acc, curr) => (acc.includes(curr) ? acc : [...acc, curr]), [])
 
@@ -119,7 +127,7 @@ const ResourcesContainer = ({ pictures }) => {
               link={resource.link}
               links={resource.links}
               isComingSoon={resource.isComingSoon}
-              langs={resource.langs}
+              langs={resource.langs || []}
             />
           ))}
         </CardsContainer>

@@ -35,7 +35,7 @@ const ResourceCard = ({
       <Image picture={picture} />
     </ImageContainer>
     <Body>{text && <P size="s">{text}</P>}</Body>
-    {!!langs.length && (
+    {!!langs?.length && (
       <LangsContainer>
         {langs.sort().map(l => (
           <LangTag
