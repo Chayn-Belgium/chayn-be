@@ -73,7 +73,7 @@ const ResourcesPage = ({ data }) => (
         </SectionContainer>
       </PageSection>
     </Image>
-    <PageSection>
+    {/* <PageSection>
       <SectionContainer>
         <ResourcesHead>
           <P>
@@ -91,7 +91,7 @@ const ResourcesPage = ({ data }) => (
           </P>
         </ResourcesHead>
       </SectionContainer>
-    </PageSection>
+    </PageSection> */}
   </Layout>
 )
 

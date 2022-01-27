@@ -14,6 +14,7 @@ import { resources } from "../../../site-data/resources"
 import { RESOURCE } from "../../../site-data/constants"
 import { Dropdown } from "../ui"
 import { LangTag } from "../resource-card/style"
+import pdfUrlAtelier from "../../assets/files/atelier-de-prevention-contre-les-cyberviolences.pdf"
 
 const CURRENT_LANG = "fr"
 
@@ -62,6 +63,16 @@ const resourcesData = [
     // langs: ["en"],
     link: {
       href: "https://www.chayn.co/themes/online-safety",
+      target: "_blank",
+    },
+  },
+  {
+    title: "Atelier de prévention contre les cyberviolences",
+    text: `Les informations nécessaires`,
+    imageName: "atelier.png",
+    langs: ["fr"],
+    link: {
+      href: `https://chayn.be${pdfUrlAtelier}`,
       target: "_blank",
     },
   },
