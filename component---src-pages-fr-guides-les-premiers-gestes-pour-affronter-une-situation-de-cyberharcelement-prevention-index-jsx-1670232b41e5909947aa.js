@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[18],{9371:function(n,e,t){"use strict";t.r(e);var a=t("q1tI"),o=t.n(a),r=t("efoz"),c=t("YGHo");e.default=function(){return o.a.createElement(r.a,{lang:"fr",name:c.GUIDE.THE_FIRST_STEPS_TO_FACE_A_CYBERBULLYING_SITUATION,chapterId:"prevention"})}}}]);
-//# sourceMappingURL=component---src-pages-fr-guides-les-premiers-gestes-pour-affronter-une-situation-de-cyberharcelement-prevention-index-jsx-1670232b41e5909947aa.js.map

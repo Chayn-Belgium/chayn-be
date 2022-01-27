@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[30],{h7Rh:function(n,e,a){"use strict";a.r(e);var t=a("q1tI"),c=a.n(t),o=a("f21E"),r=a("YGHo");e.default=function(){return c.a.createElement(o.a,{lang:"pl",articleName:r.RESOURCE.HOW_TO_BE_A_GOOD_ALLIED})}}}]);
+//# sourceMappingURL=component---src-pages-pl-surowce-przewodnik-dobrego-sojusznika-index-jsx-11175ec6a941a5712bf1.js.map

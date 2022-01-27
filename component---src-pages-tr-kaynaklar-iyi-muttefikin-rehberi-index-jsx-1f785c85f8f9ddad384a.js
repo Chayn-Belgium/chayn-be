@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[30],{ftsL:function(n,t,e){"use strict";e.r(t);var a=e("q1tI"),r=e.n(a),c=e("f21E"),o=e("YGHo");t.default=function(){return r.a.createElement(c.a,{lang:"tr",articleName:o.RESOURCE.HOW_TO_BE_A_GOOD_ALLIED})}}}]);
-//# sourceMappingURL=component---src-pages-tr-kaynaklar-iyi-muttefikin-rehberi-index-jsx-1f785c85f8f9ddad384a.js.map
