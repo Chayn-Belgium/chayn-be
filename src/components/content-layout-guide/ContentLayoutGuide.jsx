@@ -15,6 +15,7 @@ import {
 } from "./style"
 import { Icon } from "../ui"
 import { capitalize, slugify } from "../../utils/helpers"
+import DownloadGuide from "../guide/download"
 
 // const isElementActive = el => {
 //   if (!el) return
@@ -103,6 +104,7 @@ const ContentLayoutGuide = ({
       <Body>{content}</Body>
 
       <AsideRight>
+        <DownloadGuide />
         <AsideContentRight isOpen={isMobileMenuOpen}>
           {asideRight.map((item, index) => (
             <TextMenu
